@@ -75,7 +75,7 @@
 \end_layout
 
 \begin_layout Subsection
-Определение аксиом и правила вывода
+Определение (Аксиомы, правило вывода)
 \end_layout
 
 \begin_layout Standard
@@ -168,8 +168,8 @@
 \end_layout
 
 \begin_layout Subsection
-Определение доказательства, доказуемой формулы, доказуемой из множества
- формулы
+Определение (Доказательство, доказуемая формула, доказуемая из множества
+ формула)
 \end_layout
 
 \begin_layout Standard
@@ -239,7 +239,7 @@
 \end_layout
 
 \begin_layout Subsection
-Теорема (об эквивалентности секвенциального и гильбертовского исчислений)
+Теорема (Об эквивалентности секвенциального и гильбертовского исчислений)
 \end_layout
 
 \begin_layout Enumerate
@@ -276,7 +276,7 @@
 \end_layout
 
 \begin_layout Subsection
-Теорема (о дедукции)
+Теорема (О дедукции)
 \end_layout
 
 \begin_layout Standard
