@@ -74,5 +74,205 @@
 Исчисление высказываний Гильбертовского типа
 \end_layout
 
+\begin_layout Subsection
+Определение аксиом и правила вывода
+\end_layout
+
+\begin_layout Standard
+Аксиомы:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\rightarrow(\psi\rightarrow\varphi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\rightarrow\psi)\rightarrow((\varphi\rightarrow(\psi\rightarrow\text{\xi))\rightarrow(\varphi\rightarrow\xi\ })$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\&\psi)\rightarrow\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\&\psi)\rightarrow\psi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\rightarrow\psi)\rightarrow((\varphi\rightarrow\xi)\rightarrow(\varphi\rightarrow(\phi\&\xi))))\rightarrow\xi))))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\rightarrow(\varphi\lor\varphi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\rightarrow(\varphi\lor\psi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\rightarrow\xi)\rightarrow((\psi\rightarrow\xi)\rightarrow((\varphi\lor\psi)\rightarrow\xi)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\rightarrow\psi)\rightarrow((\psi\rightarrow\neg\psi)\rightarrow\neg\varphi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\neg\neg\varphi\rightarrow\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Правило вывода: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\varphi;\varphi\rightarrow\psi}{\psi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение доказательства, доказуемой формулы, доказуемой из множества
+ формулы
+\end_layout
+
+\begin_layout Standard
+Последовательность 
+\begin_inset Formula $\varphi_{1},\dots,\varphi_{n}$
+\end_inset
+
+ называется доказательством, если каждая 
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+ является аксиомой, либо получена из предыдущих однократным применением
+ правила вывода.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - доказуема, если существует доказательство 
+\begin_inset Formula $\varphi_{1},\dots,\varphi_{n}$
+\end_inset
+
+ заканчивающееся этой формулой (
+\begin_inset Formula $\vartriangleright\varphi$
+\end_inset
+
+).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - доказуема из множества формул, если существует
+\begin_inset Formula $\varphi_{1},\dots,\varphi_{n}=\varphi$
+\end_inset
+
+, в которой каждая 
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+ является аксиомой, либо принадлежит множеству 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+, либо получена из предыдущих однократным применением правила вывода (
+\begin_inset Formula $\Gamma\vartriangleright\varphi$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
+Теорема (об эквивалентности секвенциального и гильбертовского исчислений)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi_{1},\dots,\varphi_{n}\vdash\psi$
+\end_inset
+
+ - доказуема 
+\begin_inset Formula $\Leftrightarrow\varphi_{1},\dots,\varphi_{n}\vartriangleright\psi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - доказуема 
+\begin_inset Formula $\Leftrightarrow\vartriangleright\psi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi_{1},\dots,\varphi_{n}\vdash\psi$
+\end_inset
+
+ - доказуема 
+\begin_inset Formula $\Leftrightarrow\varphi_{1},\dots,\varphi_{n}\vartriangleright\psi,\forall\psi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Теорема (о дедукции)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma\cup\{\varphi\}\vartriangleright\psi\Leftrightarrow\Gamma\vartriangleright(\varphi\rightarrow\psi)$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
