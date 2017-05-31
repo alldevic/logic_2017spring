@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language russian
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -58,7 +58,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
