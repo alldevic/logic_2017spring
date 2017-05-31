@@ -74,5 +74,263 @@
 Исчисление предикатов Гильбертовского типа
 \end_layout
 
+\begin_layout Subsection
+Определение аксиом и правил вывода
+\end_layout
+
+\begin_layout Standard
+Аксиомы:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\rightarrow(\psi\rightarrow\varphi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\rightarrow\psi)\rightarrow((\varphi\rightarrow(\psi\rightarrow\text{\xi))\rightarrow(\varphi\rightarrow\xi\ })$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\&\psi)\rightarrow\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\&\psi)\rightarrow\psi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\rightarrow\psi)\rightarrow((\varphi\rightarrow\xi)\rightarrow(\varphi\rightarrow(\phi\&\xi))))\rightarrow\xi))))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\rightarrow(\varphi\lor\varphi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\rightarrow(\varphi\lor\psi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\rightarrow\xi)\rightarrow((\psi\rightarrow\xi)\rightarrow((\varphi\lor\psi)\rightarrow\xi)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\rightarrow\psi)\rightarrow((\psi\rightarrow\neg\psi)\rightarrow\neg\varphi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\neg\neg\varphi\rightarrow\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\forall x\varphi\rightarrow[\varphi]_{t}^{x})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $([\varphi]_{t}^{x})\rightarrow\exists x\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(x=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((x=y)\rightarrow([\varphi]_{x}^{z}\rightarrow[\varphi]_{y}^{z}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Правила вывода: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\varphi;\varphi\rightarrow\psi}{\psi}\hspace{1em}\hspace{1em}\hspace{1em}\frac{\varphi\rightarrow\psi}{\varphi\rightarrow\forall x\psi}\hspace{1em}\hspace{1em}\hspace{1em}\frac{\psi\rightarrow\varphi}{\exists x\psi\rightarrow\varphi}\hspace{1em}\hspace{1em}\hspace{1em}x\notin FV(\varphi)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение доказательства и доказуемой формулы
+\end_layout
+
+\begin_layout Standard
+Последовательность 
+\begin_inset Formula $\varphi_{1},\dots,\varphi_{n}$
+\end_inset
+
+ называется 
+\series bold
+доказательством
+\series default
+, если каждая 
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+ является аксиомой, либо получена из предыдущих однократным применением
+ правил вывода.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - 
+\series bold
+доказуема
+\series default
+, если существует доказательство 
+\begin_inset Formula $\varphi_{1},\dots,\varphi_{n}$
+\end_inset
+
+ заканчивающееся этой формулой.
+\end_layout
+
+\begin_layout Subsection
+Определение вывода
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Выводом 
+\series default
+
+\begin_inset Formula $\varphi$
+\end_inset
+
+ из 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ называется последовательность 
+\begin_inset Formula $\varphi_{1},\dots,\varphi_{n}=\varphi$
+\end_inset
+
+, в которой каждая 
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+ является аксиомой, либо принадлежит множеству 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+, либо получена из предыдущих однократным применением правил вывода.
+ Если существует вывод 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ из 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+, то говорят, что 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ выводима из 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ и обозначают 
+\begin_inset Formula $\Gamma\vartriangleright\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Теорема (о дедукции) (б.
+ д.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma\cup\{\varphi\}\vartriangleright\psi\Leftrightarrow\Gamma\vartriangleright(\varphi\rightarrow\psi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Следствие
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\{\varphi_{1},\dots,\varphi_{n}\}\vartriangleright\psi\Leftrightarrow\vartriangleright(\varphi_{1}\rightarrow(\varphi_{2}\rightarrow\dots(\varphi_{n}\rightarrow\varphi)\dots))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Теорема (б.
+ д.)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\{\varphi_{1},\dots,\varphi_{n}\}\vartriangleright\psi\Leftrightarrow\varphi_{1},\dots,\varphi_{n}\vdash\varphi$
+\end_inset
+
+ - доказуема в секв.
+ исч.
+ предикатов
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vartriangleright\varphi\Leftrightarrow\vdash\varphi$
+\end_inset
+
+- доказуема в секв.
+ исч.
+ предикатов
+\end_layout
+
 \end_body
 \end_document
