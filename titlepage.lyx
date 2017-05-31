@@ -27,7 +27,6 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -72,75 +71,34 @@
 \begin_body
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "10.lyx"
+\begin_inset ERT
+status open
 
-\end_inset
+\begin_layout Plain Layout
 
 
+\backslash
+begin{titlepage}
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "11.lyx"
+\begin_layout Plain Layout
 
-\end_inset
+alkjdalkd
+\end_layout
 
-
-\begin_inset CommandInset include
-LatexCommand include
-filename "12.lyx"
-
-\end_inset
+\begin_layout Plain Layout
 
 
-\begin_inset CommandInset include
-LatexCommand include
-filename "13.lyx"
+\backslash
+end{titlepage}
+\end_layout
 
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand include
-filename "14.lyx"
-
-\end_inset
+\begin_layout Plain Layout
 
 
-\begin_inset CommandInset include
-LatexCommand include
-filename "15.lyx"
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand include
-filename "16.lyx"
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand include
-filename "17.lyx"
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand include
-filename "18.lyx"
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand include
-filename "19.lyx"
+\backslash
+tableofcontents
+\end_layout
 
 \end_inset
 
