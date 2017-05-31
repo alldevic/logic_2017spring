@@ -75,5 +75,609 @@
  Неразрешимые проблемы
 \end_layout
 
+\begin_layout Subsection
+Определение (Арифметика Пеано)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Sigma_{0}=(<^{2},+^{2},\times^{2},S^{1},0)$
+\end_inset
+
+ - сигнатура арифметики Пеано
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $T(\Sigma_{0})$
+\end_inset
+
+ - множество термов, 
+\begin_inset Formula $F(\Sigma_{0})$
+\end_inset
+
+ - множество формул, 
+\begin_inset Formula $S(\Sigma_{0})$
+\end_inset
+
+ - множество предложений, 
+\begin_inset Formula $\{v_{i}|\in\mathbb{N}\}$
+\end_inset
+
+ - переменные
+\end_layout
+
+\begin_layout Subsection
+Определение (Гёделевская нумерация)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Гёделевской нумерацией 
+\series default
+термов и формул сигнатуры 
+\begin_inset Formula $\Sigma_{0}$
+\end_inset
+
+ называется:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\gamma(0)=c(0,1)$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma(v_{i})=c(1,i)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\gamma(S(t))=c(2,\gamma(t))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\gamma(t+q)=c(3,c(\gamma(t),\gamma(q)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\gamma(t\times q)=c(4,c(\gamma(t),\gamma(q)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\gamma(t=q)=c(5,c(\gamma(t),\gamma(q)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\gamma(t<q)=c(6,c(\gamma(t),\gamma(q)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\gamma(\varphi\&\psi)=c(7,c(\gamma(\varphi),\gamma(\psi)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\gamma(\varphi\lor\psi)=c(8,c(\gamma(\varphi),\gamma(\psi)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\gamma(\varphi\rightarrow\psi)=c(9,c(\gamma(\varphi),\gamma(\psi)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\gamma(\neg\varphi)=c(10,c(\gamma(\varphi)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\gamma(\exists v_{i}\varphi)=c(11,c(i,\gamma(\varphi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\gamma(\forall v_{i}\varphi)=c(12,c(i,\gamma(\varphi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+Следующие множества - прим.
+ рек.
+ мн-ва:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\gamma(T(\Sigma_{0}))=\{\gamma(t)|t\in T(\Sigma_{0})\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\gamma(F(\Sigma_{0}))=\{\gamma(t)|t\in F(\Sigma_{0})\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\gamma(S(\Sigma_{0}))=\{\gamma(t)|t\in S(\Sigma_{0})\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение (Разрешимое множество, перечислимое множество)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\subseteq T(\Sigma_{0})\cup F(\Sigma_{0})$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $X$
+\end_inset
+
+ - 
+\series bold
+разрешимо
+\series default
+, если 
+\begin_inset Formula $\gamma(X)=\{\gamma(a)|a\in X\}$
+\end_inset
+
+- рекурсивное множество.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $X$
+\end_inset
+
+ - 
+\series bold
+перечислимо
+\series default
+, если 
+\begin_inset Formula $\gamma(X)=\{\gamma(a)|a\in X\}$
+\end_inset
+
+- рекурсивно-перечислимое множество.
+ 
+\end_layout
+
+\begin_layout Subsection
+Замечание (упр.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall n\forall a_{1},\dots,a_{n}\in\mathbb{N}\exists x=p_{0}^{a_{0}}\cdot\dots\cdot p_{n}^{a_{n}}$
+\end_inset
+
+, т.
+ е.
+ 
+\begin_inset Formula $ex(0,x)=a_{0},\dots,ex(n,x)=a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Обозначение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\prod_{\Sigma_{0}}=\{\varphi\in F(\Sigma_{0})|\varphi\text{-т. и.}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\prod_{\Sigma_{0}}$
+\end_inset
+
+ - перечислимо
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f(x,n,y)=\begin{cases}
+y & \text{если }ex(n,x)=y\text{ и }\\
+ & \gamma^{-1}(ex(0,x))\dots\gamma^{-1}(ex(n,x))\text{ -посл-ть формул из }F(\Sigma_{0})\text{ - док-во}\\
+\gamma(v_{0}=v_{0}) & \text{иначе}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $f$
+\end_inset
+
+ - общ.
+ рек.
+ ф-ла (б.
+ д.)
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\gamma(\prod_{\Sigma_{0}})=\rho f$
+\end_inset
+
+ (б.
+ д.)
+\end_layout
+
+\begin_layout Subsection
+Определение (Формальная арифметика Пеано)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall v_{0}\neg(S(v_{0})=0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall v_{0}\forall v_{1}((S(v_{0})=S(v_{1}))\rightarrow(v_{0}=v_{1}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall v_{0}(v_{0}+0=v_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall v_{0}\forall v_{1}(v_{0}+S(v_{1})=S(v_{0}+v_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall v_{0}(v_{0}*0=0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall v_{0}\forall v_{1}(v_{0}*S(v_{1})=(v_{0}*v_{1})+v_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall v_{0}\neg(v_{0}<0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall v_{0}\forall v_{1}((v_{0}<S(v_{1}))\rightarrow((v_{0}<v_{1})\lor(v_{0}=v_{1})))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall v_{0}\forall v_{1}(((v_{0}<v_{1})\lor(v_{0}=v_{1}))\rightarrow(v_{0}<S(v_{1}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall v_{0}\forall v_{1}(\neg(v_{0}=v_{1})\rightarrow((v_{0}<v_{1})\lor(v_{1}<v_{0})))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение (Термы)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\underline{0}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\underline{1}=S(0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n+1=S(n)$
+\end_inset
+
+, т.
+ е.
+ 
+\begin_inset Formula $\underline{n}=S(S(\dots S(0)\dots))$
+\end_inset
+
+, где 
+\begin_inset Formula $S$
+\end_inset
+
+ применяется 
+\begin_inset Formula $n$
+\end_inset
+
+ раз.
+\end_layout
+
+\begin_layout Subsection
+Определение (Представимость в арифметике)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:\mathbb{N^{\text{k}}\rightarrow\mathbb{N}}$
+\end_inset
+
+ - 
+\series bold
+представима в арифметике 
+\begin_inset Formula $A_{0}$
+\end_inset
+
+
+\series default
+(
+\series bold
+
+\begin_inset Formula $A_{0}$
+\end_inset
+
+
+\series default
+ - набор аксиом), если 
+\series bold
+
+\begin_inset Formula $\exists\varphi(v_{0},\dots,v_{k}|\forall n_{0},\dots,n_{k}\in\mathbb{N}$
+\end_inset
+
+
+\series default
+:
+\end_layout
+
+\begin_layout Enumerate
+если 
+\series bold
+
+\begin_inset Formula $f(n_{0},\dots,n_{k-1})=n_{k}$
+\end_inset
+
+
+\series default
+, то 
+\series bold
+
+\begin_inset Formula $A_{0}\vdash\varphi(\underline{n_{0}},\dots,\underline{n_{k}})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+если 
+\series bold
+
+\begin_inset Formula $f(n_{0},\dots,n_{k-1})\neq n_{k}$
+\end_inset
+
+
+\series default
+, то 
+\series bold
+
+\begin_inset Formula $A_{0}\vdash\neg\varphi(\underline{n_{0}},\dots,\underline{n_{k}})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Каждая орф представима в 
+\series bold
+
+\begin_inset Formula $A_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0(v_{0})$
+\end_inset
+
+ представима формулой 
+\begin_inset Formula $\varphi(v_{0},v_{1})=(v_{1}=0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S(v_{0})$
+\end_inset
+
+ представима формулой 
+\begin_inset Formula $\varphi(v_{0},v_{1})=(v_{1}=S(v_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $I_{m}^{n}(v_{0},\dots,v_{n-1})$
+\end_inset
+
+ представима формулой 
+\begin_inset Formula $\varphi(v_{0},\dots,v_{n})=(v_{n}=v_{m-1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Суперпозиция - упражнение
+\end_layout
+
+\begin_layout Enumerate
+Остальное - б.
+ д.
+\end_layout
+
+\begin_layout Subsection
+Теорема (Гёделя о неразрешимости)
+\end_layout
+
+\begin_layout Standard
+Любая непротиворечивая теория, содержащая арифметику Пеано, является неразрешимо
+й.
+ Или система аксиом 
+\begin_inset Formula $A_{0}$
+\end_inset
+
+ является наслдественное неразрешимой.
+ А именно: пусть 
+\begin_inset Formula $T\subseteq S(\Sigma_{0})$
+\end_inset
+
+, 
+\begin_inset Formula $A_{0}\subseteq T$
+\end_inset
+
+, 
+\begin_inset Formula $T$
+\end_inset
+
+ - непротиворечива, тогда 
+\begin_inset Formula $T$
+\end_inset
+
+ - неразрешима.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Subsection
+Теорема (б.
+ д.)
+\end_layout
+
+\begin_layout Standard
+Любая полная перечислимая теория является разрешимой, т.
+ е.
+ 
+\begin_inset Formula $T\subseteq S(\Sigma_{0})$
+\end_inset
+
+, 
+\begin_inset Formula $T$
+\end_inset
+
+ - перечислима, 
+\begin_inset Formula $T$
+\end_inset
+
+ - полная теория, тогда 
+\begin_inset Formula $T$
+\end_inset
+
+ - неразрешима.
+\end_layout
+
+\begin_layout Subsection
+Теорема (Чёрча о неразрешимости)
+\end_layout
+
+\begin_layout Subsection
+Теорема (Гёделя о неполноте)
+\end_layout
+
 \end_body
 \end_document
