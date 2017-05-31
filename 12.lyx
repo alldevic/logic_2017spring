@@ -177,7 +177,11 @@
 \begin_inset Formula $\varphi_{1},\dots,\varphi_{n}$
 \end_inset
 
- называется доказательством, если каждая 
+ называется 
+\series bold
+доказательством
+\series default
+, если каждая 
 \begin_inset Formula $\varphi_{i}$
 \end_inset
 
@@ -191,7 +195,11 @@
 \begin_inset Formula $\varphi$
 \end_inset
 
- - доказуема, если существует доказательство 
+ - 
+\series bold
+доказуема
+\series default
+, если существует доказательство 
 \begin_inset Formula $\varphi_{1},\dots,\varphi_{n}$
 \end_inset
 
@@ -207,7 +215,11 @@
 \begin_inset Formula $\varphi$
 \end_inset
 
- - доказуема из множества формул, если существует
+ -
+\series bold
+ доказуема из множества формул
+\series default
+, если существует
 \begin_inset Formula $\varphi_{1},\dots,\varphi_{n}=\varphi$
 \end_inset
 
