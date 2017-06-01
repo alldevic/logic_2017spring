@@ -74,5 +74,401 @@
 Секвенциальное исчисление высказываний
 \end_layout
 
+\begin_layout Subsection
+Определение (Секвенции, аксиомы, правила вывода)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma=\text{<\ensuremath{\varphi_{1}\ldots\varphi_{n}}>}$
+\end_inset
+
+- конечная последовательность формул.
+ Тогда следующие выражения называются секвенциями:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varGamma\vdash\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vdash\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varGamma\vdash$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Аксиома:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi\vdash\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Правила вывода:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\text{\Gamma\vdash\varphi;\Gamma\vdash\psi}}{\Gamma\vdash(\varphi\&\psi)}\qquad\qquad\frac{\Gamma\vdash(\varphi\&\phi)}{\Gamma\vdash\varphi}\qquad\qquad\frac{\Gamma\vdash(\varphi\&\psi)}{\Gamma\vdash\psi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Gamma\vdash\varphi}{\Gamma\vdash(\varphi\lor\psi)}\qquad\qquad\frac{\Gamma\vdash\psi}{\Gamma\vdash(\varphi\lor\psi)}\qquad\qquad\frac{\Gamma,\varphi\vdash\xi;\Gamma,\psi\vdash(\varphi\lor\psi)}{\Gamma\vdash\xi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Gamma\vdash\varphi;\Gamma\vdash(\varphi\rightarrow\psi)}{\Gamma\vdash\psi}\qquad\qquad\frac{\Gamma\vdash\varphi;\Gamma\vdash(\varphi\rightarrow\psi)}{\Gamma\vdash\psi}\qquad\qquad\frac{\Gamma,\neg\varphi\vdash}{\Gamma\vdash\varphi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Gamma\vdash\varphi;\Gamma\vdash\neg\varphi}{\Gamma\vdash}\qquad\qquad\frac{\Gamma_{1},\varphi,\psi,\Gamma_{2}\vdash\xi}{\Gamma_{1},\psi,\varphi,\Gamma_{2}\vdash\xi}\qquad\qquad\frac{\Gamma\vdash\varphi}{\Gamma,\psi\vdash\varphi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение (Доказательство, доказуемая секвенция)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{1}\ldots S_{n}$
+\end_inset
+
+называется доказательством, если каждая секвенция 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ либо является аксиомой, либо получена из предыдущих однократным применением
+ правил вывода.
+\end_layout
+
+\begin_layout Standard
+Секвенция 
+\begin_inset Formula $S$
+\end_inset
+
+ называется доказуемой, если 
+\begin_inset Formula $\exists$
+\end_inset
+
+ 
+\begin_inset Formula $S_{1}\ldots S_{n}$
+\end_inset
+
+, которая является доказательством и заканчивается на эту секвенцию.
+\end_layout
+
+\begin_layout Subsection
+Замечание
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $S_{1}\ldots S_{n}$
+\end_inset
+
+доказательство, то 
+\begin_inset Formula $\forall k\leq n$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+a) 
+\begin_inset Formula $S_{1}\ldots S_{n}$
+\end_inset
+
+-доказательство
+\end_layout
+
+\begin_layout Standard
+б) 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+-доказуема
+\end_layout
+
+\begin_layout Subsection
+Определение (Дерево секвенций)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S$
+\end_inset
+
+ - дерево
+\end_layout
+
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $D_{1}\ldots D_{n}$
+\end_inset
+
+ - деревья секвенций, 
+\begin_inset Formula $S$
+\end_inset
+
+ - секвенция, то 
+\begin_inset Formula $D=\frac{D_{1}\ldots D_{n}}{S}$
+\end_inset
+
+ - дерево секвенций
+\end_layout
+
+\begin_layout Enumerate
+Других деревьев нет
+\end_layout
+
+\begin_layout Subsection
+Определение (Вершины, переходы, высота)
+\end_layout
+
+\begin_layout Standard
+а) 
+\begin_inset Formula $V(D)$
+\end_inset
+
+ - множество вершин:
+\end_layout
+
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $D=S$
+\end_inset
+
+, то 
+\begin_inset Formula $V(D)=\{S\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $D=\frac{D_{1}\ldots D_{n}}{S}$
+\end_inset
+
+, то 
+\begin_inset Formula $V(D)=V(D_{1})\cup\ldots\cup V(D_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+б) 
+\begin_inset Formula $P(D)$
+\end_inset
+
+ - переходы:
+\end_layout
+
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $D=S$
+\end_inset
+
+, то 
+\begin_inset Formula $P(D)=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $D=\frac{D_{1}\ldots D_{n}}{S}$
+\end_inset
+
+, 
+\begin_inset Formula $D_{i}=\frac{\ldots\ldots\ldots}{S_{i}}$
+\end_inset
+
+, то 
+\begin_inset Formula $P(D)=P(D_{1})\cup\ldots P(D_{n})\cup\{\frac{S_{1}\ldots S_{n}}{S}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+в) 
+\begin_inset Formula $h(D)$
+\end_inset
+
+ - высота дерева:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D=S$
+\end_inset
+
+, то 
+\begin_inset Formula $h(D)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D=\frac{D_{1}\ldots D_{n}}{S}$
+\end_inset
+
+, 
+\begin_inset Formula $h(D)=max(h(D_{1})\ldots h(D_{n}))+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение (Дерево вывода)
+\end_layout
+
+\begin_layout Standard
+Дерево секвенций называется деревом вывода, если все его вершины являются
+ аксиомами, а переходы - частными случаями правил вывода.
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+Секвенция 
+\begin_inset Formula $S$
+\end_inset
+
+ - доказуема 
+\begin_inset Formula $\Leftrightarrow\exists D=\frac{D_{1}\ldots D_{n}}{S}$
+\end_inset
+
+ - дерево вывода, заканчивающееся на эту секвенцию.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+) 
+\begin_inset Formula $S$
+\end_inset
+
+ - доказуема 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $\exists$
+\end_inset
+
+ 
+\begin_inset Formula $S_{1}\ldots S_{n}=S$
+\end_inset
+
+ - доказательство.
+ Индукция по 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=1$
+\end_inset
+
+: 
+\begin_inset Formula $S$
+\end_inset
+
+ - аксиома 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $D=S$
+\end_inset
+
+ - дерево вывода.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $<n\rightarrow n$
+\end_inset
+
+: 
+\begin_inset Formula $\forall$
+\end_inset
+
+ 
+\begin_inset Formula $k<n$
+\end_inset
+
+ - верно.
+ 
+\begin_inset Formula $S_{1}\ldots S_{n}=S$
+\end_inset
+
+ - доказательство, 
+\begin_inset Formula $\frac{S_{i_{1}}\ldots S_{i_{m}}}{S}$
+\end_inset
+
+ - правило вывода, 
+\begin_inset Formula $i_{1}<i_{m}<n$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
