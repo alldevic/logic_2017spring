@@ -641,7 +641,138 @@ y & \text{если }ex(n,x)=y\text{ и }\\
 \end_layout
 
 \begin_layout Standard
-TODO
+От противного: пусть
+\begin_inset Formula $T$
+\end_inset
+
+ - разрешима, тогда 
+\begin_inset Formula $M=\gamma(T)$
+\end_inset
+
+ - рекурсивное множество, а значит 
+\begin_inset Formula $\chi_{M}$
+\end_inset
+
+ - орф.
+ Рассмотрим функцию
+\begin_inset Formula 
+\[
+f(x,y)=\begin{cases}
+\gamma([\gamma^{-1}(x)]_{\underline{y}}^{v_{0}}) & \text{если }x\in\gamma(F(\Sigma_{0}))\\
+0 & \text{если }x\notin\gamma(F(\Sigma_{0}))
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma(F(\Sigma_{0}))$
+\end_inset
+
+ - прм, следовательно 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ - прф (б.
+ д.)
+\end_layout
+
+\begin_layout Standard
+Рассмотрим функцию 
+\begin_inset Formula $g(x,y)=\chi_{M}(f(x,y))$
+\end_inset
+
+ - орф, следовательно 
+\begin_inset Formula $g$
+\end_inset
+
+ представимо в 
+\begin_inset Formula $A_{0}$
+\end_inset
+
+, значит существует формула 
+\begin_inset Formula $\varphi(v_{0},v_{1},v_{2})$
+\end_inset
+
+ представляющая 
+\begin_inset Formula $g(v_{0},v_{1})$
+\end_inset
+
+.
+ Тогда рассмотрим 
+\begin_inset Formula $n=\gamma(\varphi(v_{0},v_{1},v_{2})).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $f(n,y)=\gamma([\varphi(v_{0},v_{0},0)]_{\underline{y}}^{v_{0}})=\gamma(\varphi(\underline{y},\underline{y},0))$
+\end_inset
+
+ - номер формулы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(n,n)=\gamma(\varphi(\underline{n},\underline{n},0))$
+\end_inset
+
+, 
+\begin_inset Formula $g(n,n)=\chi_{M}(f(n,n))=1$
+\end_inset
+
+ - ?
+\end_layout
+
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $g(n,n)=\chi_{M}(f(n,n))=1$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $g(n,n)\neq0\Rightarrow A_{0}\vdash\neg\varphi(\underline{n},\underline{n},0)$
+\end_inset
+
+, 
+\begin_inset Formula $A_{0}\in T\Rightarrow T\vdash\neg\varphi(\underline{n},\underline{n},0)\Rightarrow\neg\varphi(\underline{n},\underline{n},0)\in T\Rightarrow T$
+\end_inset
+
+ - непротиворечива 
+\begin_inset Formula $\Rightarrow\varphi(\underline{n},\underline{n},0)\notin T\Rightarrow\gamma(\varphi(\underline{n},\underline{n},0))\notin M\Rightarrow\chi_{M}(f(n,n))=\chi_{M}(\gamma(\varphi(\underline{n},\underline{n},0)))=0$
+\end_inset
+
+ - противоречие.
+\end_layout
+
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $g(n,n)=\chi_{M}(f(n,n))=0\Rightarrow\chi_{M}(\gamma(\varphi(\underline{n},\underline{n},0)))=0\Rightarrow\gamma(\varphi(\underline{n},\underline{n},0))\notin M\Rightarrow\varphi(\underline{n},\underline{n},0)\notin T,A_{0}\subseteq T\Rightarrow A_{0}\nvdash\varphi(\underline{n},\underline{n},0)\Rightarrow g(n,n)\neq0$
+\end_inset
+
+ - противоречие.
+\end_layout
+
+\begin_layout Standard
+Значит 
+\begin_inset Formula $\chi_{M}$
+\end_inset
+
+ - не орф, т.
+ е.
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ не рекурсивное множество, а значит 
+\begin_inset Formula $T$
+\end_inset
+
+ - не разрешима.
 \end_layout
 
 \begin_layout Subsection
