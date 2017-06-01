@@ -71,10 +71,290 @@
 \begin_body
 
 \begin_layout Section
-Гомоморфизмы.
- Изоморфизмы.
- Подмодели
+Гомоморфизмы, изоморфизмы, подмодели
 \end_layout
 
+\begin_layout Subsection
+Определение (гомоморфизм)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathfrak{A},$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{B}\epsilon\kappa(\sigma)$
+\end_inset
+
+, 
+\begin_inset Formula $h:\mathfrak{|A|}\to\mathfrak{|B|}$
+\end_inset
+
+ - гомоморфизм алгебраических систем 
+\begin_inset Formula $\mathfrak{A}$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathfrak{B}$
+\end_inset
+
+, если
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall P^{n},\,f^{n},\,c\in\sigma\;\forall a_{1},\dots,a_{n}\in k(\sigma)$
+\end_inset
+
+ выполнено следующее:
+\end_layout
+
+\begin_layout Standard
+a) 
+\begin_inset Formula $\mathfrak{A}\vDash P^{\mathfrak{A}}(a_{1}\dots\text{,}a_{n})$
+\end_inset
+
+, то 
+\begin_inset Formula $\mathfrak{B}\models P^{\mathfrak{B}}(h(a_{1})\dots h(a_{n}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+б) 
+\begin_inset Formula $h(f^{\mathfrak{A}}(a_{1}\dots a_{n}))=f^{\mathfrak{B}}(h(a_{1}\dots a_{n}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+в) 
+\begin_inset Formula $h(c^{\mathfrak{A}})=c^{\mathfrak{B}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение (эпиморфизм) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h$
+\end_inset
+
+ - эпиморфизм, если 
+\begin_inset Formula $h$
+\end_inset
+
+ - гомоморфизм и 
+\begin_inset Quotes eld
+\end_inset
+
+на
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение (изоморфизм)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h$
+\end_inset
+
+ - изоморфизм, если:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h$
+\end_inset
+
+ - взаимно-однозначно
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall P^{n},\,f^{n},\,c\in\sigma,\,\forall a_{1},\dots,a_{n}\mathfrak{\in|A|}$
+\end_inset
+
+: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+a) 
+\begin_inset Formula $\mathfrak{A}\vDash P^{\mathfrak{A}}(a_{1}\dots a_{n})\iff\mathfrak{B}\models P^{\mathfrak{B}}(h(a_{1})\dots h(a_{n}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+б) 
+\begin_inset Formula $h(f^{\mathfrak{A}}(a_{1}\dots a_{n}))=f^{\mathfrak{B}}(h(a_{1}\dots a_{n}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+в) 
+\begin_inset Formula $h(c^{\mathfrak{A}})=c^{\mathfrak{B}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Определение (изоморфное вложение)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h:\mathfrak{|A|}\to\mathfrak{|B|}$
+\end_inset
+
+- изоморфное вложение, если:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h$
+\end_inset
+
+ - разнозначно
+\end_layout
+
+\begin_layout Enumerate
+a) 
+\begin_inset Formula $\mathfrak{A}\vDash P^{\mathfrak{A}}(a_{1}\dots a_{n})\iff\mathfrak{B}\models P^{\mathfrak{B}}(h(a_{1})\dots h(a_{n}))$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+б) 
+\begin_inset Formula $h(f^{\mathfrak{A}}(a_{1}\dots a_{n}))=f^{\mathfrak{B}}(h(a_{1}\dots a_{n}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+в) 
+\begin_inset Formula $h(c^{\mathfrak{A}})=c^{\mathfrak{B}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Замечание 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h$
+\end_inset
+
+ - эпиморфизм 
+\begin_inset Formula $\Longleftrightarrow h$
+\end_inset
+
+ - гомоморфизм и 
+\begin_inset Quotes eld
+\end_inset
+
+на
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h$
+\end_inset
+
+ - изоморфизм 
+\begin_inset Formula $\Longleftrightarrow h$
+\end_inset
+
+ - эпимоморфизм и изоморфное вложение
+\end_layout
+
+\begin_layout Subsection
+Определение (подмодель) 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\mathfrak{A},$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{B}\in K(\sigma)$
+\end_inset
+
+, 
+\begin_inset Formula $\mathfrak{A}\leq\mathfrak{B}$
+\end_inset
+
+ - 
+\begin_inset Formula $\mathfrak{A}$
+\end_inset
+
+ - подмодель 
+\begin_inset Formula $\mathfrak{B}$
+\end_inset
+
+, если: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathfrak{|A|}\leq\mathfrak{|B|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall P^{n},f^{n},c\in\sigma,\forall a_{1},\dots,a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+a) 
+\begin_inset Formula $\mathfrak{A}\vDash P^{\mathfrak{A}}(a_{1},\dots,a_{n})\iff\mathfrak{B}\models P^{\mathfrak{B}}(a_{1},\dots,a_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+б) 
+\begin_inset Formula $f^{\mathfrak{A}}(a_{1}\dots a_{n})=f^{\mathfrak{B}}(h(a_{1}\dots a_{n}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+в) 
+\begin_inset Formula $h(c^{\mathfrak{A}})=c^{\mathfrak{B}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
