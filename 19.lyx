@@ -675,8 +675,113 @@ TODO
 Теорема (Чёрча о неразрешимости)
 \end_layout
 
+\begin_layout Standard
+Множество 
+\begin_inset Formula $\prod_{\Sigma_{0}}$
+\end_inset
+
+ - теорем логики предикатов сигнатуры 
+\begin_inset Formula $\Sigma_{0}$
+\end_inset
+
+ неразрешимо
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+
+\begin_inset Newline newline
+\end_inset
+
+Пусть 
+\begin_inset Formula $T=\{\varphi\in S(\Sigma_{0})|\vdash\varphi\}$
+\end_inset
+
+, 
+\begin_inset Formula $T_{0}=\{\varphi\in S(\Sigma_{0})|A_{0}\vdash\varphi\}$
+\end_inset
+
+, 
+\begin_inset Formula $\psi=\&\xi$
+\end_inset
+
+, где 
+\begin_inset Formula $\xi\in A_{0}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Если 
+\begin_inset Formula $T$
+\end_inset
+
+ - разрешимо, то 
+\begin_inset Formula $\varphi\in T_{0}\Leftrightarrow A_{0}\vdash\varphi\Leftrightarrow\psi\vdash\varphi\Leftrightarrow\vdash(\psi\rightarrow\varphi)\Leftrightarrow(\psi\rightarrow\varphi)\in T$
+\end_inset
+
+,
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\chi_{\gamma(T_{0})}^{(x)}=\chi_{\gamma(T)}(c(9,c(\gamma(\psi),(x))))$
+\end_inset
+
+ - упр.
+ 
+\end_layout
+
 \begin_layout Subsection
 Теорема (Гёделя о неполноте)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T\subseteq S(\Sigma_{0})$
+\end_inset
+
+, 
+\begin_inset Formula $A_{0}\subseteq T$
+\end_inset
+
+, 
+\begin_inset Formula $T$
+\end_inset
+
+ - перечислима, 
+\begin_inset Formula $T$
+\end_inset
+
+ - непротиворечивая теория, тогда 
+\begin_inset Formula $T$
+\end_inset
+
+ - не полна.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ Пусть 
+\begin_inset Formula $T$
+\end_inset
+
+ - полна.
+ Следовательно 
+\begin_inset Formula $T$
+\end_inset
+
+ - разрешима - противоречие, значит 
+\begin_inset Formula $T$
+\end_inset
+
+ - не полна.
 \end_layout
 
 \end_body
