@@ -717,5 +717,306 @@ t = c
 Теорема
 \end_layout
 
+\begin_layout Description
+\begin_inset Formula $\mathfrak{A},\mathfrak{B}\in K(\sigma),\mathfrak{A}\leq\mathfrak{B},a_{1},\dots,a_{n}\in\mathfrak{|A|},\varphi(k_{1},\dots,k_{n})\in F(\sigma)$
+\end_inset
+
+ тогда 
+\begin_inset Formula $\mathfrak{A}\models\varphi(a_{1},\dots,a_{n})\Longleftrightarrow\mathfrak{B}\models\varphi(a_{1},\dots,a_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ 1) a) 
+\begin_inset Formula $\varphi(x_{1},\dots,x_{n})=(t_{1}(\overset{-}{x})=t_{2}(\overset{-}{x})),\forall i$
+\end_inset
+
+ 
+\begin_inset Formula $t_{i}^{\mathfrak{A}}(a_{1},\dots,a_{n})=t_{i}^{\mathfrak{B}}(a_{1},\dots,a_{n})$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{A}\models\varphi(x_{1},\dots,x_{n})\Longleftrightarrow t_{1}^{\mathfrak{A}}(\overset{-}{a})=t_{2}^{\mathfrak{A}}(\overset{-}{a})\Longleftrightarrow t_{1}^{\mathfrak{B}}(\overset{-}{a})=t_{2}^{\mathfrak{B}}(\overset{-}{a})\Longleftrightarrow\mathfrak{B}\models\varphi(\overset{-}{a})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+б) 
+\begin_inset Formula $P^{k}\in\sigma,$
+\end_inset
+
+ 
+\begin_inset Formula $t_{1}(\overset{-}{x}),\dots,t_{n}(\overset{-}{x})\in T(\sigma)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall i$
+\end_inset
+
+ 
+\begin_inset Formula $t_{i}^{\mathfrak{A}}(a_{1},\dots,a_{n})=t_{i}^{\mathfrak{B}}(a_{1},\dots,a_{n})$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{A}\models\varphi(a_{1},\dots,a_{n})\Longleftrightarrow\mathfrak{A}\models P(t_{1}^{\mathfrak{A}}(\overset{-}{a}),\dots,t_{k}^{\mathfrak{A}}(\overset{-}{a}))\Longleftrightarrow\mathfrak{A}\models P(t_{1}^{\mathfrak{B}}(\overset{-}{a}),\dots,t_{k}^{\mathfrak{B}}(\overset{-}{a}))\Longleftrightarrow\mathfrak{B}\models P(t_{1}^{\mathfrak{B}}(\overset{-}{a}),\dots,t_{k}^{\mathfrak{B}}(\overset{-}{a}))\Longleftrightarrow\mathfrak{B}\models\varphi(a_{1},\dots,a_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+2) Пусть 
+\begin_inset Formula $\varphi_{1}(x_{1},\dots,x_{n}),$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi_{2}(x_{1},\dots,x_{n})\in F(\sigma)$
+\end_inset
+
+ 
+\begin_inset Formula $\forall i$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{A}\models\varphi_{i}(a_{1},\dots,a_{n})\Longrightarrow\mathfrak{B}\models\varphi_{i}(a_{1},\dots,a_{n})$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathfrak{A}\models\varphi_{2}(a_{1},\dots,a_{n})\Longleftrightarrow\mathfrak{B}\models\varphi_{1}(a_{1},\dots,a_{n})$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathfrak{B}\models\varphi_{2}(a_{1},\dots,a_{n})\Longleftrightarrow\mathfrak{B}\models\varphi(a_{1},\dots,a_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение
+\end_layout
+
+\begin_layout Description
+Пусть 
+\begin_inset Formula $\psi(x_{1},\dots,x_{n},y_{1},\dots,y_{k})\in F(\sigma)$
+\end_inset
+
+, тогда 
+\end_layout
+
+\begin_layout Description
+a) 
+\begin_inset Formula $\forall y_{1},\dots,y_{n}$
+\end_inset
+
+ 
+\begin_inset Formula $\psi(\overset{-}{x},\overset{-}{y})$
+\end_inset
+
+ - 
+\begin_inset Formula $\forall$
+\end_inset
+
+ - формула (универсальная)
+\end_layout
+
+\begin_layout Description
+б) 
+\begin_inset Formula $\exists y_{1},\dots,y_{k}$
+\end_inset
+
+ 
+\begin_inset Formula $\psi(\overset{-}{x},\overset{-}{y})$
+\end_inset
+
+ - 
+\begin_inset Formula $\exists$
+\end_inset
+
+ - формула (экзистенциальная)
+\end_layout
+
+\begin_layout Subsection
+Теорема
+\end_layout
+
+\begin_layout Description
+Пусть 
+\begin_inset Formula $\mathfrak{A},\mathfrak{B}\in K(\sigma),$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{A\leq B}$
+\end_inset
+
+ 
+\begin_inset Formula $a_{1},\dots a_{n}\in\mathfrak{|A}|$
+\end_inset
+
+ 
+\begin_inset Formula $\psi(x_{1},\dots,x_{n},y_{1},\dots,y_{k})$
+\end_inset
+
+ - бескванторная 
+\begin_inset Formula $\in F(\sigma)$
+\end_inset
+
+ тогда:
+\end_layout
+
+\begin_layout Description
+а) 
+\begin_inset Formula $\mathfrak{A}\models\exists y_{1},\dots,\exists y_{k}$
+\end_inset
+
+ 
+\begin_inset Formula $\psi(\overset{-}{a},\overset{-}{y})$
+\end_inset
+
+, то 
+\begin_inset Formula $\mathfrak{B}\models\exists y_{1},\dots,\exists y_{k}$
+\end_inset
+
+ 
+\begin_inset Formula $\psi(\overset{-}{a},\overset{-}{y})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+б) 
+\begin_inset Formula $\mathfrak{B}\models\forall y_{1},\dots,\forall y_{k}$
+\end_inset
+
+ 
+\begin_inset Formula $\psi(\overset{-}{a},\overset{-}{y})$
+\end_inset
+
+, то 
+\begin_inset Formula $\mathfrak{A}\models\forall y_{1},\dots,\forall y_{k}$
+\end_inset
+
+ 
+\begin_inset Formula $\psi(\overset{-}{a},\overset{-}{y})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство
+\bar default
+: а) 
+\begin_inset Formula $\mathfrak{A}\models\exists\overset{-}{y}\psi(\overset{-}{a},\overset{-}{y})\Longleftrightarrow\exists c_{1},\dots,c_{k}\in\mathfrak{|A|}:$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{A}\models\psi(\overset{-}{a},\overset{-}{c})\Rightarrow\mathfrak{B}\models\exists c_{1},\dots,c_{k}\in\mathfrak{|B|}:$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{B}\models\psi(\overset{-}{a},\overset{-}{c})\Longleftrightarrow\mathfrak{B}\models\exists y_{1},\dots,y_{k}$
+\end_inset
+
+ 
+\begin_inset Formula $\psi(\overset{-}{a},\overset{-}{y})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+б) Упражнение
+\end_layout
+
+\begin_layout Subsection
+Замечание
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\mathfrak{A},\mathfrak{B}\in K(\sigma),$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{|A|}\leq\mathfrak{|B|}.$
+\end_inset
+
+ Тогда: 
+\begin_inset Formula $\mathfrak{A}\leq\mathfrak{B}\Longleftrightarrow i_{A}:\mathfrak{|A|}\rightarrow\mathfrak{|B|}$
+\end_inset
+
+ - изоморфное вложение (
+\begin_inset Formula $i_{A}:A\rightarrow B,$
+\end_inset
+
+ 
+\begin_inset Formula $i_{A}(a)=a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство: 
+\bar default
+
+\begin_inset Formula $\Rightarrow)$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{A},\mathfrak{B}$
+\end_inset
+
+ 
+\begin_inset Formula $P,$
+\end_inset
+
+ 
+\begin_inset Formula $f,$
+\end_inset
+
+ 
+\begin_inset Formula $c\in\sigma$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{A}\models P(a_{1},\dots,a_{n})\Longleftrightarrow\mathfrak{B}\models P(a_{1},\dots,a_{n})\Longleftrightarrow\mathfrak{B}\models P(i_{A}(a_{1}),\dots,i_{A}(a_{n}))$
+\end_inset
+
+ (упражнение)
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\Leftarrow)$
+\end_inset
+
+ 
+\begin_inset Formula $i_{A}$
+\end_inset
+
+- изоморфное вложение 
+\begin_inset Formula $\mathfrak{A}\models P(a_{1},\dots,a_{n})\Longleftrightarrow\mathfrak{B}\models P(i_{A}(a_{1}),\dots,i_{A}(a_{n}))\Longleftrightarrow\mathfrak{B}\models P(a_{1},\dots,a_{n})$
+\end_inset
+
+ (упражнение)
+\end_layout
+
+\begin_layout Subsection
+Определение
+\end_layout
+
 \end_body
 \end_document
