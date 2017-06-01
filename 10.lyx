@@ -356,5 +356,366 @@ a)
 \end_layout
 
 \end_deeper
+\begin_layout Subsection
+Пример
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $<\mathbb{N};+,*>\leq<\mathbb{Z};+,*>\leq<\mathbb{Q};+,*>\leq<\mathbb{R};+,*>$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $<\mathbb{Z};+,-,*>\leq<\mathbb{Q};+,-,*>$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение (замкнутость множества отн-но операций)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ - замкнуто относительно операций в модели 
+\begin_inset Formula $\mathfrak{B}$
+\end_inset
+
+, если:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall f\in\sigma$
+\end_inset
+
+ 
+\begin_inset Formula $\forall a_{1}\dots a_{n}\in A$
+\end_inset
+
+ 
+\begin_inset Formula $f(a_{1}\dots a_{n})\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall c\in\sigma$
+\end_inset
+
+ 
+\begin_inset Formula $c^{\mathfrak{B}}\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение 
+\end_layout
+
+\begin_layout Standard
+Пусть
+\begin_inset Formula $\mathfrak{B}\in K(\sigma)$
+\end_inset
+
+, 
+\begin_inset Formula $A\subseteq\mathfrak{|B|}$
+\end_inset
+
+, тогда множество 
+\begin_inset Formula $A$
+\end_inset
+
+ определяет подмодель 
+\begin_inset Formula $\mathfrak{B}$
+\end_inset
+
+(т.е.
+ множество 
+\begin_inset Formula $A$
+\end_inset
+
+ является основным множеством некоторой подмодели модели 
+\begin_inset Formula $\mathfrak{B}\Longleftrightarrow A$
+\end_inset
+
+ замкнуто в 
+\begin_inset Formula $\mathfrak{B}$
+\end_inset
+
+относительно операций)
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\mathfrak{A}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathfrak{B}\in K(\sigma)$
+\end_inset
+
+, 
+\begin_inset Formula $h\,:\mathfrak{\,A}\to\mathfrak{B}$
+\end_inset
+
+ - гомоморфизм.
+ Рассмотрим 
+\begin_inset Formula $C=h(A)=\{h(a)\mid a\in\mathfrak{A}\}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $С$
+\end_inset
+
+ - замкнуто относительно операций в модели 
+\begin_inset Formula $\mathfrak{B}$
+\end_inset
+
+, т.е.
+ определена (
+\begin_inset Formula $\exists)$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{C}\leq\mathfrak{B}$
+\end_inset
+
+, такая что 
+\begin_inset Formula $\mathfrak{|C|}=C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathfrak{B}\in K(\sigma)$
+\end_inset
+
+, 
+\begin_inset Formula $H=\{\mathfrak{A}\in K(\sigma)|\mathfrak{A\leq\mathfrak{B}}\}$
+\end_inset
+
+, 
+\begin_inset Formula $\text{C=}\underset{\mathfrak{A\in}H}{\cap\mathfrak{|A|}}(C\neq\oslash)$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $C$
+\end_inset
+
+ замкнуто в 
+\begin_inset Formula $\mathfrak{B}$
+\end_inset
+
+, 
+\begin_inset Formula $\implies\exists\mathfrak{C\leq B:|C|}=C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Теорема 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\mathfrak{B}\in K(\sigma),$
+\end_inset
+
+ 
+\begin_inset Formula $X\subseteq\mathfrak{|B|,}\,X\neq\oslash$
+\end_inset
+
+ Тогда 
+\begin_inset Formula $\exists$
+\end_inset
+
+наименьшая по вложению модель 
+\begin_inset Formula $\mathfrak{C\leq\mathfrak{B}\text{,}}$
+\end_inset
+
+такая что 
+\begin_inset Formula $X\subseteq\mathfrak{|C|}$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{C}=Sub_{\mathfrak{B}}(X)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A$
+\end_inset
+
+- множество и 
+\begin_inset Formula $\sigma$
+\end_inset
+
+- сигнатура 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+
+\begin_inset Formula $\exists\mathfrak{A}\in K(\sigma)\mathfrak{|A|}=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $K(\sigma)$
+\end_inset
+
+ - не множество
+\end_layout
+
+\begin_layout Subsection
+Теорема
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathfrak{B}\in K(\sigma),X\subseteq\mathfrak{|B|}$
+\end_inset
+
+ и 
+\begin_inset Formula $(x\neq\oslash\text{или }\exists\text{с}\in\sigma)$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{C}=Sub_{\mathfrak{B}}(X)$
+\end_inset
+
+ Тогда множество 
+\begin_inset Formula $\mathfrak{|C}|=\{t^{\mathfrak{B}}(a_{1},\dots,a_{n})|[t(x_{1},\dots,x_{n})\in T(\sigma),a_{1},\dots,a_{n}\in X\}=T_{x}]\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Следствие
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $X=\oslash,$
+\end_inset
+
+ пусть 
+\begin_inset Formula $\exists c\in\sigma,$
+\end_inset
+
+ тогда 
+\begin_inset Formula $\mathfrak{|C|=\{t^{\mathfrak{B}}|t\in}T(\sigma),t\text{-замкнуто}\}$
+\end_inset
+
+ 
+\begin_inset Formula $F\cup(t)=\oslash$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathfrak{A,B\in}K(\sigma)$
+\end_inset
+
+ 
+\begin_inset Formula $a_{1},\dots,a_{n}\in\mathfrak{A,A\leq B}\text{,}$
+\end_inset
+
+ 
+\begin_inset Formula $t(x_{1},\dots,x_{n})\in T(\sigma).$
+\end_inset
+
+ Тогда 
+\begin_inset Formula $t^{\mathfrak{A}}(a_{1},\dots,a_{n})=t^{\mathfrak{B}}(a_{1},\dots,a_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $t(x)=x_{1}$
+\end_inset
+
+ 
+\begin_inset Formula $t^{\mathfrak{A}}(a_{1})=a_{1}=t^{\mathfrak{B}}(a_{1})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+t = c 
+\begin_inset Formula $t^{\mathfrak{A}}=c^{\mathfrak{A}}=c^{\mathfrak{B}}=t^{\mathfrak{B}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $t=f(t_{1}(\overset{-}{x})\dots t_{k}(\overset{-}{x}))$
+\end_inset
+
+ 
+\begin_inset Formula $t^{k}\in\sigma$
+\end_inset
+
+, 
+\begin_inset Formula $\forall i$
+\end_inset
+
+ 
+\begin_inset Formula $t_{i}^{\mathfrak{A}}(\overset{-}{a})=t_{i}^{\mathfrak{B}}(\overset{-}{a})$
+\end_inset
+
+, 
+\begin_inset Formula $t^{\mathfrak{A}}(\overset{-}{a})=f^{\mathfrak{\mathfrak{A}}}(t_{1}^{\mathfrak{A}}(\overset{-}{a}),\dots,t_{k}^{\mathfrak{A}}(\overset{-}{a}))=f^{\mathfrak{A}}(t_{1}^{\mathfrak{B}}(\overset{-}{a}),\dots,t_{k}^{\mathfrak{B}}(\overset{-}{a}))=f^{\mathfrak{B}}(t_{1}^{\mathfrak{B}}(\overset{-}{a}),\dots,t_{k}^{\mathfrak{B}}(\overset{-}{a}))=t^{\mathfrak{B}}(\overset{-}{a})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Теорема
+\end_layout
+
 \end_body
 \end_document
