@@ -211,5 +211,402 @@
 
 \end_layout
 
+\begin_layout Subsection
+Определение (Доказательство)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{1}\ldots S_{n}$
+\end_inset
+
+называется доказательством, если каждая 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ является аксиомой, либо получена из аксиом однократным применением правил
+ вывода.
+\end_layout
+
+\begin_layout Subsection
+Определение
+\end_layout
+
+\begin_layout Standard
+Секвенция 
+\begin_inset Formula $S$
+\end_inset
+
+ называется доказуемой, если существует доказательство 
+\begin_inset Formula $S_{1}\ldots S_{n}=S$
+\end_inset
+
+ (зак.
+ на S).
+\end_layout
+
+\begin_layout Subsection
+Замечание 
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $S_{1}\ldots S_{n}$
+\end_inset
+
+доказательство, то 
+\begin_inset Formula $\forall k\leq n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a)
+\begin_inset Formula $S_{1}\ldots S_{n}$
+\end_inset
+
+-доказательство
+\end_layout
+
+\begin_layout Standard
+б)
+\begin_inset Formula $S_{k}$
+\end_inset
+
+-доказуема
+\end_layout
+
+\begin_layout Subsection
+Определение (Дерево секвенций)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S$
+\end_inset
+
+-дерево, 
+\begin_inset Formula $h(S)=1,\,V(S)=\{S\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D_{1}\ldots D_{n}-$
+\end_inset
+
+дерево секвенций, 
+\begin_inset Formula $S-$
+\end_inset
+
+секвенция, то 
+\begin_inset Formula $D=\frac{D_{1}\ldots D_{n}}{S}$
+\end_inset
+
+ - дерево такое, что 
+\begin_inset Formula $h(D)=max(h(D_{1})\ldots h(D_{n}))+1$
+\end_inset
+
+, 
+\begin_inset Formula $V(D)=V(D_{1})\cup\ldots\cup V(D_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение (Дерево вывода)
+\end_layout
+
+\begin_layout Standard
+Дерево секвенций называется деревом вывода, если все его вершины являются
+ аксиомами, а переходы- частными случаями правил вывода.
+\end_layout
+
+\begin_layout Subsection
+Предложение 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ - доказуема 
+\begin_inset Formula $\Leftrightarrow\exists D$
+\end_inset
+
+, заканчивающееся на эту секвенцию.
+\end_layout
+
+\begin_layout Subsection
+Определение (Производное правило)
+\end_layout
+
+\begin_layout Standard
+Дерево 
+\begin_inset Formula $\frac{S_{1}\ldots S_{n}}{S}$
+\end_inset
+
+ высоты 2 называется производным, если 
+\begin_inset Formula $\exists D$
+\end_inset
+
+ заканчивающееся на 
+\begin_inset Formula $S$
+\end_inset
+
+, у которого каждая вершина является аксиомой, либо одной из секвенций 
+\begin_inset Formula $S_{1}\ldots S_{n}$
+\end_inset
+
+, а все переходы являются частными случаями правил вывода.
+\end_layout
+
+\begin_layout Subsection
+Определение (Допустимое правило вывода)
+\end_layout
+
+\begin_layout Standard
+Дерево секвенций 
+\begin_inset Formula $\frac{S_{1}\ldots S_{n}}{S}$
+\end_inset
+
+ называется допустимым правилом вывода, если при его добавлении в качестве
+ нового правила вывода множество доказуемых секвенций не увеличится.
+\end_layout
+
+\begin_layout Subsection
+Замечание 
+\end_layout
+
+\begin_layout Standard
+Каждое производное правило вывода является допустимым.
+\end_layout
+
+\begin_layout Subsection
+Предложение 
+\end_layout
+
+\begin_layout Standard
+a) если секвенция логики предикатов получена из доказуемой секвенции логики
+ высказывания подстановкой формулы логики предикатов вместо пропозициональных
+ переменных, то эта секвенция доказуема в секыентальном исчислении предикатов.
+\end_layout
+
+\begin_layout Standard
+б)Допустимые (производные) правила вывода секв.
+ исчислений высказываний являются допустимыми(производными) правилами вывода
+ секвенций исчисления предикатов.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho:R^{0}-F^{1}:\varphi\rightarrow[\varphi]_{y_{1}\ldots y_{n}}^{A_{1}\ldots A_{n}}=\rho(\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S\rightarrow[S]_{y_{1}\ldots y_{n}}^{A_{1}\ldots A_{n}}=\rho(S)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\rightarrow\rho(D)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда если 
+\begin_inset Formula $D$
+\end_inset
+
+ - дерево вывода в СИВ, тогда 
+\begin_inset Formula $\rho(D)$
+\end_inset
+
+ - дерево вывода в СИП
+\end_layout
+
+\begin_layout Subsection
+Следующие правила вывода допустимы:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\varphi\vdash\psi}{(\varphi\&\xi)\vdash(\psi\&\xi)}\qquad\qquad\frac{\varphi\vdash\psi}{(\xi\&\varphi)\vdash(\xi\&\psi)}\qquad\qquad\frac{\varphi\vdash\psi}{(\varphi\lor\xi)\vdash(\psi\lor\xi)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\varphi\vdash\psi}{(\xi\lor\varphi)\vdash(\xi\lor\psi)}\qquad\qquad\frac{\varphi\vdash\psi}{(\psi\rightarrow\xi)\vdash(\varphi\rightarrow\xi)}\qquad\qquad\frac{\varphi\vdash\psi}{(\xi\rightarrow\varphi)\vdash(\xi\rightarrow\psi)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\varphi\vdash\psi}{\neg\psi\vdash\neg\varphi}\qquad\qquad\frac{\Gamma\vdash\forall x\varphi}{\Gamma\vdash\varphi(x)}\qquad\qquad\frac{\varphi\vdash\psi}{\forall x\varphi\vdash\forall x\psi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\varphi\vdash\psi}{\exists x\varphi\vdash\exists x\varphi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение (равносильность)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi$
+\end_inset
+
+ и 
+\begin_inset Formula $\psi$
+\end_inset
+
+ равносильны 
+\begin_inset Formula $(\varphi=\psi)$
+\end_inset
+
+, если 
+\begin_inset Formula $\varphi\vdash\psi,\:\psi\vdash\varphi$
+\end_inset
+
+ доказуемы.
+\end_layout
+
+\begin_layout Subsection
+Замечание 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\equiv$
+\end_inset
+
+- отношение эквивалентности.
+\end_layout
+
+\begin_layout Subsection
+Следствие 
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $\varphi\equiv\varphi_{1},\:\psi\equiv\psi_{1}$
+\end_inset
+
+, тогда:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\lor\psi)\equiv(\phi_{1}\lor\psi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\&\psi)\equiv(\varphi_{1}\&\psi_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\rightarrow\psi)\equiv(\varphi_{1}\rightarrow\psi_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\neg\varphi\equiv\neg\varphi_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Теорема (О замене)
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\psi=\psi_{1},\varphi_{1}$
+\end_inset
+
+получена из 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ заменой одного вхождения 
+\begin_inset Formula $\psi$
+\end_inset
+
+ на 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection
+Определение (Семантика СИП)
+\end_layout
+
+\begin_layout Standard
+1)
+\begin_inset Formula $\varphi_{1}\qquad\varphi_{n}\vdash\psi-$
+\end_inset
+
+т.и , если 
+\begin_inset Formula $\forall$
+\end_inset
+
+ модели 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
