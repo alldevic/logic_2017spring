@@ -74,5 +74,142 @@
 Секвенциальное исчисление предикатов
 \end_layout
 
+\begin_layout Subsection
+Определение (Аксиомы)
+\end_layout
+
+\begin_layout Standard
+Аксиомы секвенциального исчисления предикатов с равенством:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\text{\varphi}\vdash\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vdash\forall x(x=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vdash\forall x\forall y((x=y)\rightarrow(y=x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vdash\forall x\forall y\forall z((x=y)\&(y=z)\rightarrow(x=z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(t_{1}=q_{1}),..,(t_{n}=q_{n}),\varphi(t_{1}...t_{n})\vdash\varphi(q_{1}...q_{n})$
+\end_inset
+
+, 
+\begin_inset Formula $[\varphi]_{t_{1}...t_{n}}^{x_{1}...x_{n}}\vdash[\varphi]_{q_{1}...q_{n}}^{x_{1}...x_{n}}$
+\end_inset
+
+, 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $[\varphi]_{t_{1}...t_{n}}^{x_{1}...x_{n}}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall i\forall y\in Fv(t_{i})$
+\end_inset
+
+, 
+\begin_inset Formula $x_{i}-$
+\end_inset
+
+не находится в области действия квантора по 
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Правила вывода:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\text{\Gamma\vdash\varphi;\Gamma\vdash\psi}}{\Gamma\vdash(\varphi\&\psi)}\qquad\qquad\frac{\Gamma\vdash(\varphi\&\phi)}{\Gamma\vdash\varphi}\qquad\qquad\frac{\Gamma\vdash(\varphi\&\psi)}{\Gamma\vdash\psi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Gamma\vdash\varphi}{\Gamma\vdash(\varphi\lor\psi)}\qquad\qquad\frac{\Gamma\vdash\psi}{\Gamma\vdash(\varphi\lor\psi)}\qquad\qquad\frac{\Gamma,\varphi\vdash\xi;\Gamma,\psi\vdash(\varphi\lor\psi)}{\Gamma\vdash\xi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Gamma\vdash\varphi;\Gamma\vdash(\varphi\rightarrow\psi)}{\Gamma\vdash\psi}\qquad\qquad\frac{\Gamma\vdash\varphi;\Gamma\vdash(\varphi\rightarrow\psi)}{\Gamma\vdash\psi}\qquad\qquad\frac{\Gamma,\neg\varphi\vdash}{\Gamma\vdash\varphi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Gamma\vdash\varphi;\Gamma\vdash\neg\varphi}{\Gamma\vdash}\qquad\qquad\frac{\Gamma_{1},\varphi,\psi,\Gamma_{2}\vdash\xi}{\Gamma_{1},\psi,\varphi,\Gamma_{2}\vdash\xi}\qquad\qquad\frac{\Gamma\vdash\varphi}{\Gamma,\psi\vdash\varphi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Gamma\vdash\varphi}{\Gamma\vdash\forall x\varphi}\:(x\in Fv(\Gamma))\qquad\qquad\frac{\Gamma,\varphi(t)\vdash\psi}{\Gamma,\forall x\varphi(x)\vdash\psi}\:(\varphi(t)=[\varphi]_{t}^{x})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Gamma\vdash\varphi(t)}{\Gamma\vdash\exists x\varphi(x)}\qquad\qquad\frac{\Gamma,\varphi\vdash\psi}{\Gamma,\exists x\varphi\vdash\psi}\:(x\notin Fv(\Gamma\bigcup\{\psi\})
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
