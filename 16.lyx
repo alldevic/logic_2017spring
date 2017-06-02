@@ -74,5 +74,212 @@
 Эквивалентность классов вычислимых функций
 \end_layout
 
+\begin_layout Subsection
+Предложение (Вычислимые на машине Тьюринга функции)
+\end_layout
+
+\begin_layout Standard
+Следующие функции являются правильно вычислимыми на машине Тьюринга:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0(x)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S(x)=x+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $I_{n}^{m}(x_{1},\dots,x_{n})=x_{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f(x_{1},\dots,x_{n})$
+\end_inset
+
+, 
+\begin_inset Formula $g_{1}(x_{1},\dots,x_{m}),\dots,\,g_{n}(x_{1},\dots,x_{m})$
+\end_inset
+
+ - правильно вычислимы на машине Тьюринга.
+ Тогда 
+\begin_inset Formula $h(x_{1},\dots,x_{m})=f(g_{1}(x_{1},\dots,x_{m}),\dots,g_{n}(x_{1},\dots,x_{m}))$
+\end_inset
+
+ - ПВТ.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+
+\begin_inset Newline newline
+\end_inset
+
+Пусть 
+\begin_inset Formula $F$
+\end_inset
+
+ вычисляет 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $G_{1},\dots,G_{n}$
+\end_inset
+
+ вычисляет 
+\begin_inset Formula $g_{1},\dots,g_{n}$
+\end_inset
+
+.
+ Тогда рассмотрим 
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение (б.
+ д.)
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f$
+\end_inset
+
+ получена из 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $h$
+\end_inset
+
+ при помощи оператора примитивной рекурсии.
+ Пусть 
+\begin_inset Formula $g$
+\end_inset
+
+ и 
+\begin_inset Formula $h$
+\end_inset
+
+ - ПВТ.
+ Тогда 
+\begin_inset Formula $f$
+\end_inset
+
+ - ПВТ.
+ 
+\end_layout
+
+\begin_layout Subsection
+Предложение (б.
+ д.)
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f(x_{1},...,x_{n})=\mu y[g(x_{1},\dots,x_{n},y)=0]$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+ - ПВТ.
+ Тогда 
+\begin_inset Formula $f$
+\end_inset
+
+ - ПВТ.
+\end_layout
+
+\begin_layout Subsection
+Теорема (Вычислимость ЧРФ)
+\end_layout
+
+\begin_layout Standard
+ЧРФ 
+\begin_inset Formula $\subseteq$
+\end_inset
+
+ ПВТ, т.
+ е.
+ каждая ЧРФ является правильно вычислимой на машине Тьюринга.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ индукция по построению ЧРФ (упр.)
+\end_layout
+
+\begin_layout Subsection
+Основная теорема арифметики
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall n\in\mathbb{N}\:\exists!$
+\end_inset
+
+ разложение 
+\begin_inset Formula $n=q_{1}^{k_{1}}x\dots q_{m}^{k_{m}}$
+\end_inset
+
+такое, что 
+\begin_inset Formula $q_{1},\dots,q_{m}$
+\end_inset
+
+ - простые, 
+\begin_inset Formula $q_{1}<\dots<q_{m}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall i\leq n,K_{i}\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $a_{1},\dots,a_{n}\in\mathbb{N}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\gamma(a_{1},\dots,a_{n})=2\cdot p_{1}^{a_{1}+1}\cdot\dots\cdot p_{n}^{a_{n}+1}$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
