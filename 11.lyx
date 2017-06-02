@@ -464,10 +464,1680 @@ a)
 \end_inset
 
  - правило вывода, 
-\begin_inset Formula $i_{1}<i_{m}<n$
+\begin_inset Formula $i_{1}\ldots i_{m}<n$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall k\leq m$
+\end_inset
+
+ 
+\begin_inset Formula $S_{i_{1}}\ldots S_{i_{k}}$
+\end_inset
+
+ - доказательство, 
+\begin_inset Formula $i_{k}<N$
+\end_inset
+
+, 
+\begin_inset Formula $D_{i_{1}}=\frac{\ldots\ldots\ldots}{S_{i_{1}}}\ldots D_{i_{m}}=\frac{\ldots\ldots\ldots}{S_{i_{m}}}$
+\end_inset
+
+ - деревья вывода.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\Leftarrow)$
+\end_inset
+
+ 
+\begin_inset Formula $D=\frac{\ldots\ldots\ldots}{S}$
+\end_inset
+
+ - дерево, 
+\begin_inset Formula $n=h(D)$
+\end_inset
+
+.
+ Индукция по 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=1$
+\end_inset
+
+: 
+\begin_inset Formula $D=S$
+\end_inset
+
+ - аксиома 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $S$
+\end_inset
+
+ - доказательство.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $<n\rightarrow n$
+\end_inset
+
+: 
+\begin_inset Formula $\forall k<n$
+\end_inset
+
+ верно, 
+\begin_inset Formula $D=\frac{D_{i}\ldots D_{m}}{S}$
+\end_inset
+
+ - дерево вывода, 
+\begin_inset Formula $h(D)=n$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $h(D_{i})<n$
+\end_inset
+
+, 
+\begin_inset Formula $i\leq m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{i}=\frac{\ldots\ldots\ldots}{S_{i}}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\forall i\leq m\exists S_{1}^{1}\ldots S_{k_{i}}^{\text{i}}=S_{i}$
+\end_inset
+
+ - доказательство, 
+\begin_inset Formula $S_{1}^{1}\ldots S_{k}^{1}=S_{1}\ldots S_{1}^{m}\ldots S_{k_{m}}^{m},S$
+\end_inset
+
+ - доказательство.
+\end_layout
+
+\begin_layout Subsection
+Определение (Производные и допустимые правила вывода)
+\end_layout
+
+\begin_layout Standard
+Дерево секвенций 
+\begin_inset Formula $\frac{S_{1}\ldots S_{n}}{S}$
+\end_inset
+
+ высоты 2 называется производным правилом вывода, если 
+\begin_inset Formula $\exists D=\frac{\ldots\ldots\ldots}{S}$
+\end_inset
+
+, вершины которого либо аксиомы, либо одни из секвкнций 
+\begin_inset Formula $S_{1}\ldots S_{n}$
+\end_inset
+
+, а все переходы являются частными случаями правил вывода
+\end_layout
+
+\begin_layout Standard
+Дерево секвенций 
+\begin_inset Formula $\frac{S_{1}\ldots S_{n}}{S}$
+\end_inset
+
+ высоты 2 называется допустимым правилом вывода, если при добавлении его
+ в качестве нового правила вывода множество доказуемых секвенций не увеличиваетс
+я.
+\end_layout
+
+\begin_layout Subsection
+Замечание
+\end_layout
+
+\begin_layout Standard
+Любое производное правило вывода является допустимым.
+\end_layout
+
+\begin_layout Subsection
+Предложение (Допустимые правила вывода)
+\end_layout
+
+\begin_layout Standard
+Следующие правила вывода являются допустимыми:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\psi_{1}\ldots\psi_{n}\vdash\varphi}{\xi_{1}\ldots\xi_{k}\vdash\varphi}\qquad\qquad\frac{\psi_{1}\ldots\psi_{n}\vdash}{\xi_{1}\ldots\xi_{n}\vdash}\:(\{\psi_{1}\ldots\psi_{n}\}\subseteq\{\xi_{1}\ldots\xi_{k}\})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Gamma\vdash\varphi;\Gamma,\varphi\vdash\psi}{\Gamma\vdash\psi}\qquad\qquad\frac{\Gamma,\varphi,\psi,\Gamma_{1}\vdash\xi}{\Gamma,(\varphi\&\psi),\Gamma_{1}\vdash\xi}\qquad\qquad\frac{\Gamma\vdash(\varphi\&\lnot\varphi)}{\Gamma\vdash}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Gamma\vdash}{\Gamma\vdash\varphi}\qquad\qquad\frac{\Gamma,\varphi\vdash}{\Gamma\vdash\lnot\varphi}\qquad\qquad\frac{\Gamma\vdash\varphi}{\Gamma,\lnot\varphi\vdash}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Gamma,\varphi\vdash\psi}{\Gamma\vdash(\lnot\psi\vdash\lnot\varphi)}\qquad\qquad\frac{\Gamma,\lnot\varphi\vdash\lnot\psi}{\Gamma,\psi\vdash\varphi}\qquad\qquad\frac{\varphi\vdash\psi;\psi\vdash\xi}{\varphi\vdash\xi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение (Семантика секвенций)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi_{1}\ldots\varphi_{n}\vdash\psi$
+\end_inset
+
+ - называется истинной при данных значениях входящих в нее пропозициональных
+ переменных, если либо 
+\begin_inset Formula $\exists i\leq n:\,\varphi_{i}$
+\end_inset
+
+ - ложна, либо 
+\begin_inset Formula $\psi$
+\end_inset
+
+ - истина.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vdash\psi$
+\end_inset
+
+ - истина, если 
+\begin_inset Formula $\psi$
+\end_inset
+
+ - истина.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi_{1}\ldots\varphi_{n}\vdash$
+\end_inset
+
+ - истина при данных значениях входящих в нее пропозициональных переменных,
+ если 
+\begin_inset Formula $\exists i\leq n:\,\varphi_{i}$
+\end_inset
+
+ - ложна.
+\end_layout
+
+\begin_layout Enumerate
+Секвенция называется тождественно истинной, если она является истинной при
+ любых значениях входящих в нее пропозициональных переменных.
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+Правила вывода сохраняют тождественную истинность секвенций, а именно, если
+ 
+\begin_inset Formula $\frac{S_{1}\ldots S_{n}}{S}$
+\end_inset
+
+ - правило вывода и 
+\begin_inset Formula $S_{1}\ldots S_{n}$
+\end_inset
+
+ - тождественно истинна, то 
+\begin_inset Formula $S$
+\end_inset
+
+ - тождественно истинна.
+\end_layout
+
+\begin_layout Subsection
+Теорема (о корректности СИВ)
+\end_layout
+
+\begin_layout Standard
+Если секвенция доказуема, то она тождественно истинна.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Пусть секвенция 
+\begin_inset Formula $S$
+\end_inset
+
+ - доказуема 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $S_{1}\ldots S_{n}=S$
+\end_inset
+
+ - доказательство.
+ Индукция по 
+\begin_inset Formula $n$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=1$
+\end_inset
+
+: 
+\begin_inset Formula $S$
+\end_inset
+
+ - аксиома 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ - тождественно истинна.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $<n\rightarrow n$
+\end_inset
+
+: 
+\begin_inset Formula $\forall k<n$
+\end_inset
+
+ - истина
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists i_{1}\ldots i_{m}<n$
+\end_inset
+
+: 
+\begin_inset Formula $\frac{S_{i_{1}}\ldots S_{i_{m}}}{S}$
+\end_inset
+
+ - правило вывода.
+ 
+\begin_inset Formula $\forall k<m$
+\end_inset
+
+ 
+\begin_inset Formula $S_{i_{1}}\ldots S_{i_{k}}$
+\end_inset
+
+ - доказательство 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $S_{i_{1}}\ldots S_{i_{m}}$
+\end_inset
+
+ - тождественно истинна 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ - тождественно истинна.
+\end_layout
+
+\begin_layout Subsection
+Опредление (подстановка)
+\end_layout
+
+\begin_layout Standard
+Отображение 
+\begin_inset Formula $\rho:F\rightarrow F$
+\end_inset
+
+ называется подстановкой, если оно перестановачно с логическими связками:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rho(\varphi\lor\psi)=(\rho(\varphi)\lor\rho(\psi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rho(\varphi\&\psi)=(\rho(\varphi)\&(\rho(\psi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rho(\varphi\rightarrow\psi)=(\rho(\varphi)\rightarrow\rho(\psi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rho(\lnot\varphi)=\lnot\rho(\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Теорема (о подстановках)
+\end_layout
+
+\begin_layout Standard
+Подстановка сохраняет доказуемость секвенций, если 
+\begin_inset Formula $S$
+\end_inset
+
+ - доказуема, то 
+\begin_inset Formula $\rho(S)$
+\end_inset
+
+ - доказуема.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ - доказуема, тогда 
+\begin_inset Formula $\exists\,D=\frac{\ldots\ldots\ldots}{S}$
+\end_inset
+
+ - дерево вывода.
+ 
+\begin_inset Formula $D\rightarrow\rho(D)=\frac{\ldots\ldots\ldots}{\rho(S)}$
+\end_inset
+
+ - дерево вывода, 
+\begin_inset Formula $n=h(D)$
+\end_inset
+
+, индукция по 
+\begin_inset Formula $n$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=1$
+\end_inset
+
+: 
+\begin_inset Formula $D=S$
+\end_inset
+
+ - аксиома, 
+\begin_inset Formula $\rho(D)=\rho(S)$
+\end_inset
+
+ - аксиома.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{S_{1}\ldots S_{n}}{S}$
+\end_inset
+
+ - правило вывода, то 
+\begin_inset Formula $\frac{\rho(S_{1})\ldots\rho(S_{n})}{\rho(S)}$
+\end_inset
+
+ - правило вывода.
+\end_layout
+
+\begin_layout Subsection
+Определение
+\end_layout
+
+\begin_layout Standard
+Формула 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ доказуема, если 
+\begin_inset Formula $\vdash\varphi$
+\end_inset
+
+ - доказуема.
+\end_layout
+
+\begin_layout Subsection
+Следствие
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $\rho$
+\end_inset
+
+ - подстановка, 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - доказуема, то 
+\begin_inset Formula $\rho(\varphi)$
+\end_inset
+
+ - доказуема.
+\end_layout
+
+\begin_layout Subsection
+Определение (равносильность)
+\end_layout
+
+\begin_layout Standard
+Формулы 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ и 
+\begin_inset Formula $\psi$
+\end_inset
+
+ называются равносильными
+\begin_inset Formula $(\varphi\equiv\psi)$
+\end_inset
+
+, если 
+\begin_inset Formula $\varphi\vdash\psi$
+\end_inset
+
+ и 
+\begin_inset Formula $\psi\vdash\varphi$
+\end_inset
+
+ - доказуемы.
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+Равносильность - отношение эквивалентности.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Enumerate
+Рефлексивность: 
+\begin_inset Formula $\varphi\vdash\varphi$
+\end_inset
+
+ - аксиома 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi\equiv\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Симметричность: 
+\begin_inset Formula $\varphi\equiv\psi$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi\vdash\psi$
+\end_inset
+
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\psi\vdash\varphi$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ - доказуемы 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\psi\vdash\varphi$
+\end_inset
+
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\varphi\vdash\psi$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ - доказуемы 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\psi\equiv\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Транзитивность: 
+\begin_inset Formula $\varphi\equiv\psi$
+\end_inset
+
+, 
+\begin_inset Formula $\psi\equiv\varphi$
+\end_inset
+
+.
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\varphi\vdash\psi$
+\end_inset
+
+, 
+\begin_inset Formula $\psi\vdash\varphi$
+\end_inset
+
+, 
+\begin_inset Formula $\psi\vdash\xi$
+\end_inset
+
+, 
+\begin_inset Formula $\xi\vdash\psi$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\frac{\varphi\vdash\psi;\psi\vdash\xi}{\varphi\vdash\xi}$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{\xi\vdash\psi;\psi\vdash\varphi}{\xi\vdash\varphi}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi\vdash\xi$
+\end_inset
+
+, 
+\begin_inset Formula $\xi\vdash\varphi$
+\end_inset
+
+ - доказуемы 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi\equiv\xi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - доказуема, 
+\begin_inset Formula $\varphi\equiv\psi$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\psi$
+\end_inset
+
+ - доказуема.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\vdash\varphi$
+\end_inset
+
+ - доказуема, 
+\begin_inset Formula $\varphi\vdash\psi$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\frac{\vdash\varphi;\varphi\vdash\psi}{\vdash\psi}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\vdash\psi$
+\end_inset
+
+ - доказуема 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\psi$
+\end_inset
+
+ - доказуема.
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\varphi\equiv\varphi_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\psi\equiv\psi_{1}$
+\end_inset
+
+, тогда:
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $(\varphi\lor\psi)\equiv(\varphi_{1}\lor\psi_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $(\varphi\&\psi)\equiv(\varphi_{1}\&\psi_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $(\varphi\rightarrow\psi)\equiv(\varphi_{1}\rightarrow\psi_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\lnot\varphi\equiv\lnot\varphi_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Теорема (о замене)
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\psi\equiv\psi_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ - получена из 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ заменой 
+\begin_inset Formula $\psi\mapsto\psi_{1}$
+\end_inset
+
+ (
+\begin_inset Formula $\psi$
+\end_inset
+
+ - подформула 
+\begin_inset Formula $\varphi$
+\end_inset
+
+).
+ Тогда 
+\begin_inset Formula $\varphi\equiv\varphi_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Индукция по длине формулы 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\varphi$
+\end_inset
+
+, 
+\begin_inset Formula $ln(\varphi)=n$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $n=1$
+\end_inset
+
+: 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - пропозициональная переменная 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\psi=\varphi$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi_{1}=\psi_{1}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi=\psi\equiv\psi_{1}=\varphi_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $<n\rightarrow n$
+\end_inset
+
+: 
+\begin_inset Formula $k<n$
+\end_inset
+
+ - доказано, докажем для 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\varphi=(\varphi^{,}\lor\varphi^{,,})$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi=(\varphi^{,}\&\varphi^{,,})$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi=(\varphi^{,}\rightarrow\varphi^{,,})$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi=\lnot\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+а) 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\psi=\varphi$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi=\psi\equiv\psi_{1}=\varphi_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+б) 
+\begin_inset Formula $\psi\neq\varphi$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\psi$
+\end_inset
+
+ - подформула 
+\begin_inset Formula $\varphi^{,}$
+\end_inset
+
+ или 
+\begin_inset Formula $\varphi^{,,}$
+\end_inset
+
+, 
+\begin_inset Formula $ln(\varphi^{,}),\:ln(\varphi^{,,})<n=ln(\varphi)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\varphi=(\varphi^{,}\lor\varphi^{,,})$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi_{1}=(\varphi_{1}^{,}\lor\varphi_{1}^{,,})$
+\end_inset
+
+, где 
+\begin_inset Formula $\varphi_{1}^{,}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi_{1}^{,,}$
+\end_inset
+
+ - либо 
+\begin_inset Formula $\varphi^{,}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi^{,,}$
+\end_inset
+
+, либо получены заменой 
+\begin_inset Formula $\psi$
+\end_inset
+
+ на 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ по индукции 
+\begin_inset Formula $\varphi_{1}^{,}\equiv\varphi^{,}$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi_{1}^{,,}\equiv\varphi^{,,}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi=(\varphi^{,}\lor\varphi^{,,})\equiv(\varphi_{1}^{,}\lor\varphi_{1}^{,,})=\varphi_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\&,\lnot,\rightarrow$
+\end_inset
+
+ - аналогично.
+\end_layout
+
+\begin_layout Subsection
+Следствие 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\psi\equiv\psi_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ получена из 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ заменой нескольких вхождений 
+\begin_inset Formula $\psi$
+\end_inset
+
+ на 
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $\varphi\equiv\varphi_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Индукция по числу вхождений - упражнение.
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+Имеют место следующие эквивалентности формул:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lnot(\varphi\lor\psi)\equiv(\lnot\varphi\&\lnot\psi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lnot(\varphi\&\psi)\equiv(\lnot\varphi\lor\lnot\psi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\lor\psi)\equiv(\psi\lor\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\&\psi)\equiv(\psi\&\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\lor\psi)\lor\xi)\equiv(\varphi\lor(\psi\lor\xi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi\&\psi)\&\xi)\equiv(\varphi\&(\psi\&\xi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\lor(\psi\&\xi))\equiv((\varphi\lor\psi)\&(\varphi\lor\xi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\&(\psi\lor\xi))\equiv((\varphi\&\psi)\lor(\varphi\&\xi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lnot\lnot\varphi\equiv\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\rightarrow\psi)\equiv(\lnot\varphi\lor\psi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\lor(\psi\&\lnot\psi)\lor\xi)\equiv(\varphi\lor\xi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\&(\psi\lor\lnot\psi)\&\xi)\equiv(\varphi\&\xi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Теорема
+\end_layout
+
+\begin_layout Standard
+Для любой формулы 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ существует равносильная ей формула 
+\begin_inset Formula $\psi$
+\end_inset
+
+, находящаяся в КНФ.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Алгоритм приведения формулы к КНФ(используем предложение 11.24):
+\end_layout
+
+\begin_layout Enumerate
+С помощью 10 избавляемся от импликаций.
+\end_layout
+
+\begin_layout Enumerate
+С помощью 1, 2, 9 вносим отрицания до пропозициональных переменных.
+\end_layout
+
+\begin_layout Enumerate
+3-7 - выносим конъюнкцию наружу.
+\end_layout
+
+\begin_layout Enumerate
+Получаем КНФ, которая будет равносильна исходной формуле.
+\end_layout
+
+\begin_layout Subsection
+Теорема
+\end_layout
+
+\begin_layout Standard
+КНФ тождественно истинна 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ в каждую ее элементарную дизъюнкцию хотя бы одна пропозициональная переменная
+ входит как с отрицанием, так и без него.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi=(\varphi_{1}\&\ldots\&\varphi_{n})$
+\end_inset
+
+, где 
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+ - элементарная дизъюнкция
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+) 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - тождественно истинна 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\forall i\:\varphi_{i}$
+\end_inset
+
+ - тождественно истинна.
+ Пусть 
+\begin_inset Formula $i\leq n$
+\end_inset
+
+ и для 
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+ - условие наршено.
+ 
+\begin_inset Formula $A_{1}\ldots A_{k}$
+\end_inset
+
+ - пропозициональные переменные, входящие в 
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{j}=\begin{cases}
+\text{л} & A_{j}\in\varphi_{i}\\
+\text{и} & \lnot A_{j}\in\varphi_{i}
+\end{cases}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi_{i}=$
+\end_inset
+
+ложь - противоречие.
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+) 
+\begin_inset Formula $\forall\varphi_{i}\exists A_{j}$
+\end_inset
+
+, такая что 
+\begin_inset Formula $\varphi_{i}=\varphi_{i}^{,}\lor A_{j}\lor\varphi_{i}^{,,}\lor\lnot A_{j}\lor\varphi_{i}^{,,,}$
+\end_inset
+
+ - тождественно истинная 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi=(\varphi_{1}\&\ldots\varphi_{n})$
+\end_inset
+
+ - тождественно истинна.
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vdash(\lnot\varphi\lor\varphi)$
+\end_inset
+
+ - доказуема.
+\end_layout
+
+\begin_layout Subsection
+Теорема
+\end_layout
+
+\begin_layout Standard
+КНФ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ доказуема 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ в каждую ее элементарную дизъюнкцию хотя бы одна пропозициональная переменная
+ входит как с отрицанием, так и без него.
+\end_layout
+
+\begin_layout Subsection
+Следствие 
+\end_layout
+
+\begin_layout Standard
+КНФ доказуема 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ она тождественно истинна.
+\end_layout
+
+\begin_layout Subsection
+Теорема (О полноте для СИВ)
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ тождественно истинна, то 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - доказуема.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - тождественно истинна.
+ 
+\begin_inset Formula $\exists\psi$
+\end_inset
+
+ - КНФ, такая что 
+\begin_inset Formula $\varphi\equiv\psi$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\psi$
+\end_inset
+
+ - тождественно истинна 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\psi$
+\end_inset
+
+ - доказуема, 
+\begin_inset Formula $\varphi\equiv\psi$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - доказуема.
+\end_layout
+
+\begin_layout Subsection
+Теорема
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi$
+\end_inset
+
+ тождественно истинна 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - доказуема.
+\end_layout
+
+\begin_layout Enumerate
+Секвенция 
+\begin_inset Formula $S$
+\end_inset
+
+ тождественно истинна 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ доказуема.
+\end_layout
+
+\begin_layout Subsection
+Следствие
+\end_layout
+
+\begin_layout Standard
+Формулы логики высказываний эквивалентны 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ они тождественно истинны.
 \end_layout
 
 \end_body
