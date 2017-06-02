@@ -315,7 +315,7 @@
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\{\varphi_{1},\dots,\varphi_{n}\}\vartriangleright\psi\Leftrightarrow\varphi_{1},\dots,\varphi_{n}\vdash\varphi$
+\begin_inset Formula $\{\varphi_{1},\dots,\varphi_{n}\}\vartriangleright\psi\Leftrightarrow\varphi_{1},\dots,\varphi_{n}\vdash\psi$
 \end_inset
 
  - доказуема в секв.
