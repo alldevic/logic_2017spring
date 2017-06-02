@@ -7,9 +7,15 @@
 \textclass article
 \begin_preamble
 \sloppy
+\setcounter{section}{9}
 \end_preamble
 \use_default_options true
-\maintain_unincluded_children false
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children true
 \language russian
 \language_package auto
 \inputencoding utf8
