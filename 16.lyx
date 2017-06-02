@@ -275,10 +275,494 @@
 
 .
  Тогда 
-\begin_inset Formula $\gamma(a_{1},\dots,a_{n})=2\cdot p_{1}^{a_{1}+1}\cdot\dots\cdot p_{n}^{a_{n}+1}$
+\begin_inset Formula $\gamma(a_{1},\dots,a_{n})=2\cdot p_{1}^{a_{1}+1}\cdot\dots\cdot p_{n}^{a_{n}+1},\text{где }P_{0}=2,p_{1}=3,p_{2}=5\ldots$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Определение (характеристическая функция)
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $B\subseteq\mathbb{N},\chi_{B}:\mathbb{N}\rightarrow\{0,1\},\chi_{B}-$
+\end_inset
+
+примитивное множество
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\chi_{B}(x)=\begin{cases}
+1, & x\in B\\
+0, & x\notin B
+\end{cases}$
+\end_inset
+
+-характеристическая функция множества 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{1}=\{\gamma(S)|S\in\{0,1\}^{*}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\chi_{A_{1}}-$
+\end_inset
+
+ПРФ.
+\end_layout
+
+\begin_layout Subsection
+Определение (машиное слово)
+\end_layout
+
+\begin_layout Standard
+Рассмотрим машинное слово 
+\begin_inset Formula $\alpha q:j\beta$
+\end_inset
+
+, тогда
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma(\alpha q_{1}j\beta)=2^{i}*3^{i}*5^{j}*7^{\gamma(\alpha)}*11^{\gamma(\beta)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение( номер машинного слова)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{2}=\{\gamma(S)|S-$
+\end_inset
+
+машинное слово
+\begin_inset Formula $\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\chi_{A_{2}}-$
+\end_inset
+
+ПРФ.
+\end_layout
+
+\begin_layout Subsection
+Определение 
+\end_layout
+
+\begin_layout Standard
+Рассмотрим команды 
+\begin_inset Formula $k_{ij},q_{ij}\rightarrow q_{s}l\varDelta,\varDelta=\begin{cases}
+L\\
+R\\
+\emptyset
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma(k_{ij})=p_{c(i,j)}^{\sigma}$
+\end_inset
+
+, 
+\begin_inset Formula $S=2^{s}3^{L}5^{\xi},\xi=\begin{cases}
+1 & \varDelta=\emptyset\\
+2 & \varDelta=R\\
+3 & \varDelta=L
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение 
+\end_layout
+
+\begin_layout Standard
+Пусит П-программа машины Тьюринга, 
+\begin_inset Formula $\text{\gamma(П})=2^{3}3^{n}\text{П\gamma}(k_{ij})$
+\end_inset
+
+-код
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=max\{i|q_{i}\text{встречается в П}\}$
+\end_inset
+
+ 
+\begin_inset Formula $k_{ij}\in\text{П}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $A_{3}=\{\gamma(\text{П})|\text{П}-$
+\end_inset
+
+программа машины Тьюринга
+\begin_inset Formula $\}$
+\end_inset
+
+,тогда 
+\begin_inset Formula $\chi_{A_{3}}-$
+\end_inset
+
+ПРФ
+\end_layout
+
+\begin_layout Standard
+Без Доказательства.
+\end_layout
+
+\begin_layout Subsection
+Определение 
+\end_layout
+
+\begin_layout Standard
+1)
+\begin_inset Formula $t(x,y)=\begin{cases}
+\gamma(\alpha'ql\alpha\beta'), & \text{если }x=\gamma(\text{П})\text{,}y=\gamma(\alpha q_{i}j\beta)\text{П}:\alpha q_{i}j\beta\rightarrow\alpha'q_{e}\alpha\beta'\\
+0, & \text{иначе}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2)
+\begin_inset Formula $T(x,y,z,t)=\begin{cases}
+1, & \text{если }x=\gamma(\text{П})\text{,}y=\gamma(\alpha q_{i}j\beta),A:\alpha q_{i}j\beta\rightarrow\alpha q_{0}01^{z+1}0\beta'\\
+0 & \text{иначе}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3)
+\begin_inset Formula $T^{n}(a,x_{1}\ldots x_{n},z,t)=\begin{cases}
+1, & \text{если \alpha=\gamma(П)}\text{,}\text{П}:q_{1}01^{x_{1}+1}0\ldots01^{x_{n}+1}0\rightarrow\alpha q_{0}01^{z+1}0\beta\\
+0, & \text{иначе}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение 
+\end_layout
+
+\begin_layout Standard
+функции 
+\begin_inset Formula $t,T,T^{n}-$
+\end_inset
+
+ПРФ
+\end_layout
+
+\begin_layout Standard
+Без доказательства.
+\end_layout
+
+\begin_layout Subsection
+Теорема ( О нормальной форме Клини)
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f(x_{1}\ldots x_{n})-$
+\end_inset
+
+вычислима на машине Тьюринга.
+ Тогда 
+\begin_inset Formula $\exists$
+\end_inset
+
+ПРФ 
+\begin_inset Formula $g(x_{1}\ldots x_{n},y)$
+\end_inset
+
+ такая что
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x_{1}\ldots x_{n})=l(\mu y[g(x_{1}\ldots x_{n},y)=0]).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f(x_{1}\ldots x_{n})$
+\end_inset
+
+ вычислима на машине Тьюринга с программой 
+\begin_inset Formula $\text{П}_{1}$
+\end_inset
+
+
+\begin_inset Formula $\alpha=\gamma(\text{П})\text{.}$
+\end_inset
+
+ Тогда 
+\begin_inset Formula $g(x_{1}\ldots x_{n},y)=|T^{n}(\alpha,x_{1}\ldots x_{n},l(y),r(y))-1|-$
+\end_inset
+
+ПРФ(упр).
+\end_layout
+
+\begin_layout Standard
+Покажем, что 
+\begin_inset Formula $f(x_{1}\ldots x_{n})=l(\mu y[g(x_{1}\ldots x_{n},y)=0]).$
+\end_inset
+
+ Рассмотрим кортеж 
+\begin_inset Formula $x_{1}\ldots x_{n}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+1)
+\begin_inset Formula $f(x_{1}...x_{n})-$
+\end_inset
+
+не определена, тогда 
+\begin_inset Formula $\forall y$
+\end_inset
+
+ 
+\begin_inset Formula $T^{n}(\alpha,x_{1}\ldots x_{n},l(y),r(y))\neq1\Rightarrow g(x_{1}\ldots x_{n},y)\neq0\Rightarrow l(\mu y[g(x_{1}\ldots x_{n},y)])$
+\end_inset
+
+-не определена
+\begin_inset Formula $\Rightarrow f(x)=l[\mu y[g(\ldots)]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2)
+\begin_inset Formula $f(x_{1}\ldots x_{n})=z\Rightarrow\exists t\in\mathbb{N}$
+\end_inset
+
+ так что 
+\begin_inset Formula $\text{П:}q_{1}01^{x_{1}+1}0\ldots01^{x_{n}+1}\Rightarrow\alpha q_{0}01^{z+1}0\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Положим:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{0}=c(z,t)\Rightarrow T^{n}(\alpha,x_{1}\ldots x_{n},l(y_{0}),r(y_{0}))=1$
+\end_inset
+
+ т.к 
+\begin_inset Formula $l(y_{0})=z,r(y_{0})=t\Rightarrow g(x_{1}\ldots x_{n},y_{0})=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть для 
+\begin_inset Formula $y_{1}:g(x_{1}\ldots x_{n},y_{1})=0\Rightarrow T^{n}(\alpha,x_{1}\ldots x_{n},l(g_{1}),r(y_{1}))=1\Rightarrow l(y_{1})=z,\Gamma(y_{1})\geq t\Rightarrow y_{1}\geq y_{0}(\text{упр)}$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow g_{0}=\mu y[g(x_{1}\ldots x_{n},y)]=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow l(\mu y[g(x_{1}\ldots x_{n},y)=0])=l(y_{0})=z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Следствие
+\end_layout
+
+\begin_layout Standard
+Любая функция вычислиммая на машине Тьюринге является ЧРФ.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ Упражнение
+\end_layout
+
+\begin_layout Subsection
+Следствие
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f(x_{1}\ldots x_{n})$
+\end_inset
+
+- ЧРФ, тогда 
+\begin_inset Formula $\exists$
+\end_inset
+
+ ПРФ 
+\begin_inset Formula $g(x_{1}\ldots x_{n},y)$
+\end_inset
+
+ так что выполнено : 
+\begin_inset Formula $f(x_{1}\ldots x_{n})=l(\mu y[g(x_{1}\ldots x_{n},y)=0])$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $f$
+\end_inset
+
+-ЧРФ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ правильно вычислима на машине Тьюринга 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+ вычислима на машине Тьюринга, 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+по теореме о нормальной форме Клини 
+\begin_inset Formula $\exists g|f(x)=l(\mu y[g(x,y)=0])$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Основная теорема о вычислимых функциях
+\end_layout
+
+\begin_layout Standard
+ЧРФ=Выч.
+ на машине Тьюренга(ВТ)=ПВТ
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{ПРФ}\subseteq\text{ПВТ}\subseteq\text{ВТ}\subseteq\text{ЧРФ}\Rightarrow$
+\end_inset
+
+все классы совпадают
+\end_layout
+
+\begin_layout Subsection
+Следствие
+\end_layout
+
+\begin_layout Standard
+Любая ОРФ может быть получена из простейших функций применением операторов
+ примитивной рекурсии, суперпозиции и минимизации таким образом, чтобы на
+ каждом шаге получались только ОРФ.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:УПР.
+\end_layout
+
+\begin_layout Subsection
+Следствие 
+\end_layout
+
+\begin_layout Standard
+Класс ОРФ совпадает с классом всюду определённых функций , вычислимых на
+ машине Тьюринга, а также совпадает с классом всюду определённых функций,
+ Правильно вычислимых на машине Тьюринга.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:УПР.
 \end_layout
 
 \end_body
