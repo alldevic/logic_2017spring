@@ -74,5 +74,1120 @@
 Рекурсивные и рекурсивно-примитивные множества
 \end_layout
 
+\begin_layout Subsection
+Определение (Разрешимое множестов)
+\end_layout
+
+\begin_layout Standard
+Множество разрешимо если существует алгоритм, на входе которого объект,
+ а на выходе ответ, принадлежит объект этому множеству или нет и перечислимым,
+ если существует алгоритм перечисления элементов.
+\end_layout
+
+\begin_layout Subsection
+Определение (Рекурсивное множество)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\subseteq\mathbb{N}^{k}$
+\end_inset
+
+ называется рекурсивным (примитивно-рекурсивным), если:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\chi_{A}(x_{1}\ldots x_{k})=\begin{cases}
+1, & (x_{1}\ldots x_{k})\in A\\
+0, & (x_{1}\ldots x_{k})\notin A
+\end{cases}$
+\end_inset
+
+ - ОРФ(ПРФ)
+\end_layout
+
+\begin_layout Subsection
+Определение (Рекурсивно-перечислимое множество)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\subseteq\mathbb{N^{\text{k}}}-$
+\end_inset
+
+рекурсивнао-перечислимое, если 
+\begin_inset Formula $A=\varnothing$
+\end_inset
+
+, либо существует ОРФ 
+\begin_inset Formula $f_{1}\ldots f_{k}$
+\end_inset
+
+ 
+\begin_inset Formula $A=\{(f_{1}(n)\ldots f_{k}(n))|n\in\mathbb{N}\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $A\subseteq\mathbb{N}^{k}-$
+\end_inset
+
+рекурсивно-перечислимо, если существует ОРФ 
+\begin_inset Formula $f$
+\end_inset
+
+, такое что 
+\begin_inset Formula $A=\rho f=\{f(n)|n\in\mathbb{N}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Замечание 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $A\subseteq\mathbb{N}^{k}$
+\end_inset
+
+, 
+\begin_inset Formula $\chi_{A}(\bar{x})$
+\end_inset
+
+ - ОРФ 
+\begin_inset Formula $\Leftrightarrow\chi_{A}(\bar{x})$
+\end_inset
+
+ - ЧРФ.
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A,B\subseteq\mathbb{N}^{k},C\subseteq\mathbb{N}^{l},A,B,C$
+\end_inset
+
+ - рекурсивные множества (рекурсивно-примитивные множества), тогда 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+,
+\begin_inset Formula $A\cap B$
+\end_inset
+
+,
+\begin_inset Formula $\bar{A}$
+\end_inset
+
+,
+\begin_inset Formula $A$
+\end_inset
+
+
+\backslash
+
+\begin_inset Formula $B$
+\end_inset
+
+,
+\begin_inset Formula $A\times B$
+\end_inset
+
+ - рекурсивно-примитивные.
+\end_layout
+
+\begin_layout Subsection
+Замечание
+\end_layout
+
+\begin_layout Standard
+ПРМ 
+\begin_inset Formula $\subseteq$
+\end_inset
+
+ РМ
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\subseteq\mathbb{N}^{k},B=\{c^{k}(\bar{x})|\bar{x}\in A\}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $A$
+\end_inset
+
+ - РМ(ПРМ) 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ - РМ(ПРМ)
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\Rightarrow)$
+\end_inset
+
+ A - РМ
+\begin_inset Formula $\Rightarrow\chi_{A}$
+\end_inset
+
+ - ОРФ, 
+\begin_inset Formula $\chi_{B}(n)=\chi_{A}(c_{1}^{k}(n)\ldots c_{r}^{k}(n))\Rightarrow\chi_{B}$
+\end_inset
+
+ - ОРФ 
+\begin_inset Formula $\Rightarrow B$
+\end_inset
+
+ - РМ.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\Leftarrow)\:\text{\chi}_{B}$
+\end_inset
+
+ - ОРФ, 
+\begin_inset Formula $\chi_{A}\{x_{1}\ldots x_{k})=\chi_{B}(c^{k}(x_{1}\ldots x_{k}))$
+\end_inset
+
+ - ОРФ 
+\begin_inset Formula $\Rightarrow A$
+\end_inset
+
+ - рекурсивное множество.
+\end_layout
+
+\begin_layout Standard
+ПРМ - упр.
+\end_layout
+
+\begin_layout Subsection
+Предложение 
+\end_layout
+
+\begin_layout Standard
+РМ 
+\begin_inset Formula $\subseteq$
+\end_inset
+
+ РПМ, т.е 
+\begin_inset Formula $\forall A\in\mathbb{N}^{k},$
+\end_inset
+
+если 
+\begin_inset Formula $A$
+\end_inset
+
+ - РМ, то 
+\begin_inset Formula $A$
+\end_inset
+
+ - РПМ.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $k=1$
+\end_inset
+
+, 
+\begin_inset Formula $\chi_{A}$
+\end_inset
+
+ - ОРФ.
+\end_layout
+
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $A=\varnothing$
+\end_inset
+
+, то 
+\begin_inset Formula $А$
+\end_inset
+
+ - РПМ(по определению).
+\end_layout
+
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $A\neq\varnothing\Rightarrow\exists a\in A.$
+\end_inset
+
+ Рассмотрим функцию 
+\begin_inset Formula $f(x)=x*\chi_{A}(x)+a*\bar{sg}\chi_{A}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $f(n)=m.\text{ Если }n\in A\Rightarrow f(n)=n,$
+\end_inset
+
+ т.е 
+\begin_inset Formula $m=n\Rightarrow m\in A$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+если 
+\begin_inset Formula $n\notin A,$
+\end_inset
+
+ то 
+\begin_inset Formula $f(n)=a\in A\Rightarrow m=a\in A\Rightarrow m\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Пусть 
+\begin_inset Formula $n\in A\Rightarrow f(n)=n,$
+\end_inset
+
+ тогда 
+\begin_inset Formula $A\subseteq\rho f\Mapsto A=\rho f,f-\text{ОРФ}\Rightarrow A$
+\end_inset
+
+ - РПМ.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+для случая 
+\begin_inset Formula $k>1$
+\end_inset
+
+ без доказательства.
+\end_layout
+
+\begin_layout Subsection
+Теорема Поста
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $A\subseteq\mathbb{N}^{k},$
+\end_inset
+
+ тогда А - РМ
+\begin_inset Formula $\Leftrightarrow A,\bar{A}$
+\end_inset
+
+ - РПМ, т.е множество рекурсивно
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+оно и его дополнение рекурсивно.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\Rightarrow)$
+\end_inset
+
+
+\begin_inset Formula $A$
+\end_inset
+
+ - РМ, 
+\begin_inset Formula $\bar{A}$
+\end_inset
+
+ - РМ
+\begin_inset Formula $\Rightarrow A,\bar{A}$
+\end_inset
+
+ - РПМ.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\Leftarrow)$
+\end_inset
+
+
+\begin_inset Formula $k=1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A,\bar{A}$
+\end_inset
+
+ - РПМ.
+ Если 
+\begin_inset Formula $A=\emptyset\Rightarrow A$
+\end_inset
+
+ РМ(упр), если 
+\begin_inset Formula $\bar{A}=\emptyset,$
+\end_inset
+
+ то 
+\begin_inset Formula $A=\mathbb{N\Rightarrow}A$
+\end_inset
+
+ - РМ(упр).
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $A\neq\varnothing,\bar{A}\neq\varnothing(A\neq\mathbb{N}).$
+\end_inset
+
+ Тогда существует ОРФ 
+\begin_inset Formula $f,g:A=\rho f,\bar{A}=\rho g.$
+\end_inset
+
+ Тогда заметим, что 
+\begin_inset Formula $\chi_{A}(x)=\bar{sg}|f(\mu y[|f(y)-x|*|g(y)-x|=0])-x|$
+\end_inset
+
+ - ЧРФ.
+ Если 
+\begin_inset Formula $x\in A\Rightarrow\exists y:f(y)=x,x\notin\bar{A}\Rightarrow\neg\exists:g(y)=x\Rightarrow$
+\end_inset
+
+ существует наименьший 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ такой что 
+\begin_inset Formula $f(y)=x\Rightarrow\chi_{A}(x)=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $x\notin A\Rightarrow x\in\bar{A}\Rightarrow\exists y:g(y)=x,\neg\exists y:f(y)=x\Rightarrow$
+\end_inset
+
+ существует наименьший 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ такой что 
+\begin_inset Formula $g(y_{0})=x\Rightarrow f(y_{0})\neq x\Rightarrow|f(\ldots)-x|\neq0\Rightarrow\bar{sg}=0\Rightarrow\chi_{A}(x)=0\Rightarrow\chi_{A}(x)$
+\end_inset
+
+ - ЧРФ
+\begin_inset Formula $\Rightarrow\chi_{A}(x)$
+\end_inset
+
+ - ОРФ
+\begin_inset Formula $\Rightarrow A$
+\end_inset
+
+ - РМ.
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $A,B\subseteq\mathbb{N}^{k},c\subseteq\mathbb{N}^{l},A,B,C$
+\end_inset
+
+ - РПМ, тогда 
+\begin_inset Formula $A\cup B,A\cap B,A\times B$
+\end_inset
+
+ - РПМ.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ упр.
+\end_layout
+
+\begin_layout Subsection
+Теорема (Об эквивалентности определения РПМ)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\subseteq\mathbb{N},$
+\end_inset
+
+ тогда эквивалентны:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ - РПМ.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\varnothing,$
+\end_inset
+
+ либо 
+\begin_inset Formula $\exists$
+\end_inset
+
+ прф 
+\begin_inset Formula $f:A=\rho f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\varnothing,$
+\end_inset
+
+ либо 
+\begin_inset Formula $\exists$
+\end_inset
+
+ чрф 
+\begin_inset Formula $f:A=\rho f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ ПРМ 
+\begin_inset Formula $B\subseteq\mathbb{N}^{2}:A=\{x|\exists y(x,y)\in B\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ РМ 
+\begin_inset Formula $B\subseteq\mathbb{N}^{2}:A=\{x|\exists y(x,y)\in B\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ ЧРФ 
+\begin_inset Formula $f:A=Sf=\{x|f(x)$
+\end_inset
+
+ - определена
+\begin_inset Formula $\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $A\subseteq\mathbb{N}^{k},B=\{c^{k}(x_{1}\ldots x_{k})|(x_{1}\ldots x_{k})\in A\}$
+\end_inset
+
+.
+ Тогда 
+\begin_inset Formula $A$
+\end_inset
+
+ - РПМ
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $В$
+\end_inset
+
+ - РПМ.
+\end_layout
+
+\begin_layout Subsection
+Следствие 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $A\subseteq\mathbb{N}^{k}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $A$
+\end_inset
+
+ - РПМ
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+существует ЧРФ 
+\begin_inset Formula $f:\mathbb{N}^{k}\rightarrow\mathbb{N}$
+\end_inset
+
+такая что 
+\begin_inset Formula $A=Sf,$
+\end_inset
+
+ т.е 
+\begin_inset Formula $A=\{(x_{1}\ldots x_{n})|f(x_{1}\ldots x_{n})\text{-}$
+\end_inset
+
+определена
+\begin_inset Formula $\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\Rightarrow)$
+\end_inset
+
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ - РПМ 
+\begin_inset Formula $\Rightarrow B$
+\end_inset
+
+ - РПМ 
+\begin_inset Formula $\Rightarrow\exists f$
+\end_inset
+
+ - ЧРФ такая что 
+\begin_inset Formula $B=Sf,$
+\end_inset
+
+ тогда рассмотрим 
+\begin_inset Formula $g(x_{1}\dots x_{k})=f(c^{k}(x_{1}\dots x_{k})),$
+\end_inset
+
+ тогда 
+\begin_inset Formula $(x_{1}\dots x_{k})\in A\Leftrightarrow c^{k}(x_{1}\dots x_{k})\in B\Leftrightarrow f(c^{k}(x_{1}\dots x_{k}))$
+\end_inset
+
+ - определена 
+\begin_inset Formula $\Leftrightarrow g(x_{1}\dots x_{k})$
+\end_inset
+
+ - определена 
+\begin_inset Formula $\Rightarrow A=Sg$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(=)$
+\end_inset
+
+ - упражнение
+\end_layout
+
+\begin_layout Subsection
+Теорема (О существовании РПМ, но не РМ)
+\end_layout
+
+\begin_layout Standard
+Существет РПМ, но не РМ, а именно: 
+\begin_inset Formula $\forall k\in\mathbb{N}\exists A\subseteq\mathbb{N}^{k}$
+\end_inset
+
+ такое что, 
+\begin_inset Formula $A$
+\end_inset
+
+ - РПМ, но не РМ.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+В качестве 
+\begin_inset Formula $А$
+\end_inset
+
+ рассмотрим : 
+\begin_inset Formula $A=\{c(x,y)|k^{2}(x,y)-$
+\end_inset
+
+определена
+\begin_inset Formula $\}$
+\end_inset
+
+, 
+\begin_inset Formula $\{(x,y)|k^{2}(x,y)$
+\end_inset
+
+ - определена
+\begin_inset Formula $\}$
+\end_inset
+
+ - РПМ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ - РПМ.
+\end_layout
+
+\begin_layout Standard
+Покажем, что 
+\begin_inset Formula $A$
+\end_inset
+
+ - не РМ.
+ От противного:
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ - РМ
+\begin_inset Formula $\Rightarrow\chi_{A}$
+\end_inset
+
+ - ОРФ.
+ т.к.
+ 
+\begin_inset Formula $k^{2}(x,y)$
+\end_inset
+
+- универсальное 
+\begin_inset Formula $\Rightarrow\exists a:k^{2}(a,x)=o(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $g(x,y)=k^{2}(x*\chi_{A}(c(x,y)+a\bar{*sg}\chi_{A}(c(x,y))),y)$
+\end_inset
+
+ - ЧРФ
+\end_layout
+
+\begin_layout Standard
+Покажем, что 
+\begin_inset Formula $g(x,y)$
+\end_inset
+
+ - ОРФ всюду определена: 
+\begin_inset Formula $(x,y)\in\mathbb{N}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+a) 
+\begin_inset Formula $k^{2}(x,y)-$
+\end_inset
+
+определена
+\begin_inset Formula $\Rightarrow c(x,y)\in A\Rightarrow\chi_{A}(c(x,y))=0\Rightarrow g(x,y)=k^{2}(x,y)$
+\end_inset
+
+ - определена.
+\end_layout
+
+\begin_layout Standard
+б) 
+\begin_inset Formula $k^{2}(x,y)$
+\end_inset
+
+- не определена 
+\begin_inset Formula $\Rightarrow c(x,y)\notin A\Rightarrow\chi_{A}(c(x,y))=0\Rightarrow g(x,y)=k^{2}(a,y)=o(y)=0\Rightarrow$
+\end_inset
+
+определена.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Mapsto g(x,y)-$
+\end_inset
+
+ОРФ.
+\end_layout
+
+\begin_layout Standard
+Покажем, что 
+\begin_inset Formula $g(x,y)$
+\end_inset
+
+ - универсальна для ОРФ:
+\end_layout
+
+\begin_layout Standard
+а) 
+\begin_inset Formula $n\in\mathbb{N}\Rightarrow g(n,y)$
+\end_inset
+
+ - ОРФ
+\end_layout
+
+\begin_layout Standard
+б) 
+\begin_inset Formula $h(x)$
+\end_inset
+
+ - ОРФ 
+\begin_inset Formula $\Rightarrow h(x)$
+\end_inset
+
+ - ЧРФ
+\begin_inset Formula $\Rightarrow\exists n\in\mathbb{N}:h(x)=k^{2}(n,x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Заметим, что 
+\begin_inset Formula $\forall x\,k^{2}(n,x)$
+\end_inset
+
+ - определена 
+\begin_inset Formula $\Rightarrow k^{2}(n,x)=g(n,x)\Rightarrow\forall x\,h(x)=g(n,x)\Rightarrow g(x_{0},x_{1})$
+\end_inset
+
+ - ОРФ универсальная для ОРФ (противоречие).
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $k>1,$
+\end_inset
+
+ тогда рассмотрим 
+\begin_inset Formula $Ak=\{(c_{1}^{k}(n)\dots c_{k}^{k}(n))|\qquad n\in A\}\Rightarrow A_{k}$
+\end_inset
+
+ - РПМ, но не РМ.
+\end_layout
+
+\begin_layout Subsection
+Замечание
+\end_layout
+
+\begin_layout Standard
+Множество 
+\begin_inset Formula $A=Sk^{n}(x_{1}\dots x_{n})$
+\end_inset
+
+ - РПМ, но не РМ.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ упр
+\end_layout
+
+\begin_layout Subsection
+Предложение 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\subseteq\mathbb{N}^{k},$
+\end_inset
+
+ тогда эквивалентности:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ - РПМ
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=Sf,f$
+\end_inset
+
+ - ЧРФ
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ РМ 
+\begin_inset Formula $B\subseteq\mathbb{N}^{k+1}$
+\end_inset
+
+ такое что 
+\begin_inset Formula $A=\{(x_{1}\dots x_{k})|(x_{1}\dots x_{k},y)\in B\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists$
+\end_inset
+
+ ПРМ 
+\begin_inset Formula $B\subseteq\mathbb{N}^{k+1}$
+\end_inset
+
+ такое что 
+\begin_inset Formula $A=\{(x_{1}\dots x_{k})|(x_{1}\dots x_{k},y)\in B\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Теорема(о графике) (б.
+ д.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ - ЧРФ 
+\begin_inset Formula $\Leftrightarrow G_{f}=\{(x_{1}\dots x_{n},y)|f(x_{1}\dots x_{n})=y\}$
+\end_inset
+
+ - РПМ (
+\begin_inset Formula $G$
+\end_inset
+
+ - график)
+\end_layout
+
+\begin_layout Subsection
+Определение (Частичная характеристическая функция)
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $A\subseteq\mathbb{N}^{k}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\chi_{A}^{*}(x_{1}\dots x_{k})=\begin{cases}
+1, & (x_{1}\dots x_{k})\in A\\
+\text{неопр}\text{,} & (x_{1}\dots x_{k})\notin A
+\end{cases}$
+\end_inset
+
+ - частичная характеристическая функция множества 
+\begin_inset Formula $А$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Теорема
+\end_layout
+
+\begin_layout Standard
+Множество является рекурсивно-перечислимой 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ его частная характеристическая функция является ЧРФ.
+ т.е 
+\begin_inset Formula $A\subseteq\mathbb{N}^{k}.\:A$
+\end_inset
+
+ - РПМ
+\begin_inset Formula $\Leftrightarrow\chi_{A}^{*}$
+\end_inset
+
+ - ЧРФ.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\Rightarrow)$
+\end_inset
+
+ Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ - РПМ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ существует ЧРФ 
+\begin_inset Formula $f:A=Sf$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Положим 
+\begin_inset Formula $h(\bar{x})=S(o(f(\bar{x})))\Rightarrow h$
+\end_inset
+
+ - ЧРФ.
+ Заметим:
+\end_layout
+
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $\bar{x}\in A\Rightarrow f(\bar{x})$
+\end_inset
+
+ - определена
+\begin_inset Formula $\Rightarrow h(\bar{x})=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $\bar{x}\notin\Rightarrow f(\bar{x})$
+\end_inset
+
+ - не определена 
+\begin_inset Formula $\Rightarrow h(\bar{x})$
+\end_inset
+
+ - не определена 
+\begin_inset Formula $\Mapsto\chi_{A}^{*}(\bar{x})=h(\bar{x})\Rightarrow\chi_{A}^{*}$
+\end_inset
+
+ - ЧРФ.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\Leftarrow)$
+\end_inset
+
+ Пусть 
+\begin_inset Formula $\chi_{A}^{*}$
+\end_inset
+
+ - ЧРФ.
+ Тогда 
+\begin_inset Formula $A=S\chi_{A}^{*}\Rightarrow A$
+\end_inset
+
+ - РПМ.
+\end_layout
+
+\begin_layout Subsection
+Теорема (О составном определении) (б.
+ д.)
+\end_layout
+
+\begin_layout Standard
+РПМ 
+\begin_inset Formula $A_{1}\dots A_{n}\subseteq\mathbb{N}^{k},A_{i}\cap A_{j}=\emptyset$
+\end_inset
+
+ при 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g_{1}(x_{1}\dots x_{k})\dots g_{n}(x_{1}\dots x_{k})$
+\end_inset
+
+ - ЧРФ.
+ Тогда функция
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x_{1}\dots x_{k})=\begin{cases}
+g_{1}(x_{1}\dots x_{k}) & \text{если}(x_{1}\dots x_{k})\in A_{1}\\
+g_{n}(x_{1}\dots x_{k}) & \text{если(}x_{1}\dots x_{k})\in A_{n}\\
+\text{неопред.} & \text{иначе}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $f$
+\end_inset
+
+ - ЧРФ.
+\end_layout
+
 \end_body
 \end_document
