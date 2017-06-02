@@ -89,18 +89,32 @@ status open
 
 
 \backslash
-begin{titlepage}
-\end_layout
+title{Математическая логика 
+\backslash
 
-\begin_layout Plain Layout
-
+\backslash
+ весна 2017}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-end{titlepage}
+clearpage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
 \end_layout
 
 \end_inset
