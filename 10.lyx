@@ -1015,7 +1015,696 @@ a)
 \end_layout
 
 \begin_layout Subsection
-Определение
+Определение (конгруэнтность)
+\end_layout
+
+\begin_layout Description
+
+\emph on
+\begin_inset Formula $\mathfrak{A}\in K(\sigma),$
+\end_inset
+
+ 
+\emph default
+
+\begin_inset Formula $\sim$
+\end_inset
+
+ - отношение эквивалетности, 
+\begin_inset Formula $A=\mathfrak{|A|,}$
+\end_inset
+
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ - без предикатов, 
+\begin_inset Formula $\sim$
+\end_inset
+
+ - конгруэнция (отношение конгруэнтности) на 
+\begin_inset Formula $\mathfrak{A}$
+\end_inset
+
+, если: 
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\forall f^{k}\in\sigma$
+\end_inset
+
+ и 
+\begin_inset Formula $a_{1},\dots,a_{n},b_{1},\dots,b_{n}\in\mathfrak{|A|}$
+\end_inset
+
+, так, что 
+\begin_inset Formula $a_{1}\sim b_{1},\dots,a_{n}\sim b_{n}$
+\end_inset
+
+, выполнено 
+\begin_inset Formula $f(a_{1},\dots,a_{n})\sim f(b_{1},\dots,b_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение (фактор) 
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\mathfrak{A}\in K(\sigma),$
+\end_inset
+
+ 
+\begin_inset Formula $\sim$
+\end_inset
+
+ - конгруэнция на 
+\begin_inset Formula $\mathfrak{A}$
+\end_inset
+
+.
+ Для 
+\begin_inset Formula $a\in\mathfrak{A}$
+\end_inset
+
+ 
+\begin_inset Formula $[a]_{n}=\{b\in\mathfrak{|A|}|a\sim b\}=a_{/_{\sim}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $A_{/_{\sim}}=\{[a]_{n}|a\in A\}=\{a_{/_{\sim}}|a\in\mathfrak{|A|}\}$
+\end_inset
+
+ 
+\begin_inset Formula $f^{n},c\in\sigma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $f^{\mathfrak{A_{/_{\sim}}}}([a_{1}],\dots,[a_{n}])=[f^{\mathfrak{A}}(a_{1},\dots,a_{n})]$
+\end_inset
+
+ 
+\begin_inset Formula $c^{\mathfrak{A_{/_{\sim}}}}=[c^{\mathfrak{A}}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+Определение фактора на модели является корректным
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ 
+\begin_inset Formula $f^{n}\in\sigma,$
+\end_inset
+
+ 
+\begin_inset Formula $a_{1},\dots,a_{n},$
+\end_inset
+
+ 
+\begin_inset Formula $c_{1},\dots,c_{n}\in\mathfrak{A}$
+\end_inset
+
+.
+ Пусть 
+\begin_inset Formula $a_{1}\sim c_{1},\dots,a_{n}\sim c_{n}.$
+\end_inset
+
+ Покажем, что 
+\begin_inset Formula $f([a_{1}],\dots,[a_{n}])=f([c_{1}],\dots,[c_{n}]$
+\end_inset
+
+) 
+\begin_inset Formula $[a_{1}]=[c_{1}],\dots,[a_{n}]=[c_{n}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $f(a_{1},\dots,a_{n})\sim f(c_{1},\dots,c_{n})\Rightarrow[f(a_{1},\dots,a_{n})]=[f(c_{1},\dots,c_{n})]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $f([a_{1}],\dots,[a_{n}]=[f(a_{1},\dots,a_{n})]=[f(c_{1},\dots,c_{n})]=f([c_{1}],\dots,[c_{n}])$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Замечание
+\end_layout
+
+\begin_layout Description
+Конгруэнция - это в точности такая эквивалентность на алгебре, по которой
+ корректно определяется фактор-алгебра
+\end_layout
+
+\begin_layout Subsection
+Теорема (об эпиморфизме)
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $h:\mathfrak{|A|\rightarrow\mathfrak{|A}|_{/_{\sim}}}$
+\end_inset
+
+, т .е.
+ 
+\begin_inset Formula $h(a)=[a]\Rightarrow h$
+\end_inset
+
+ - эпиморфизм
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство: 
+\bar default
+1) Покажем, что 
+\begin_inset Formula $h$
+\end_inset
+
+ - гомоморфизм:
+\end_layout
+
+\begin_layout Standard
+а) 
+\begin_inset Formula $f^{n}\in\sigma,$
+\end_inset
+
+ 
+\begin_inset Formula $a_{1},\dots,a_{n}\in\mathfrak{|A|}.$
+\end_inset
+
+ 
+\begin_inset Formula $h(f(a_{1},\dots,a_{n}))=[f(a_{1},\dots,a_{n})]=f([a_{1}],\dots,[a_{n}])=f(h(a_{1}),\dots,h(a_{n}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+б) 
+\begin_inset Formula $c\in\sigma,$
+\end_inset
+
+ 
+\begin_inset Formula $h(c^{\mathfrak{A}})=[c^{\mathfrak{A}}]=c^{\mathfrak{A_{/_{\sim}}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2) 
+\begin_inset Quotes eld
+\end_inset
+
+на
+\begin_inset Quotes erd
+\end_inset
+
+: 
+\begin_inset Formula $[a]\in\mathfrak{A_{/_{\sim}}\Rightarrow a\in\mathfrak{|A|}}$
+\end_inset
+
+ 
+\begin_inset Formula $h(a)=[a]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $h:\mathfrak{A}\rightarrow\mathfrak{B}$
+\end_inset
+
+ - гомоморфизм 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $\sim$
+\end_inset
+
+на 
+\begin_inset Formula $A=\mathfrak{|A|}$
+\end_inset
+
+ 
+\begin_inset Formula $a\sim c:$
+\end_inset
+
+ 
+\begin_inset Formula $h(a)=h(c)$
+\end_inset
+
+, 
+\begin_inset Formula $\sim$
+\end_inset
+
+ - конгруэнция на 
+\begin_inset Formula $\mathfrak{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ упражнение.
+\end_layout
+
+\begin_layout Subsection
+Теорема (об изоморфизме)
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\mathfrak{A,B}\in K(\sigma),$
+\end_inset
+
+ 
+\begin_inset Formula $h:\mathfrak{A\rightarrow\mathfrak{B}}$
+\end_inset
+
+ - эпиморфизм.
+ Для 
+\begin_inset Formula $a,c\in\mathfrak{A}$
+\end_inset
+
+ 
+\begin_inset Formula $a\sim c:$
+\end_inset
+
+ 
+\begin_inset Formula $h(a)=h(c)$
+\end_inset
+
+ тогда 
+\begin_inset Formula $\mathfrak{A_{/_{\sim}}\simeq\mathfrak{B}},$
+\end_inset
+
+ а именно 
+\begin_inset Formula $g:\mathfrak{|A|_{/_{\sim}}\rightarrow\mathfrak{|B|}\text{,}}$
+\end_inset
+
+ 
+\begin_inset Formula $g:([a])=h(a)$
+\end_inset
+
+ - изоморфизм, 
+\begin_inset Formula $g:\mathfrak{|A|_{/_{\sim}}\rightarrow\mathfrak{B}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ 
+\begin_inset Formula $g([a])=h(a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1) 
+\begin_inset Formula $g$
+\end_inset
+
+ - отображение 
+\begin_inset Formula $a,c\in\mathfrak{|A|},$
+\end_inset
+
+ 
+\begin_inset Formula $[a]=[c]\Rightarrow a\sim c\Rightarrow h(a)=h(c)\Rightarrow h([a])=h([c])$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2) 
+\begin_inset Formula $\text{g}$
+\end_inset
+
+- взаимно-однозначное: 
+\end_layout
+
+\begin_layout Standard
+а) 
+\begin_inset Quotes eld
+\end_inset
+
+на
+\begin_inset Quotes erd
+\end_inset
+
+: 
+\begin_inset Formula $b\in\mathfrak{B}\Rightarrow\exists a\in\mathfrak{A}$
+\end_inset
+
+, такое что 
+\begin_inset Formula $h(a)=b\Rightarrow g([a])=h(a)=b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+б) 
+\begin_inset Formula $g$
+\end_inset
+
+ - разнозначно: 
+\begin_inset Formula $g([a])=g([c])\Rightarrow h(a)=h(c)\Rightarrow a\sim c\Rightarrow[a]=[c]\Rightarrow g$
+\end_inset
+
+- взаимно-однозначное
+\end_layout
+
+\begin_layout Standard
+3) 
+\begin_inset Formula $\text{g}$
+\end_inset
+
+ - сохраняет операции и константы: Пусть 
+\begin_inset Formula $f^{n},c\in\sigma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a) 
+\begin_inset Formula $[a_{1}],\dots,[a_{n}]\in\mathfrak{A_{/_{\sim}}}$
+\end_inset
+
+ 
+\begin_inset Formula $g(f([a_{1}],\dots,[a_{n}]))=g([f(a_{1},\dots,a_{n})])=h(f(a_{1},\dots,a_{n}))=f(h(a_{1}),\dots,h(a_{n}))=f(g([a_{1}]),\dots,g([a_{n}]))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+б) 
+\begin_inset Formula $g(c^{\mathfrak{A_{/\sim}}})=g([c^{\mathfrak{A}}])=h(c^{\mathfrak{A}})=c^{\mathfrak{B}}\Rightarrow g$
+\end_inset
+
+ - изоморфизм, 
+\begin_inset Formula $g:\mathfrak{A_{/_{\sim}}\rightarrow\mathfrak{B}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Description
+
+\series medium
+Любой
+\series default
+ гомоморфизм является композицией эпиморфизма и изоморфного вложения
+\end_layout
+
+\begin_layout Description
+
+\series medium
+\bar under
+Доказательство:
+\series default
+\bar default
+ 
+\begin_inset Formula $\mathfrak{A,B}\in K(\sigma),$
+\end_inset
+
+ 
+\begin_inset Formula $h:\mathfrak{A}\rightarrow\mathfrak{B}$
+\end_inset
+
+ - гомоморфизм, 
+\begin_inset Formula $C=h(a)=\{h(a)|a\in\mathfrak{A}\}$
+\end_inset
+
+, 
+\begin_inset Formula $\exists\mathfrak{C\in}K(\sigma)$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{|C|}=C,$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{C}\leq\mathfrak{B},$
+\end_inset
+
+ 
+\begin_inset Formula $g:\mathfrak{|A|\rightarrow|C|},$
+\end_inset
+
+ 
+\begin_inset Formula $g(a)=h(a)\in C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\series medium
+Тогда
+\series default
+ 
+\begin_inset Formula $g$
+\end_inset
+
+- эпиморфизм (упражнение).
+ 
+\begin_inset Formula $id_{c}:C\rightarrow B,$
+\end_inset
+
+ 
+\begin_inset Formula $id_{c}:\mathfrak{C\rightarrow B}$
+\end_inset
+
+- изоморфное вложение (упражнение)
+\end_layout
+
+\begin_layout Description
+
+\series medium
+Тогда
+\series default
+ 
+\begin_inset Formula $\forall a\in\mathfrak{A}$
+\end_inset
+
+ имеем 
+\begin_inset Formula $h(a)=g(a)=id_{c}(g(a))$
+\end_inset
+
+, 
+\begin_inset Formula $h=g\circ id_{c},$
+\end_inset
+
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ - эпиморфизм, 
+\begin_inset Formula $id_{c}$
+\end_inset
+
+- изоморфное вложение
+\end_layout
+
+\begin_layout Subsection
+Теорема (основная теорема о гомоморфизмах)
+\end_layout
+
+\begin_layout Description
+
+\series medium
+Любой
+\series default
+ гомоморфизм является композицией, факторизацией изоморфного вложения.
+\end_layout
+
+\begin_layout Description
+
+\series medium
+\bar under
+Доказательство:
+\series default
+\bar default
+ 
+\begin_inset Formula $\mathfrak{A,B}\in K(\sigma),$
+\end_inset
+
+ 
+\begin_inset Formula $h:\mathfrak{A\rightarrow B}$
+\end_inset
+
+ - гомоморфизм.
+ Пусть 
+\begin_inset Formula $\mathfrak{C}=h(\mathfrak{A})$
+\end_inset
+
+, т.е.
+ 
+\begin_inset Formula $\mathfrak{|C|}=C=h(A),$
+\end_inset
+
+ 
+\begin_inset Formula $A=\mathfrak{|A|,}$
+\end_inset
+
+ пусть 
+\begin_inset Formula $h=g\circ id_{c},$
+\end_inset
+
+ 
+\begin_inset Formula $g:\mathfrak{A\rightarrow C}$
+\end_inset
+
+ - эпиморфизм
+\end_layout
+
+\begin_layout Description
+
+\series medium
+Для
+\series default
+ 
+\begin_inset Formula $a,c\in\mathfrak{A},$
+\end_inset
+
+ 
+\begin_inset Formula $a\sim c,$
+\end_inset
+
+ 
+\begin_inset Formula $h(a)=h(c)$
+\end_inset
+
+ 
+\begin_inset Formula $(\text{или }g(a)=g(c))$
+\end_inset
+
+.
+ 
+\begin_inset Formula $v:\mathfrak{A_{/_{\sim}}\rightarrow C},$
+\end_inset
+
+ 
+\begin_inset Formula $v([a])=g(a).$
+\end_inset
+
+ Тогда 
+\begin_inset Formula $v:\mathfrak{A_{/_{\sim}}\rightarrow C}$
+\end_inset
+
+ - изоморфизм
+\end_layout
+
+\begin_layout Description
+
+\series medium
+Положим 
+\series default
+
+\begin_inset Formula $u:\mathfrak{A\rightarrow A_{/_{\sim}},}$
+\end_inset
+
+ 
+\begin_inset Formula $u(a)=[a]\Rightarrow g=u\circ v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $h=u\circ v\circ id_{c}$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{A\underset{u}{\longrightarrow}A_{/_{\sim}}}\underset{v}{\longrightarrow}\mathfrak{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $h=g\circ id_{c}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $q=v\circ id_{c}$
+\end_inset
+
+
+\series medium
+,
+\series default
+ 
+\begin_inset Formula $\mathfrak{A}\underset{u}{\longrightarrow}\mathfrak{A_{/_{\sim}}\underset{v}{\longrightarrow}\mathfrak{C}}\underset{id_{c}}{\longrightarrow}\mathfrak{B}$
+\end_inset
+
+, 
+\begin_inset Formula $q:\mathfrak{A_{/_{\sim}}\longrightarrow B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Композиция изоморфизма и изоморфного вложения является изоморфным вложением
+ 
+\begin_inset Formula $h=u\circ q$
+\end_inset
+
+
 \end_layout
 
 \end_body
