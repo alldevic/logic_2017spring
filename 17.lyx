@@ -74,5 +74,435 @@
 Универсальные вычислимые функции
 \end_layout
 
+\begin_layout Section
+Универсальные вычислимые функции
+\end_layout
+
+\begin_layout Subsection
+Определение (Универсальная функция )
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $K$
+\end_inset
+
+ - некоторое множество частичных функций 
+\begin_inset Formula $f:\mathbb{N^{n}\rightarrow\mathbb{N}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Функция 
+\begin_inset Formula $f(x_{0},x_{1},...x_{n})$
+\end_inset
+
+ называется универсальной функцией для класса 
+\begin_inset Formula $K$
+\end_inset
+
+ , если: 
+\end_layout
+
+\begin_layout Standard
+a) 
+\begin_inset Formula $\forall m\in\mathbb{N}$
+\end_inset
+
+ 
+\begin_inset Formula $f(m,x_{1}...x_{n})\in K$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+б) 
+\begin_inset Formula $\forall g(x_{1}..x_{n})\in K\exists m\in\mathbb{N}$
+\end_inset
+
+: 
+\begin_inset Formula $\forall x_{1}..x_{n}$
+\end_inset
+
+ 
+\begin_inset Formula $g(x_{1}...x_{n})=f(m,x_{1}..x_{n})$
+\end_inset
+
+, то есть 
+\begin_inset Formula $K=\left\{ f(m_{1}x_{1}...x_{n})|m\in\mathbb{N}\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Замечание (О конечности класса функции )
+\end_layout
+
+\begin_layout Standard
+Класс 
+\begin_inset Formula $K$
+\end_inset
+
+ имеет универсальную функцию 
+\begin_inset Formula $\Longleftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $K$
+\end_inset
+
+ счетен либо конечен
+\end_layout
+
+\begin_layout Standard
+Док-во (упр)
+\end_layout
+
+\begin_layout Subsection
+Следствие (Континуальность класса )
+\end_layout
+
+\begin_layout Standard
+Если класс 
+\begin_inset Formula $K$
+\end_inset
+
+ континулален , то он не имеет универсальной функции 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ (упр) 
+\end_layout
+
+\begin_layout Subsection
+Следствие 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall n$
+\end_inset
+
+ класс всех частичных 
+\begin_inset Formula $n$
+\end_inset
+
+ - местных функций не имеет универсальных функций 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ (упр)
+\end_layout
+
+\begin_layout Subsection
+Следствие (ПРФ , ОРФ , ЧРФ)
+\end_layout
+
+\begin_layout Standard
+ПРФ,ОРФ,ЧРФ имеют универсальные функции 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+ПРФ
+\begin_inset Formula $\subseteq$
+\end_inset
+
+ОРФ 
+\begin_inset Formula $\subseteq$
+\end_inset
+
+ЧРФ = ПВТ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{А}$
+\end_inset
+
+ - алфавит (счетный).
+ Любая программа 
+\begin_inset Formula $\text{П}\in A^{*}=\underset{\text{n}}{\bigcup}A^{n}=\left\{ (a_{1}...a_{n})|n\in\mathbb{N},a_{i}\in A\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A^{*}$
+\end_inset
+
+ - счетно , то количество программ счётно 
+\end_layout
+
+\begin_layout Standard
+количество функций ПВТ - счётно 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+ПРФ ,ОРФ,ЧРФ - счётны.
+\end_layout
+
+\begin_layout Subsection
+Замечание (О универсальности )
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $h:\text{ \mathbb{N\rightarrow\mathbb{N}}-}$
+\end_inset
+
+взаимно однозначны, 
+\begin_inset Formula $f(x_{0},x_{1}...x_{n})-$
+\end_inset
+
+универсальная для 
+\begin_inset Formula $K$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ (упражнение )
+\end_layout
+
+\begin_layout Subsection
+Следствие 
+\end_layout
+
+\begin_layout Standard
+а) если 
+\begin_inset Formula $K$
+\end_inset
+
+ счётен , то он имеет континуум универсальных функций
+\begin_inset Newline newline
+\end_inset
+
+б) Классы ПРФ,ОРФ, ИРФ имеют континуум универсальных функций 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ (упражнение)
+\end_layout
+
+\begin_layout Subsection
+Теорема(ПРФ
+\begin_inset Quotes erd
+\end_inset
+
+,ОРФ
+\begin_inset Quotes erd
+\end_inset
+
+,ЧРФ
+\begin_inset Quotes erd
+\end_inset
+
+ - 
+\begin_inset Formula $n$
+\end_inset
+
+-местные )
+\end_layout
+
+\begin_layout Standard
+а) 
+\begin_inset Formula $\nexists$
+\end_inset
+
+ ПРФ, универсальной для ПРФ
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+б) Класс ОРФ
+\begin_inset Quotes erd
+\end_inset
+
+ не имеет универсальной ОРФ 
+\end_layout
+
+\begin_layout Standard
+в) Класс ОРФ
+\begin_inset Quotes erd
+\end_inset
+
+ не имеет универсальной ЧРФ 
+\end_layout
+
+\begin_layout Standard
+Доказательство 
+\end_layout
+
+\begin_layout Standard
+а)От противного .
+ Пусть 
+\begin_inset Formula $\exists\text{ПРФ}f(x_{o}...x_{n})-$
+\end_inset
+
+ универсальная для ПРФ
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g(x_{1}...x_{n})=f(x_{1},x_{1},x_{2}..x_{n})+1-$
+\end_inset
+
+ПРФ ,так как 
+\begin_inset Formula $f-\text{ПРФ}\text{.}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g(x_{1}..x_{n})\in\text{П}\text{Р}\text{Ф}^{n}$
+\end_inset
+
+
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+
+\begin_inset Formula $\exists m:g(x_{1}...x_{n})=f(m,x_{1}..\text{.}x_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $f(m..m)=g(m...m)=f(m...m)+1$
+\end_inset
+
+ противоречие 
+\end_layout
+
+\begin_layout Standard
+б)Аналогично (упр) (ПРФ заменить на ОРФ )
+\end_layout
+
+\begin_layout Standard
+в) От противного .
+ Пусть 
+\begin_inset Formula $f(x_{0}...x_{n})-$
+\end_inset
+
+универсальная для ОРФ
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f-$
+\end_inset
+
+ЧРФ.
+ Рассмотрим произвольный кортеж 
+\begin_inset Formula $m_{o}...m_{n}\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $f(m_{0},x_{1}...x_{n})\in\text{О}\text{Р}\text{Ф}^{n}$
+\end_inset
+
+
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+всюду определен 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+
+\begin_inset Formula $f(m_{0},m_{1}...m_{n})-$
+\end_inset
+
+определена 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f-$
+\end_inset
+
+ОРФ , универасальная для ОРФ
+\begin_inset Quotes erd
+\end_inset
+
+ - противоречие 
+\end_layout
+
+\begin_layout Subsection
+Теорема (Класс ЧРФ
+\begin_inset Quotes erd
+\end_inset
+
+ имеет универсальную ЧРФ )
+\end_layout
+
+\begin_layout Standard
+Доказательство 
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $f(x_{0}...x_{n})=l(\mu y\left[T^{n}(x_{0}...x_{n},l(y),r(y)-1)=0\right]$
+\end_inset
+
+
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathfrak{f}$
+\end_inset
+
+ 
+\end_layout
+
 \end_body
 \end_document
