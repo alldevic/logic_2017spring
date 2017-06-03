@@ -74,11 +74,8 @@
 Теорема о существовании модели
 \end_layout
 
-\begin_layout Standard
-
-\series bold
-\size large
-5.1 Определение
+\begin_layout Subsection
+Определение
 \end_layout
 
 \begin_layout Standard
@@ -100,7 +97,7 @@
 \begin_inset Formula $\Gamma\vdash\varphi$
 \end_inset
 
-если 
+ если 
 \begin_inset Formula $\exists\varphi_{1},\ldots,\varphi_{n}$
 \end_inset
 
@@ -112,14 +109,14 @@
 \begin_inset Formula $\varphi_{1},\ldots,\varphi_{n}\vdash\varphi$
 \end_inset
 
-доказуема
+ доказуема
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $\Gamma\vdash$
 \end_inset
 
-(
+ (
 \begin_inset Formula $\Gamma$
 \end_inset
 
@@ -135,14 +132,18 @@
 \begin_inset Formula $\varphi_{1},\ldots,\varphi_{n}\vdash$
 \end_inset
 
-доказуема
+ доказуема
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $\Gamma\dashv$
 \end_inset
 
-(Г непротиворечива) если 
+ (
+\begin_inset Formula $Г$
+\end_inset
+
+ непротиворечива) если 
 \begin_inset Formula $\lnot(\Gamma\vdash)$
 \end_inset
 
@@ -153,15 +154,19 @@
 \begin_inset Formula $T\subseteq S(\sigma)$
 \end_inset
 
- - теория сигнатуры 
+ - 
+\series bold
+теория сигнатуры 
 \begin_inset Formula $\sigma$
 \end_inset
 
+
+\series default
 , если 
 \begin_inset Formula $T$
 \end_inset
 
-- дедуктивно замкнуто, то есть 
+ - дедуктивно замкнуто, то есть 
 \begin_inset Formula $\forall\varphi\in S(\sigma)$
 \end_inset
 
@@ -180,7 +185,11 @@
 \begin_inset Formula $T$
 \end_inset
 
- - полно, если 
+ - 
+\series bold
+полно
+\series default
+, если 
 \begin_inset Formula $\forall\varphi\in S(\sigma)$
 \end_inset
 
@@ -195,19 +204,23 @@
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
 \noindent
 
 \series bold
 \size large
-5.2 Замечание
+Замечание
 \series default
 \size default
  
 \end_layout
 
 \begin_layout Standard
-Пусть T - теория сигнатуры 
+Пусть 
+\begin_inset Formula $T$
+\end_inset
+
+ - теория сигнатуры 
 \begin_inset Formula $\sigma=\sigma(T)$
 \end_inset
 
@@ -239,7 +252,11 @@
 \begin_inset Formula $\sigma\neq\sigma_{1}$
 \end_inset
 
-, то T - не является теорией сигнатуры
+, то 
+\begin_inset Formula $T$
+\end_inset
+
+ - не является теорией сигнатуры 
 \begin_inset Formula $\sigma_{1}$
 \end_inset
 
@@ -248,10 +265,8 @@
 
 \begin_layout Standard
 
-\series bold
+\bar under
 Доказательство:
-\series default
- 
 \end_layout
 
 \begin_layout Enumerate
@@ -266,7 +281,7 @@
 \begin_inset Formula $\varphi\vdash\varphi$
 \end_inset
 
-доказуема (аксиома) 
+ доказуема (аксиома) 
 \begin_inset Formula $\Rightarrow T\vdash\varphi$
 \end_inset
 
@@ -282,7 +297,11 @@
 \begin_inset Formula $T\vdash\varphi$
 \end_inset
 
-, T - теория 
+, 
+\begin_inset Formula $T$
+\end_inset
+
+ - теория 
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
@@ -322,7 +341,7 @@
 \begin_inset Formula $q\in\sigma(\varphi)$
 \end_inset
 
- (Упр.)
+ (упр.)
 \end_layout
 
 \begin_layout Standard
@@ -333,11 +352,15 @@
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
-(из предположения, что T - теория 
+ (из предположения, что 
+\begin_inset Formula $T$
+\end_inset
+
+ - теория 
 \begin_inset Formula $\sigma_{1}$
 \end_inset
 
-)
+) 
 \begin_inset Formula $T\vdash(\varphi\lor\lnot\varphi)$
 \end_inset
 
@@ -361,11 +384,11 @@
 \end_layout
 
 \end_deeper
-\begin_layout Standard
+\begin_layout Subsection
 
 \series bold
 \size large
-Замечание 5.3
+Замечание
 \end_layout
 
 \begin_layout Standard
@@ -415,7 +438,7 @@
 
 \begin_layout Standard
 
-\series bold
+\bar under
 Доказательство:
 \end_layout
 
@@ -505,15 +528,18 @@
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
 
 \series bold
 \size large
-5.4 Следствие 
+Следствие 
 \end_layout
 
 \begin_layout Standard
-Т - теория сигнатуры 
+\begin_inset Formula $Т$
+\end_inset
+
+ - теория сигнатуры 
 \begin_inset Formula $\sigma$
 \end_inset
 
@@ -522,34 +548,35 @@
 \end_inset
 
  
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
 
-\series bold
+\bar under
 Доказательство:
-\series default
+\bar default
  упр.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
 \noindent
 
 \series bold
 \size large
-5.5 Предложение
+Предложение
 \end_layout
 
 \begin_layout Standard
-Полное непротиворечивое множество предложений является теорией 
-\end_layout
-
-\begin_layout Standard
-Пусть 
+Полное непротиворечивое множество предложений является теорией.
+ Пусть 
 \begin_inset Formula $T\subseteq S(\sigma)$
 \end_inset
 
- T - полно в 
+, 
+\begin_inset Formula $T$
+\end_inset
+
+ - полно в 
 \begin_inset Formula $\sigma$
 \end_inset
 
@@ -557,27 +584,30 @@
 \begin_inset Formula $T\dashv$
 \end_inset
 
+.
+ Тогда 
+\begin_inset Formula $Т$
+\end_inset
 
-\end_layout
-
-\begin_layout Standard
-Тогда Т - теория сигнатуры
+ - теория сигнатуры
 \begin_inset Formula $\sigma$
 \end_inset
 
- 
-\end_layout
+ .
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
 
-\series bold
+\bar under
 Доказательство:
-\series default
- 
 \end_layout
 
 \begin_layout Standard
-Пусть Т - не теория 
+Пусть 
+\begin_inset Formula $Т$
+\end_inset
+
+ - не теория 
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
@@ -620,12 +650,12 @@
  Противоречие.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
 \noindent
 
 \series bold
 \size large
-5.6 Определение 
+Определение (Элементарная теория модели)
 \end_layout
 
 \begin_layout Standard
@@ -637,15 +667,15 @@
 \begin_inset Formula $\mathfrak{A}=<A,\sigma>$
 \end_inset
 
-, тогда элементарной теорией модели называется множество всех предложений,
- истинных на этой модели:
-\end_layout
-
-\begin_layout Standard
+, тогда 
+\series bold
+элементарной теорией модели
+\series default
+ называется множество всех предложений, истинных на этой модели: 
 \begin_inset Formula $Th\mathfrak{\,A}=\{\varphi\in S(\sigma)|\varphi\models\mathfrak{A}\}$
 \end_inset
 
-
+.
 \end_layout
 
 \end_body
