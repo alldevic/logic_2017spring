@@ -120,7 +120,11 @@
 \begin_inset Formula $\Gamma$
 \end_inset
 
-противоречива) если 
+ 
+\series bold
+противоречива
+\series default
+) если 
 \begin_inset Formula $\exists\varphi_{1},\ldots,\varphi_{n}$
 \end_inset
 
@@ -136,14 +140,18 @@
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\Gamma\dashv$
+\begin_inset Formula $\Gamma\nvdash$
 \end_inset
 
  (
 \begin_inset Formula $Г$
 \end_inset
 
- непротиворечива) если 
+ 
+\series bold
+непротиворечива
+\series default
+) если 
 \begin_inset Formula $\lnot(\Gamma\vdash)$
 \end_inset
 
@@ -305,7 +313,7 @@
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
-
+ 
 \begin_inset Formula $\varphi\in T$
 \end_inset
 
@@ -325,7 +333,7 @@
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
-
+ 
 \begin_inset Formula $\exists q\in\sigma\setminus\sigma{\scriptstyle 1}$
 \end_inset
 
@@ -364,11 +372,11 @@
 \begin_inset Formula $T\vdash(\varphi\lor\lnot\varphi)$
 \end_inset
 
-
+ 
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
-
+ 
 \begin_inset Formula $(\varphi\lor\lnot\varphi)\in T$
 \end_inset
 
@@ -376,7 +384,7 @@
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
-
+ 
 \begin_inset Formula $q\in\sigma(T)=\sigma$
 \end_inset
 
@@ -451,11 +459,11 @@
 \begin_inset Formula $T\vdash$
 \end_inset
 
-
+ 
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
-
+ 
 \begin_inset Formula $\exists\varphi{\scriptstyle 1},\ldots,\varphi{\scriptstyle n}\in T$
 \end_inset
 
@@ -475,7 +483,7 @@
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{\varphi_{1},\ldots,\varphi_{n}\vdash}{\varphi_{1},\ldots,\varphi_{n}\lnot\varphi\vdash}\:\frac{\varphi_{1},\ldots,\varphi_{n}\lnot\varphi\vdash}{\varphi_{1},\ldots,\varphi_{n}\vdash\varphi}
+\frac{\varphi_{1},\ldots,\varphi_{n}\vdash}{\varphi_{1},\ldots,\varphi_{n}\lnot\varphi\vdash}\qquad\frac{\varphi_{1},\ldots,\varphi_{n}\lnot\varphi\vdash}{\varphi_{1},\ldots,\varphi_{n}\vdash\varphi}
 \]
 
 \end_inset
@@ -484,7 +492,7 @@
 \begin_inset Formula $\Rightarrow\varphi{\scriptstyle 1},\ldots,\varphi{\scriptstyle n}\vdash\varphi$
 \end_inset
 
- - доказуема
+ - доказуема 
 \begin_inset Formula $\Rightarrow T\vdash\varphi\Rightarrow\varphi\in T$
 \end_inset
 
@@ -510,6 +518,14 @@
 \end_inset
 
 1.) 
+\begin_inset Formula $\varphi,\lnot\varphi\in T$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow T\vdash\varphi\quad T\vdash\lnot\varphi$
+\end_inset
+
+
 \begin_inset Formula 
 \[
 \frac{\varphi\vdash\varphi;\lnot\varphi\vdash\lnot\varphi}{\varphi,\lnot\varphi\vdash}
@@ -518,7 +534,11 @@
 \end_inset
 
 
-\begin_inset Formula $\Rightarrow\varphi,\lnot\varphi\vdash$
+\begin_inset Formula $\varphi,\lnot\varphi\in T$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi,\lnot\varphi\vdash$
 \end_inset
 
  - доказуемо 
@@ -544,7 +564,7 @@
 \end_inset
 
 , тогда 
-\begin_inset Formula $T\vdash\Leftrightarrow T=S(\sigma)$
+\begin_inset Formula $T\vdash\:\Leftrightarrow\:T=S(\sigma)$
 \end_inset
 
  
@@ -581,7 +601,7 @@
 \end_inset
 
  и 
-\begin_inset Formula $T\dashv$
+\begin_inset Formula $T\nvdash$
 \end_inset
 
 .
@@ -589,7 +609,7 @@
 \begin_inset Formula $Т$
 \end_inset
 
- - теория сигнатуры
+ - теория сигнатуры 
 \begin_inset Formula $\sigma$
 \end_inset
 
@@ -642,8 +662,8 @@
 \begin_inset Formula $\Rightarrow\varphi_{1},\ldots,\varphi_{n},\lnot\varphi\vdash$
 \end_inset
 
-- доказуемо 
-\begin_inset Formula $\Rightarrow T\dashv$
+ - доказуемо 
+\begin_inset Formula $\Rightarrow T\vdash$
 \end_inset
 
 .
@@ -664,7 +684,7 @@
 \end_inset
 
  , то есть 
-\begin_inset Formula $\mathfrak{A}=<A,\sigma>$
+\begin_inset Formula $\mathfrak{A}=\,<A,\,\sigma>$
 \end_inset
 
 , тогда 
@@ -672,7 +692,7 @@
 элементарной теорией модели
 \series default
  называется множество всех предложений, истинных на этой модели: 
-\begin_inset Formula $Th\mathfrak{\,A}=\{\varphi\in S(\sigma)|\varphi\models\mathfrak{A}\}$
+\begin_inset Formula $Th\mathfrak{\,A}=\{\varphi\in S(\sigma)\,|\,\varphi\models\mathfrak{A}\}$
 \end_inset
 
 .
