@@ -361,10 +361,10 @@ a)
 \begin_layout Standard
 а)От противного .
  Пусть 
-\begin_inset Formula $\exists\text{ПРФ}f(x_{o}...x_{n})-$
+\begin_inset Formula $\exists\text{ПРФ}f(x_{o}...x_{n})$
 \end_inset
 
- универсальная для ПРФ
+ - универсальная для ПРФ
 \begin_inset Quotes erd
 \end_inset
 
@@ -406,7 +406,7 @@ a)
 \end_layout
 
 \begin_layout Standard
-б)Аналогично (упр) (ПРФ заменить на ОРФ )
+б) Аналогично (упр) (ПРФ заменить на ОРФ )
 \end_layout
 
 \begin_layout Standard
@@ -456,13 +456,10 @@ a)
 \end_inset
 
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $f-$
+\begin_inset Formula $f$
 \end_inset
 
-ОРФ , универасальная для ОРФ
+ - ОРФ, универсальная для ОРФ
 \begin_inset Quotes erd
 \end_inset
 
@@ -478,7 +475,9 @@ a)
 \end_layout
 
 \begin_layout Standard
-Доказательство 
+
+\bar under
+Доказательство:
 \end_layout
 
 \begin_layout Standard
@@ -491,13 +490,650 @@ a)
 \end_inset
 
  
+\begin_inset Formula $f$
+\end_inset
+
+ - ЧРФ 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\mathfrak{f}$
+а) 
+\begin_inset Formula $\forall m$
 \end_inset
 
  
+\begin_inset Formula $f(m,x_{1}...x_{n})-\text{ЧРФ}$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $f(m,x_{1}..x_{n})\text{}\in\text{Ч}\text{Р}\text{Ф}^{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+б) 
+\begin_inset Formula $g(x_{1}..x_{n})\in\text{ЧРФ}\Longrightarrow g-$
+\end_inset
+
+ПВТ 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\exists$
+\end_inset
+
+программа 
+\begin_inset Formula $\text{П }|$
+\end_inset
+
+ вычесляет 
+\begin_inset Formula $g$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $m=\gamma(\text{П})$
+\end_inset
+
+ 
+\begin_inset Formula $\Longrightarrow g(x_{1}..x_{n})=f(m,x_{1}...x_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi^{2}(x_{0},x_{1})=l(\mu y[(T(x_{0},x_{1},l(y),r(y)-1)=0]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Следствие 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi^{2}(x_{0},x_{1})$
+\end_inset
+
+ - ЧРФ, универсально для ЧРФ'(упр)
+\end_layout
+
+\begin_layout Subsection
+Определение 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi^{n+1}(x_{0}...x_{n})=\varphi^{2}(x_{0},c^{n}(x_{1}...x_{n}))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Предложение 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi^{n+1}$
+\end_inset
+
+ - ЧРФ, универасальное для ЧРФ
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Очевидно, что 
+\begin_inset Formula $\varphi^{n+1}-$
+\end_inset
+
+ЧРФ(упр) 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+а) Пусть 
+\begin_inset Formula $m\in\mathbb{N}\Longrightarrow\varphi^{n+1}(m,x_{1}...x_{n})-$
+\end_inset
+
+ЧРФ 
+\begin_inset Formula $\Longrightarrow\in\text{ЧРФ}^{\text{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+б) Пусть 
+\begin_inset Formula $g(x_{1}..x_{n})\in\text{ЧРФ}^{n}$
+\end_inset
+
+.Тогда рассмотрим 
+\begin_inset Formula $h(x)=g(c_{1}^{n}(x)...c_{n}^{n}(x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longrightarrow g(x_{1}...x_{n})=h(c(x_{1}...x_{n}))-$
+\end_inset
+
+упр 
+\begin_inset Formula $\Longrightarrow h-\text{}$
+\end_inset
+
+ ЧРФ , 
+\begin_inset Formula $\text{\inЧРФ}^{\text{n}}$
+\end_inset
+
+ 
+\begin_inset Formula $\Longrightarrow\exists m:h(x)=\varphi^{2}(\text{m,x)}$
+\end_inset
+
+
+\begin_inset Formula $\Longrightarrow g(x_{1}..x_{n})=h(c(x_{1}..x_{n}))=\varphi^{2})m_{1}c(x_{1}..x_{n})$
+\end_inset
+
+ 
+\begin_inset Formula $\Longmapsto\varphi^{n+1}$
+\end_inset
+
+ - универсальная для 
+\begin_inset Formula $\text{ЧРФ}^{\text{n}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Определение (Клинцевские скобки )
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[x,y\right]=c(l(x),c(r(x),y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[x_{1}...x_{n+1}\right]=\left[\left[x_{1}...x_{n}\right],x_{n+1}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[K\right]_{21}=c(l(k),l(r(k))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[K\right]_{22}=r(r(k))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[K\right]_{n+1,i}=\left[\left[K\right]_{21}\right]_{n,i},$
+\end_inset
+
+ 
+\begin_inset Formula $i\leq n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[K\right]_{n+1,n+1}=[K]_{22}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение
+\end_layout
+
+\begin_layout Standard
+Все функции из определения 17.14 являются ПРФ
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ (упражнение)
+\end_layout
+
+\begin_layout Subsection
+Предложение 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left[\left[x_{1}...x_{n}\right]\right]_{ne}=x_{e}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left[\left[\text{K}\right]_{n1}...\left[K\right]_{nn}\right]=K$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $[\,]:\mathbb{N\rightarrow}\mathbb{N}-$
+\end_inset
+
+взаимно однозначно 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ (упражнение) 
+\end_layout
+
+\begin_layout Subsection
+Предложение 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left[c(x_{0},x_{1}),x_{2}\right]=c(x_{0},c(x_{1},x_{2}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $c^{n}(c(x_{1},x_{2}),x_{3}...x_{n+1})=c^{n+1}(x_{1}..x_{n+1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $[x_{1}...x_{n}]=\left[\left[x_{1}...x_{m}\right],x_{m+1}...x_{n}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+a),б) - упражнение 
+\end_layout
+
+\begin_layout Standard
+в) Берем 
+\begin_inset Formula $\left[x_{1}..x_{n}\right]=\left[\left[x_{1}..x_{n-1}\right],x_{n}\right]=....=\left[\left[\left[\left[\left[x_{1}x_{2}\right],x_{3}\right],x_{4}\right]...x_{n-1}\right],x_{n}\right]=\left[\left[\left[\left[x_{1}...x_{m}\right]x_{m+1}\right]...\right]x_{n}\right]=\left[\left[x_{1}...x_{m}\right],x_{m+1}...x_{n}\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Определение Клиенивские универсальные функции 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{K}^{2}(x_{0},x_{1})=\varphi^{2}(l(x_{0}),c(r(x_{0}),x_{1}))$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $K^{n+1}(x_{0}...x_{n})=K^{n}([x_{o},x_{1}],x_{2}...x_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Предложение 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{K}^{n}(c(x_{0},x_{1}),x_{2}...x_{n})=\varphi^{n+1}(x_{0}.....x_{n})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\bar under
+Доказательство
+\bar default
+: (упражнение)
+\end_layout
+
+\begin_layout Subsection
+Теорема 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{K}^{n+1}-$
+\end_inset
+
+ универсальное для 
+\begin_inset Formula $\text{ЧРФ}^{\text{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+а) 
+\begin_inset Formula $K^{n+1}$
+\end_inset
+
+ - ЧРФ 
+\begin_inset Formula $\Longrightarrow\forall m$
+\end_inset
+
+ 
+\begin_inset Formula $K^{n+1}(m,x_{1}...x_{n})\in\text{ЧФР}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+б) Пусть 
+\begin_inset Formula $g(x_{1}..x_{n)}\in\text{ЧРФ}^{n}.$
+\end_inset
+
+ Рассмотрим 
+\begin_inset Formula $f(y,x_{1}...x_{n})=\text{ЗДЕСЬ ХУЙНя}+g(x_{1}..x_{n})=g(x_{1}...x_{n})\Longrightarrow f(y,x_{1}...x_{n})\in\text{ЧРФ}^{n+1}\Longrightarrow$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists a\in\mathbb{N}:f(y,x_{1}..x_{n})=\varphi^{n+2}(a,y,x_{1}..x_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $K^{n+1}(c(a,y),x_{1}...x_{n})=\varphi^{n+2}(a,y,x_{1}...x_{n})=f(y,x_{1}...x_{n})=g(x_{1}...x_{n})$
+\end_inset
+
+ 
+\begin_inset Formula $\forall k:m_{k}=c(a,k)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Если рассмотрим 
+\begin_inset Formula $m_{0}=c(a,0)$
+\end_inset
+
+, то 
+\begin_inset Formula $g(x_{1}..x_{n})=K^{n+1}(m_{0,}x_{1}...x_{n})$
+\end_inset
+
+ 
+\begin_inset Formula $\Longrightarrow K^{n+1}-$
+\end_inset
+
+универсальное для 
+\begin_inset Formula $\text{ЧРФ}^{\text{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Следствие 
+\end_layout
+
+\begin_layout Standard
+Любая 
+\begin_inset Formula $\text{ЧРФ}^{\text{n}}$
+\end_inset
+
+имеет бесконечно много клиниевших номеров , т.е 
+\begin_inset Formula $\forall g\in\text{ЧРФ}^{n}\exists$
+\end_inset
+
+ бесконечно много 
+\begin_inset Formula $m_{k}:g(x_{1}...x_{n})=K^{n+1}(m_{k},x_{1}...x_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство
+\bar default
+: (упражнение )
+\end_layout
+
+\begin_layout Subsection
+Теорема (S-m-n)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall m,n\in\mathbb{N}\text{ существует ПРФ }S_{m}^{n}(x_{0}...x_{n}):K^{n+m+1}(x_{0}...x_{m+n})=K^{m+1}(S_{m}^{^{n}}(x_{0}..x_{m}),x_{n+1}...x_{n+m})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Положим 
+\begin_inset Formula $S_{m}^{n}(x_{0}..x_{n})=[x_{0}..x_{n}]$
+\end_inset
+
+, тогда 
+\begin_inset Formula $K^{n+m+1}(x_{0}...x_{n+m})=K^{n+m}([x_{0},x_{1}]),x_{2}...x_{n+m})=K^{n+m-1}([[x_{0},x_{1}],x_{2}]...x_{n+m})=...=K^{m+1}([[x_{0},x_{1}],x_{2}],x_{n}]x_{n+1},...x_{n+m})=K^{m+1}([x_{0}...x_{n}],x_{n+1},x_{n+m})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Теорема (О неподвижной точке ) 
+\end_layout
+
+\begin_layout Standard
+Для любой ЧРФ 
+\begin_inset Formula $h(x_{1}...x_{n+1})\text{ существует ПРФ }g(x_{1}...x_{n})$
+\end_inset
+
+ так что 
+\begin_inset Formula $K^{2}(h(x_{1}..x_{n},g(x_{1}...x_{n}),y$
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $K^{2}(h(x_{1}..x_{n},[z,z,x_{1}....x_{n}],y)-$
+\end_inset
+
+ЧРФ 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+
+\begin_inset Formula $\exists a\in\mathbb{N}$
+\end_inset
+
+ такая что 
+\begin_inset Formula $K^{2}(h(x_{1}...x_{n},[z,z,x_{1}...x_{n}]),y)=K^{n+3}(a,z,x_{1}...x_{n},y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g(x_{1}..x_{n})=[a,a,x_{1}..x_{n}]\text{ - ПРФ}\text{.}$
+\end_inset
+
+ Тогда 
+\begin_inset Formula $K^{2}(h(x_{1}....x_{n},[a,a,x_{1}...x_{n}],y)=K^{n+3}(a,a,x_{1}...x_{n},g)=K^{2}([a,a,x_{1}...x_{n}],y)=K^{2}(g(x_{1}...x_{n}),y)=K^{2}(h(x_{1}...x_{n},g(x_{1}...x_{n})),y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Определение
+\end_layout
+
+\begin_layout Standard
+Обозначим 
+\begin_inset Formula $\mathfrak{A}(n)=K^{2}(n,x)$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{A}:\mathbb{N}\rightarrow\text{ЧРФ}\grave{}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Следствие 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall$
+\end_inset
+
+ЧРФ 
+\begin_inset Formula $h(x)\exists m\in\mathbb{N}:\mathfrak{A}(h(m))=\mathfrak{A}(n)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Теорема (Райса)
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $K\subseteq\text{ЧРФ}\text{'}$
+\end_inset
+
+ ,
+\begin_inset Formula $K\neq\emptyset,K\neq\text{ЧРФ}'$
+\end_inset
+
+Тогда множество 
+\begin_inset Formula $M=\{n|\mathfrak{A(n)\in}K\}$
+\end_inset
+
+ не рекурсивно , т.е 
+\begin_inset Formula $\chi_{\text{M}}(x)=\begin{cases}
+1, & x\in M\\
+0, & x\notin M
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\chi_{m}-$
+\end_inset
+
+не ЧРФ(не ОРФ)
+\end_layout
+
+\begin_layout Standard
+Доказательство 
+\end_layout
+
+\begin_layout Standard
+От противного .Пусть 
+\begin_inset Formula $\chi_{m}(\text{x)}-$
+\end_inset
+
+ЧРФ
+\begin_inset Formula $\Longrightarrow\text{ОРФ}\text{.Тк \chi_{m}-}$
+\end_inset
+
+
 \end_layout
 
 \end_body
