@@ -75,7 +75,7 @@
 \end_layout
 
 \begin_layout Subsection
-Определение (Универсальная функция )
+Определение (Универсальная функция)
 \end_layout
 
 \begin_layout Standard
@@ -92,7 +92,7 @@
 
 \begin_layout Standard
 Функция 
-\begin_inset Formula $f(x_{0},x_{1},...x_{n})$
+\begin_inset Formula $f(x_{0},x_{1},\ldots,x_{n})$
 \end_inset
 
  называется универсальной функцией для класса 
@@ -108,7 +108,7 @@ a)
 \end_inset
 
  
-\begin_inset Formula $f(m,x_{1}...x_{n})\in K$
+\begin_inset Formula $f(m,x_{1},\ldots,x_{n})\in K$
 \end_inset
 
 
@@ -116,7 +116,7 @@ a)
 
 \begin_layout Standard
 б) 
-\begin_inset Formula $\forall g(x_{1}..x_{n})\in K\exists m\in\mathbb{N}$
+\begin_inset Formula $\forall g(x_{1},\ldots,x_{n})\in K\,\exists m\in\mathbb{N}$
 \end_inset
 
 : 
@@ -124,18 +124,18 @@ a)
 \end_inset
 
  
-\begin_inset Formula $g(x_{1}...x_{n})=f(m,x_{1}..x_{n})$
+\begin_inset Formula $g(x_{1},\ldots,x_{n})=f(m,x_{1},\ldots,x_{n})$
 \end_inset
 
 , то есть 
-\begin_inset Formula $K=\left\{ f(m_{1}x_{1}...x_{n})|m\in\mathbb{N}\right\} $
+\begin_inset Formula $K=\left\{ f(m,\,x_{1},\ldots,x_{n})|m\in\mathbb{N}\right\} $
 \end_inset
 
  
 \end_layout
 
 \begin_layout Subsection
-Замечание (О конечности класса функции )
+Замечание (О конечности класса функции)
 \end_layout
 
 \begin_layout Standard
@@ -159,7 +159,7 @@ a)
 \end_layout
 
 \begin_layout Subsection
-Следствие (Континуальность класса )
+Следствие (Континуальность класса)
 \end_layout
 
 \begin_layout Standard
@@ -233,7 +233,7 @@ a)
 
  - алфавит (счетный).
  Любая программа 
-\begin_inset Formula $\text{П}\in A^{*}=\underset{\text{n}}{\bigcup}A^{n}=\left\{ (a_{1}...a_{n})|n\in\mathbb{N},a_{i}\in A\right\} $
+\begin_inset Formula $\text{П}\in A^{*}=\underset{\text{n}}{\bigcup}A^{n}=\left\{ (a_{1},\ldots,a_{n})|n\in\mathbb{N},a_{i}\in A\right\} $
 \end_inset
 
  
@@ -255,7 +255,7 @@ a)
 \end_layout
 
 \begin_layout Subsection
-Замечание (О универсальности )
+Замечание (О универсальности)
 \end_layout
 
 \begin_layout Standard
@@ -263,11 +263,19 @@ a)
 \begin_inset Formula $h:\text{ \mathbb{N\rightarrow\mathbb{N}}-}$
 \end_inset
 
-взаимно однозначны, 
-\begin_inset Formula $f(x_{0},x_{1}...x_{n})-$
+взаимно однозначно, 
+\begin_inset Formula $f(x_{0},x_{1},\ldots,x_{n})-$
 \end_inset
 
 универсальная для 
+\begin_inset Formula $K$
+\end_inset
+
+, тогда 
+\begin_inset Formula $f(h(x_{0}),\,x_{1},\ldots,x_{n})$
+\end_inset
+
+ - универсальная для 
 \begin_inset Formula $K$
 \end_inset
 
@@ -295,7 +303,7 @@ a)
 \begin_inset Newline newline
 \end_inset
 
-б) Классы ПРФ,ОРФ, ИРФ имеют континуум универсальных функций 
+б) Классы ПРФ,ОРФ, ЧРФ имеют континуум универсальных функций 
 \end_layout
 
 \begin_layout Standard
@@ -303,27 +311,92 @@ a)
 \bar under
 Доказательство:
 \bar default
- (упражнение)
+ (Упр.)
+\end_layout
+
+\begin_layout Standard
+а) Возьмем множество отображений 
+\begin_inset Formula $h:\text{ \mathbb{N\rightarrow\mathbb{N}}}$
+\end_inset
+
+таких, что в 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ выбирается не конечное и не коконечное подмножество, в нем меняем четные
+ и нечетные элементы местами сдвигом.
+ Количество таких подмножеств континуально, значит, таких отображений 
+\begin_inset Formula $h$
+\end_inset
+
+ тоже.
+ По 17.6 все такие 
+\begin_inset Formula $f(h(x_{0}),\,x_{1},\ldots,x_{n})$
+\end_inset
+
+ будут являтся универсальными для 
+\begin_inset Formula $K$
+\end_inset
+
+, и, т.
+ к.
+  мощность множества таких
+\begin_inset Formula $h$
+\end_inset
+
+ континуум, то таких функций тоже континуум, даже если предположить, что
+ 
+\begin_inset Formula $\exists h_{1},\,h_{2}|\,f(h_{1}(x_{0}),\,x_{1},\ldots,x_{n})\,=f(h_{2}(x_{0}),\,x_{1},\ldots,x_{n})$
+\end_inset
+
+, то таких 
+\begin_inset Formula $h$
+\end_inset
+
+ не более, чем счетно, потому что не более чем счетно количество 
+\begin_inset Formula $m_{1},\ldots\,|\,f(m_{i},\,x_{1},\ldots,x_{n})=f(m_{j},\,x_{1},\ldots,x_{n})$
+\end_inset
+
+, т.к.
+ 
+\begin_inset Formula $m\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+б) ПРФ
+\begin_inset Formula $\subseteq$
+\end_inset
+
+ОРФ 
+\begin_inset Formula $\subseteq$
+\end_inset
+
+ЧРФ = ПВТ имеют счетную мощность.
+ Переходим к п.
+ (а)
 \end_layout
 
 \begin_layout Subsection
-Теорема(ПРФ
-\begin_inset Quotes erd
+Теорема(
+\begin_inset Formula $\boldsymbol{\text{ПРФ}}\boldsymbol{^{n}}$
 \end_inset
 
-,ОРФ
-\begin_inset Quotes erd
+, 
+\begin_inset Formula $\boldsymbol{\text{ОРФ}}\boldsymbol{^{n}}$
 \end_inset
 
-,ЧРФ
-\begin_inset Quotes erd
+, 
+\begin_inset Formula $\boldsymbol{\text{ЧРФ}}\boldsymbol{^{n}}$
 \end_inset
 
- - 
+- 
 \begin_inset Formula $n$
 \end_inset
 
--местные )
+-местные)
 \end_layout
 
 \begin_layout Standard
@@ -331,24 +404,24 @@ a)
 \begin_inset Formula $\nexists$
 \end_inset
 
- ПРФ, универсальной для ПРФ
-\begin_inset Quotes erd
+ ПРФ, универсальной для 
+\begin_inset Formula $\text{ПРФ}{}^{n}$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Standard
-б) Класс ОРФ
-\begin_inset Quotes erd
+б) Класс 
+\begin_inset Formula $\text{ОРФ}{}^{n}$
 \end_inset
 
  не имеет универсальной ОРФ 
 \end_layout
 
 \begin_layout Standard
-в) Класс ОРФ
-\begin_inset Quotes erd
+в) Класс 
+\begin_inset Formula $\text{ОРФ}{}^{n}$
 \end_inset
 
  не имеет универсальной ЧРФ 
@@ -359,16 +432,16 @@ a)
 \end_layout
 
 \begin_layout Standard
-а)От противного .
+а) От противного .
  Пусть 
 \begin_inset Formula $\exists\text{ПРФ}f(x_{o}...x_{n})$
 \end_inset
 
- - универсальная для ПРФ
-\begin_inset Quotes erd
+ - универсальная для 
+\begin_inset Formula $\text{ПРФ}{}^{n}$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Standard
@@ -459,19 +532,19 @@ a)
 \begin_inset Formula $f$
 \end_inset
 
- - ОРФ, универсальная для ОРФ
-\begin_inset Quotes erd
+ - ОРФ, универсальная для 
+\begin_inset Formula $\text{ОРФ}{}^{n}$
 \end_inset
 
  - противоречие 
 \end_layout
 
 \begin_layout Subsection
-Теорема (Класс ЧРФ
-\begin_inset Quotes erd
+Теорема (Класс 
+\begin_inset Formula $\boldsymbol{\text{ЧРФ}}\boldsymbol{^{n}}$
 \end_inset
 
- имеет универсальную ЧРФ )
+ имеет универсальную ЧРФ)
 \end_layout
 
 \begin_layout Standard
@@ -482,7 +555,7 @@ a)
 
 \begin_layout Standard
 Рассмотрим 
-\begin_inset Formula $f(x_{0}...x_{n})=l(\mu y\left[T^{n}(x_{0}...x_{n},l(y),r(y)-1)=0\right]$
+\begin_inset Formula $f(x_{0}...x_{n})=l(\mu y\left[T^{n}|x_{0}...x_{n},l(y),r(y)-1|=0\right]$
 \end_inset
 
 
@@ -561,7 +634,7 @@ a)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\varphi^{2}(x_{0},x_{1})=l(\mu y[(T(x_{0},x_{1},l(y),r(y)-1)=0]$
+\begin_inset Formula $\varphi^{2}(x_{0},x_{1})=l(\mu y[|T^{1}(x_{0},x_{1},l(y),r(y)-1|=0]$
 \end_inset
 
  
@@ -575,7 +648,11 @@ a)
 \begin_inset Formula $\varphi^{2}(x_{0},x_{1})$
 \end_inset
 
- - ЧРФ, универсально для ЧРФ'(упр)
+ - ЧРФ, универсально для 
+\begin_inset Formula $\text{ЧРФ}{}^{n}$
+\end_inset
+
+(упр)
 \end_layout
 
 \begin_layout Subsection
@@ -597,8 +674,8 @@ a)
 \begin_inset Formula $\varphi^{n+1}$
 \end_inset
 
- - ЧРФ, универасальное для ЧРФ
-\begin_inset Quotes erd
+ - ЧРФ, универасальное для 
+\begin_inset Formula $\text{ОРФ}{}^{n}$
 \end_inset
 
 
@@ -615,7 +692,7 @@ a)
 \begin_inset Formula $\varphi^{n+1}-$
 \end_inset
 
-ЧРФ(упр) 
+ЧРФ (упр) 
 \begin_inset Formula $\Longrightarrow$
 \end_inset
 
@@ -651,19 +728,19 @@ a)
 \end_inset
 
 упр 
-\begin_inset Formula $\Longrightarrow h-\text{}$
+\begin_inset Formula $\Longrightarrow h$
 \end_inset
 
- ЧРФ , 
-\begin_inset Formula $\text{\inЧРФ}^{\text{n}}$
+ - ЧРФ
+\begin_inset Formula $\text{\inЧРФ}^{\text{1}}$
 \end_inset
 
  
-\begin_inset Formula $\Longrightarrow\exists m:h(x)=\varphi^{2}(\text{m,x)}$
+\begin_inset Formula $\Longrightarrow\exists m:h(x)=\varphi^{2}(\text{m,\,x)}$
 \end_inset
 
 
-\begin_inset Formula $\Longrightarrow g(x_{1}..x_{n})=h(c(x_{1}..x_{n}))=\varphi^{2})m_{1}c(x_{1}..x_{n})$
+\begin_inset Formula $\Longrightarrow g(x_{1}..x_{n})=h(c(x_{1}..x_{n}))=\varphi^{2}(m_{1}c(x_{1}..x_{n})=\varphi^{n+1}(m,\,x_{1},\ldots,x_{n})$
 \end_inset
 
  
@@ -678,7 +755,7 @@ a)
 \end_layout
 
 \begin_layout Subsection
-Определение (Клинцевские скобки )
+Определение (Клиниевские скобки)
 \end_layout
 
 \begin_layout Standard
@@ -1003,7 +1080,7 @@ a),б) - упражнение
 \end_layout
 
 \begin_layout Subsection
-Теорема (О неподвижной точке ) 
+Теорема (О неподвижной точке) 
 \end_layout
 
 \begin_layout Standard
@@ -1080,7 +1157,7 @@ a),б) - упражнение
 \end_inset
 
 ЧРФ 
-\begin_inset Formula $h(x)\exists m\in\mathbb{N}:\mathfrak{A}(h(m))=\mathfrak{A}(n)$
+\begin_inset Formula $h(x)\exists m\in\mathbb{N}:\mathfrak{A}(h(m))=\mathfrak{A}(m)$
 \end_inset
 
 
@@ -1096,7 +1173,7 @@ a),б) - упражнение
 \end_inset
 
  ,
-\begin_inset Formula $K\neq\emptyset,K\neq\text{ЧРФ}'$
+\begin_inset Formula $K\neq\emptyset,K\neq\text{ЧРФ}^{n}$
 \end_inset
 
 Тогда множество 
@@ -1117,11 +1194,13 @@ a),б) - упражнение
 \begin_inset Formula $\chi_{m}-$
 \end_inset
 
-не ЧРФ(не ОРФ)
+не ЧРФ (не ОРФ)
 \end_layout
 
 \begin_layout Standard
-Доказательство 
+
+\bar under
+Доказательство:
 \end_layout
 
 \begin_layout Standard
@@ -1130,10 +1209,98 @@ a),б) - упражнение
 \end_inset
 
 ЧРФ
-\begin_inset Formula $\Longrightarrow\text{ОРФ}\text{.Тк \chi_{m}-}$
+\begin_inset Formula $\Longrightarrow\text{ОРФ}$
+\end_inset
+
+.
+ Т.
+ к.
+ 
+\begin_inset Formula $K\neq\emptyset$
 \end_inset
 
 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $M\neq\emptyset$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\exists a\in M$
+\end_inset
+
+.
+ Т.
+ к.
+ 
+\begin_inset Formula $K\neq\text{ЧРФ}^{n}$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\exists b\notin M$
+\end_inset
+
+.
+ Рассмотрим функцию 
+\begin_inset Formula $f(x)\,=\,b\chi_{M}(x)+a$
+\end_inset
+
+
+\strikeout on
+sg
+\strikeout default
+
+\begin_inset Formula $\chi_{M}(x)$
+\end_inset
+
+ Из п.
+ 17.25 
+\begin_inset Formula $\exists m\,|\,\mathfrak{A}(f(m))=\mathfrak{A}(m)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\mathfrak{A}(m)\in K\Rightarrow f(m)=b\notin M\Rightarrow\mathfrak{A}(b)=\mathfrak{A}(f(m))=\mathfrak{A}(m)\notin K$
+\end_inset
+
+.
+ Противоречие
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula $\mathfrak{A}(m)\notin K\Rightarrow f(m)=a\in M\Rightarrow\mathfrak{A}(a)=\mathfrak{A}(f(m))=\mathfrak{A}(m)\in K$
+\end_inset
+
+.
+ Противоречие
 \end_layout
 
 \end_body
