@@ -326,7 +326,7 @@
 \end_layout
 
 \begin_layout Subsection
-Определение (машиное слово)
+Определение (номер машинного слова)
 \end_layout
 
 \begin_layout Standard
@@ -345,7 +345,7 @@
 \end_layout
 
 \begin_layout Subsection
-Определение( номер машинного слова)
+Определение (множество номеров машинных слов)
 \end_layout
 
 \begin_layout Standard
@@ -376,7 +376,7 @@
 
 \begin_layout Standard
 Рассмотрим команды 
-\begin_inset Formula $k_{ij},q_{ij}\rightarrow q_{s}l\varDelta,\varDelta=\begin{cases}
+\begin_inset Formula $k_{ij},q_{i}j\rightarrow q_{s}l\varDelta,\varDelta=\begin{cases}
 L\\
 R\\
 \emptyset
@@ -387,11 +387,11 @@ R\\
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\gamma(k_{ij})=p_{c(i,j)}^{\sigma}$
+\begin_inset Formula $\gamma(k_{ij})=p_{c(i,j)}^{\delta}$
 \end_inset
 
 , 
-\begin_inset Formula $S=2^{s}3^{L}5^{\xi},\xi=\begin{cases}
+\begin_inset Formula $\delta=2^{s}3^{L}5^{\xi},\xi=\begin{cases}
 1 & \varDelta=\emptyset\\
 2 & \varDelta=R\\
 3 & \varDelta=L
@@ -402,19 +402,19 @@ R\\
 \end_layout
 
 \begin_layout Subsection
-Определение 
+Определение (номер программы МТ)
 \end_layout
 
 \begin_layout Standard
-Пусит П-программа машины Тьюринга, 
+Пусть П - программа машины Тьюринга, 
 \begin_inset Formula $\text{\gamma(П})=2^{3}3^{n}\text{П\gamma}(k_{ij})$
 \end_inset
 
--код
+ 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $n=max\{i|q_{i}\text{встречается в П}\}$
+\begin_inset Formula $n=max\{i\,|\,q_{i}\text{встречается в П}\}$
 \end_inset
 
  
@@ -425,7 +425,7 @@ R\\
 \end_layout
 
 \begin_layout Subsection
-Предложение 
+Предложение (множество номеров программ МТ)
 \end_layout
 
 \begin_layout Standard
@@ -455,7 +455,8 @@ R\\
 \begin_layout Standard
 1)
 \begin_inset Formula $t(x,y)=\begin{cases}
-\gamma(\alpha'ql\alpha\beta'), & \text{если }x=\gamma(\text{П})\text{,}y=\gamma(\alpha q_{i}j\beta)\text{П}:\alpha q_{i}j\beta\rightarrow\alpha'q_{e}\alpha\beta'\\
+\gamma(\alpha'q_{\text{i}}\alpha\beta'), & \text{если }x=\gamma(\text{П})\text{,}y=\gamma(\alpha q_{i}j\beta)\\
+ & \text{П}:\alpha q_{i}j\beta\xrightarrow[1\,\text{шаг}]{}\alpha'q_{e}\alpha\beta'\\
 0, & \text{иначе}
 \end{cases}$
 \end_inset
@@ -466,7 +467,8 @@ R\\
 \begin_layout Standard
 2)
 \begin_inset Formula $T(x,y,z,t)=\begin{cases}
-1, & \text{если }x=\gamma(\text{П})\text{,}y=\gamma(\alpha q_{i}j\beta),A:\alpha q_{i}j\beta\rightarrow\alpha q_{0}01^{z+1}0\beta'\\
+1, & \text{если }x=\gamma(\text{П})\text{,}y=\gamma(\alpha q_{i}j\beta)\\
+ & \text{П}:\alpha q_{i}j\beta\xrightarrow[\leq t\,\text{шагов}]{}\alpha'q_{0}01^{z+1}0\beta'\\
 0 & \text{иначе}
 \end{cases}$
 \end_inset
@@ -477,7 +479,8 @@ R\\
 \begin_layout Standard
 3)
 \begin_inset Formula $T^{n}(a,x_{1}\ldots x_{n},z,t)=\begin{cases}
-1, & \text{если \alpha=\gamma(П)}\text{,}\text{П}:q_{1}01^{x_{1}+1}0\ldots01^{x_{n}+1}0\rightarrow\alpha q_{0}01^{z+1}0\beta\\
+1, & \text{если \alpha=\gamma(П)}\text{}\\
+ & \text{П}:q_{1}01^{x_{1}+1}0\ldots01^{x_{n}+1}0\xrightarrow[\leq t\,\text{шагов}]{}\alpha q_{0}01^{z+1}0\beta\\
 0, & \text{иначе}
 \end{cases}$
 \end_inset
@@ -541,10 +544,10 @@ R\\
 \end_inset
 
  вычислима на машине Тьюринга с программой 
-\begin_inset Formula $\text{П}_{1}$
+\begin_inset Formula $\text{П}$
 \end_inset
 
-
+,
 \begin_inset Formula $\alpha=\gamma(\text{П})\text{.}$
 \end_inset
 
@@ -580,7 +583,7 @@ R\\
 \begin_inset Formula $T^{n}(\alpha,x_{1}\ldots x_{n},l(y),r(y))\neq1\Rightarrow g(x_{1}\ldots x_{n},y)\neq0\Rightarrow l(\mu y[g(x_{1}\ldots x_{n},y)])$
 \end_inset
 
--не определена
+ - не определена 
 \begin_inset Formula $\Rightarrow f(x)=l[\mu y[g(\ldots)]$
 \end_inset
 
@@ -592,8 +595,11 @@ R\\
 \begin_inset Formula $f(x_{1}\ldots x_{n})=z\Rightarrow\exists t\in\mathbb{N}$
 \end_inset
 
- так что 
-\begin_inset Formula $\text{П:}q_{1}01^{x_{1}+1}0\ldots01^{x_{n}+1}\Rightarrow\alpha q_{0}01^{z+1}0\beta$
+ такое что 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{П:}q_{1}01^{x_{1}+1}0\ldots01^{x_{n}+1}\xrightarrow[t\,\text{шагов}]{}\alpha q_{0}01^{z+1}0\beta$
 \end_inset
 
 
@@ -716,8 +722,8 @@ R\\
 \end_layout
 
 \begin_layout Standard
-ЧРФ=Выч.
- на машине Тьюренга(ВТ)=ПВТ
+ЧРФ = Выч.
+ на машине Тьюренга (ВТ) = ПВТ
 \end_layout
 
 \begin_layout Standard
