@@ -118,97 +118,11 @@ maketitle
 thispagestyle{empty}
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
 \begin_layout Plain Layout
 
 
 \backslash
-begin{displaymath}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-prftree[r]{$
-\backslash
-supset$I}
-\end_layout
-
-\begin_layout Plain Layout
-
-{
-\backslash
-prftree[r]{$
-\backslash
-supset$I}
-\end_layout
-
-\begin_layout Plain Layout
-
-{
-\backslash
-prftree[r]{$
-\backslash
-supset$E}
-\end_layout
-
-\begin_layout Plain Layout
-
-{
-\backslash
-prfboundedassumption{A}}
-\end_layout
-
-\begin_layout Plain Layout
-
-{
-\backslash
-prfboundedassumption{
-\backslash
-neg A}}
-\end_layout
-
-\begin_layout Plain Layout
-
-{
-\backslash
-bot}}
-\end_layout
-
-\begin_layout Plain Layout
-
-{
-\backslash
-neg
-\backslash
-neg A}}
-\end_layout
-
-\begin_layout Plain Layout
-
-{A 
-\backslash
-supset 
-\backslash
-neg
-\backslash
-neg A}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{displaymath} 
+newpage
 \end_layout
 
 \end_inset

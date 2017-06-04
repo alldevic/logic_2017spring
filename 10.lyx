@@ -610,7 +610,7 @@ a)
 \end_inset
 
  Тогда множество 
-\begin_inset Formula $\mathfrak{|C}|=\{t^{\mathfrak{B}}(a_{1},\dots,a_{n})|[t(x_{1},\dots,x_{n})\in T(\sigma),a_{1},\dots,a_{n}\in X\}=T_{x}]\}$
+\begin_inset Formula $\mathfrak{|C}|=\{t^{\mathfrak{B}}(a_{1},\dots,a_{n})|t(x_{1},\dots,x_{n})\in T(\sigma),a_{1},\dots,a_{n}\in X\}=T_{x}$
 \end_inset
 
 
@@ -804,7 +804,7 @@ t = c
 Определение
 \end_layout
 
-\begin_layout Description
+\begin_layout Standard
 Пусть 
 \begin_inset Formula $\psi(x_{1},\dots,x_{n},y_{1},\dots,y_{k})\in F(\sigma)$
 \end_inset
@@ -848,7 +848,7 @@ a)
 Теорема
 \end_layout
 
-\begin_layout Description
+\begin_layout Standard
 Пусть 
 \begin_inset Formula $\mathfrak{A},\mathfrak{B}\in K(\sigma),$
 \end_inset
