@@ -1112,19 +1112,381 @@
 \end_layout
 
 \begin_layout Subsection
-1
+Лемма
 \end_layout
 
 \begin_layout Standard
-1
+Множество Предложений 
+\begin_inset Formula $\Gamma'$
+\end_inset
+
+ непротиворечиво.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\Gamma'\vdash\hspace*{1em}\Rightarrow\exists\varphi'_{1}\dots\varphi'_{n}\in\Gamma'\qquad\varphi'_{1}\dots\varphi'_{n}\vdash$
+\end_inset
+
+доказательство, дерево вывода 
+\begin_inset Formula $D'=\frac{\frown}{\varphi'_{1}\dots\varphi'_{n}\vdash}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D=[D']_{\gamma^{-1}(\varphi')}^{\varphi'}$
+\end_inset
+
+:
+\begin_inset Formula $\qquad\varphi'=\gamma(\varphi)=\varphi[\gamma]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\qquad\qquad\qquad\qquad\varphi=\gamma^{-1}(\varphi')$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D=[D']_{\gamma^{-1}(\alpha)\in X}^{d\in D}\qquad\hspace*{1em}\varphi'=\varphi(d_{1}\dots d_{n})\rightarrow\varphi(x_{1}\dots x_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D=\frac{\frown}{\varphi_{1}\dots\varphi_{n}\vdash},\hspace*{1em}\varphi_{i}\in\Gamma,D$
+\end_inset
+
+ - дерево вывода (упр).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow\varphi_{1}\dots\varphi_{n}\vdash$
+\end_inset
+
+ доказательство 
+\begin_inset Formula $\Gamma\vdash$
+\end_inset
+
+ - противоречива 
+\begin_inset Formula $\Mapsto\Gamma'\nvdash.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta=max(\omega,||\delta||,||X||)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть С-множество констант 
+\begin_inset Formula $C\cap(\delta\cup D)=\phi,$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $||c||=\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma'=\sigma\cup D\cup C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S(\sigma')\subseteq(\sigma'\cup\{x_{i}|i\in\mathbb{N}\}\cup\{(.),",",\&,\cup,\rightarrow,\neg.\exists,\forall\})^{*}$
+\end_inset
+
+ - множество всех конечных слов
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $||S(\sigma')||\leq\delta\Rightarrow||S(\sigma)||=||\delta||=||\{\alpha|\alpha<\delta\}||$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta$
+\end_inset
+
+- кардинал.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S(\sigma')=\{\varphi_{\alpha}|\alpha<\delta|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T'\subseteq S(\sigma')$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Шаг 0 : 
+\begin_inset Formula $T_{0}=\Gamma',\hspace*{1em}T_{0}\nvdash$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Шаг 
+\begin_inset Formula $\beta$
+\end_inset
+
+: Случай 1: 
+\begin_inset Formula $0<\beta\leq\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\beta$
+\end_inset
+
+ - непред.
+ 
+\begin_inset Formula $\beta=\alpha+1,\hspace*{1em}\beta\leq\delta\Rightarrow\beta<\delta\Rightarrow\alpha<\delta$
+\end_inset
+
+, 
+\begin_inset Formula $T_{\alpha}$
+\end_inset
+
+ - построена, рассмотрим 
+\begin_inset Formula $\varphi_{\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+случай 1.1: Пусть 
+\begin_inset Formula $T_{\alpha}\cup\{\varphi_{\alpha}\}\nvdash,$
+\end_inset
+
+ пусть 
+\begin_inset Formula $\varphi_{\alpha}\neq\exists x\psi(x),$
+\end_inset
+
+ положим 
+\begin_inset Formula $T_{\beta}=T_{\alpha+1}=T_{\alpha}\cup\{\varphi_{\alpha}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+cлучай 1.2: 
+\begin_inset Formula $T_{\alpha}\cup\{\varphi_{\alpha}\}\nvdash,\hspace*{1em}\varphi_{\alpha}=\exists x\psi_{\alpha}(x),\hspace*{1em}\alpha<\delta,\hspace*{1em}\delta$
+\end_inset
+
+ - кардинал 
+\begin_inset Formula $\Rightarrow||\alpha||<||\delta||$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ - беконечна, то 
+\begin_inset Formula $||C\cap\sigma(T_{\alpha})||\leq\alpha<\delta;\hspace*{1em}\alpha$
+\end_inset
+
+ - конечна.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $||C\cap\sigma(T_{\alpha}))||$
+\end_inset
+
+ - конечно, 
+\begin_inset Formula $\text{<\delta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Mapsto||C\cap\sigma(T_{\alpha})||<\delta,\qquad||c||=\delta\Rightarrow||c^{\smallsetminus}\sigma(T_{\alpha})||=\delta\Rightarrow C^{\smallsetminus}\sigma(T_{\alpha})\neq\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow\exists c_{\alpha}\in c^{\smallsetminus}\sigma(T_{\alpha}).$
+\end_inset
+
+ Положим, 
+\begin_inset Formula $T_{\beta}=T_{\alpha}\cup\{\varphi_{\alpha},\psi_{\alpha}(c_{\alpha})\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Случай 1.3 
+\begin_inset Formula $T_{\alpha}\cup\{\varphi_{\alpha}\}\vdash,\hspace*{1em}T_{\beta}=T_{\alpha}\cup\{\neg\varphi_{\alpha}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Случай 2: 
+\begin_inset Formula $\beta$
+\end_inset
+
+ - предельный, тогда 
+\begin_inset Formula $T_{\beta}=\underset{\alpha<\beta}{\cup}T_{\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Далее индукцией:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\beta<\delta,\qquad T'=T_{\delta}=\underset{\alpha<\delta}{\cup}T_{\alpha}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-1
+Лемма
 \end_layout
 
 \begin_layout Standard
-1
+\begin_inset Formula $\Delta\subseteq F(\sigma_{0}),$
+\end_inset
+
+ 
+\begin_inset Formula $x\notin Fv(\Delta),$
+\end_inset
+
+ x - не входит в 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ , 
+\begin_inset Formula $\varphi\in F(\sigma_{0})$
+\end_inset
+
+ , 
+\begin_inset Formula $c\in\sigma(\varphi),$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c\notin\sigma(\Delta),$
+\end_inset
+
+
+\begin_inset Formula $x$
+\end_inset
+
+ - не входит в
+\begin_inset Formula $\varphi$
+\end_inset
+
+ .Тогда если секвенция 
+\begin_inset Formula $\Delta,\varphi\vdash$
+\end_inset
+
+ - доказуема ,то 
+\begin_inset Formula $\Delta,\left[\varphi\right]_{x}^{c}\vdash$
+\end_inset
+
+ - доказуема 
+\end_layout
+
+\begin_layout Standard
+Доказательство :
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\Delta,\varphi\vdash$
+\end_inset
+
+ - доказуема 
+\begin_inset Formula $\Longrightarrow\exists D=\frac{\cap}{\Delta,\varphi\vdash}$
+\end_inset
+
+ - дерево вывода 
+\end_layout
+
+\begin_layout Standard
+Без ограничения общности можно считать , что 
+\begin_inset Formula $x$
+\end_inset
+
+ - не входит в 
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{1}=\left[D\right]_{x}^{C}$
+\end_inset
+
+ - дерево вывода (упражнение), при этом 
+\begin_inset Formula $D_{1}=\frac{\cap}{\Delta,\left[\varphi\right]_{x}^{c}\vdash}\Rightarrow$
+\end_inset
+
+ cеквенция 
+\begin_inset Formula $\Delta$
+\end_inset
+
+, 
+\begin_inset Formula $\left[\varphi\right]_{x}^{c}\vdash$
+\end_inset
+
+ доказуема 
 \end_layout
 
 \begin_layout Subsection
