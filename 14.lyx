@@ -2653,11 +2653,264 @@ end{displaymath}
 \end_layout
 
 \begin_layout Subsection
-1
+Лемма (Опр.14.27 - корректно)
 \end_layout
 
 \begin_layout Standard
-1
+Док-во 
+\end_layout
+
+\begin_layout Standard
+б)
+\begin_inset Formula $f^{n}\in\sigma\acute{}$
+\end_inset
+
+ , 
+\begin_inset Formula $c_{1}...c_{n}\in C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(c_{1}...c_{n})\in T(\sigma\acute{})$
+\end_inset
+
+, 
+\begin_inset Formula $Fv(f(c_{1}...c_{n}))=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longrightarrow\exists e\in C$
+\end_inset
+
+ т.ч 
+\begin_inset Formula $f(c_{1}...c_{n})=e\in T\acute{}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $d_{1}...d_{n}\in C,$
+\end_inset
+
+ 
+\begin_inset Formula $e,b\in C$
+\end_inset
+
+, 
+\begin_inset Formula $\left[c_{1}\right]=\left[d_{1}\right]...\left[c_{n}\right]=\left[d_{n}\right],$
+\end_inset
+
+
+\begin_inset Formula $f(e_{1}...e_{n})=e$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(d_{1}...d_{n})=b\in T\acute{}.$
+\end_inset
+
+ Покажем , что 
+\begin_inset Formula $\left[e\right]=\left[b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longrightarrow c_{1}\sim d_{1}...c_{n}\sim d_{n}\Longrightarrow c_{1}=d_{1}...c_{n}=d_{n}\in T\acute{}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{1}=d_{1}...c_{n}=d_{n},f(c_{1}...c_{n})=f(c_{1}...c_{n})+f(c_{1}...c_{n})=f(d_{1}...d_{n})$
+\end_inset
+
+ - доказательство(упр)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi(x_{p}...x_{n})=(f(c_{1}...c_{n})\vdash\varphi(d_{1}...d_{n)}$
+\end_inset
+
+ - аксиома 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(c_{1}...c_{n})=f(c_{1}...c_{n})\in T\acute{}$
+\end_inset
+
+ (упр)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longrightarrow f(c_{1}...c_{n})=f(d_{1}...d_{n})\in T\acute{}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e=f(c_{1}...c_{n})\in T\acute{}$
+\end_inset
+
+ , 
+\begin_inset Formula $e=f(c_{1}...c_{n}),f(c_{1}...c_{n})=f(d_{1}...d_{n})\vdash e=(d_{1}...d_{n})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e=f(d_{1}...d_{n}),f(d_{1}...d_{n})=b\vdash e=b\Rightarrow e=b\in T\acute{}\Rightarrow e\sim b,$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+т.е 
+\begin_inset Formula $\left[e\right]=\left[b\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+a) 
+\begin_inset Formula $P^{n}\in\sigma\acute{},c_{1}..c_{n},d_{1}...d_{n}\in C,\left[c_{1}\right]=\left[d_{1}\right]...\left[c_{n}\right]=\left[d_{n}\right],$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(c_{1}...c_{n})\in T\acute{}$
+\end_inset
+
+ Покажем что 
+\begin_inset Formula $P(d_{1}...d_{n})\in T\acute{}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow c_{1}\sim d_{1}...c_{n}\sim d_{n}\Rightarrow c_{1}=d_{1}...c_{n}=d_{n}\in T\acute{}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi(x_{1}...x_{n})=P(x_{1}...x_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{1}=d_{1}...c_{n}=d_{n},$
+\end_inset
+
+
+\begin_inset Formula $P(c_{1}...c_{n})\vdash P(d_{1}...d_{n})\Rightarrow P(d_{1}...d_{n})\in T\acute{}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+в)
+\begin_inset Formula $d\in\sigma\acute{},c,e\in C,(d=c),(d=e)\in T\acute{}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d^{\mathfrak{A\acute{}}}=\left[c\right],d^{\mathfrak{A\acute{}}}=\left[e\right]$
+\end_inset
+
+ Покажем,что 
+\begin_inset Formula $\left[c\right]=\left[e\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d=c\vdash c=d,c=d,d=e\vdash c=e$
+\end_inset
+
+ (упр)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T\acute{}\vdash c=d\Rightarrow T\acute{}\vdash c=e\Rightarrow c=e\in T\acute{}\Rightarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c\sim e\Rightarrow\left[c\right]=\left[e\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Лемма 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $t\in T(\sigma\acute{}),Fv(t)=Fv(q)=\emptyset$
+\end_inset
+
+ , тогда 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathfrak{A}\acute{}\models(t=q)\Longleftrightarrow t=q\in T\acute{}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Лемма 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $P^{n}\in\sigma\acute{}$
+\end_inset
+
+ , 
+\begin_inset Formula $t_{1}...t_{n}\in T(\sigma\acute{}),Fv(t:)=\emptyset,$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+тогда
+\begin_inset Formula $\mathfrak{A\acute{}}\models P(t_{1}...t_{n})\Longleftrightarrow P(t_{1}...t_{n})\in T\acute{}$
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -2733,11 +2986,81 @@ end{displaymath}
 \end_layout
 
 \begin_layout Subsection
-1
+Следствие
 \end_layout
 
 \begin_layout Standard
-1
+Пусть 
+\begin_inset Formula $\mathfrak{A}\in K(\sigma),\;\mathfrak{A}$
+\end_inset
+
+ – бесконечна, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+– кардинал, тогда 
+\begin_inset Formula $\exists\mathfrak{B}\in K(\varGamma)$
+\end_inset
+
+ т.
+ ч.
+ 
+\begin_inset Formula $\mathfrak{A}\equiv\mathfrak{B},\;\left\Vert \mathfrak{B}\right\Vert \leq\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varGamma\vDash Th\mathfrak{\:A}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\mathfrak{A}\vDash Th\:\mathfrak{A}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathfrak{A}$
+\end_inset
+
+ – бесконечна 
+\begin_inset Formula $\Rightarrow\exists\mathfrak{B}:\:\mathfrak{B}\vDash Th\:\mathfrak{A}$
+\end_inset
+
+ и 
+\begin_inset Formula $\left\Vert \mathfrak{B}\right\Vert \geq\alpha\Rightarrow\mathfrak{A}\equiv\mathfrak{B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Замечание
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathfrak{A,\:B}\in K(\sigma),\;\mathfrak{A}$
+\end_inset
+
+ – конечна, тогда 
+\begin_inset Formula $\mathfrak{A}\equiv\mathfrak{B}\Leftrightarrow\mathfrak{A}\simeq\mathfrak{B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ (упражнение)
 \end_layout
 
 \begin_layout Subsection
@@ -2749,43 +3072,43 @@ end{displaymath}
 \end_layout
 
 \begin_layout Subsection
-1
+Замечание
 \end_layout
 
 \begin_layout Standard
-1
+\begin_inset Formula $\mathfrak{M}\equiv\mathfrak{N}$
+\end_inset
+
+, поэтому в 
+\begin_inset Formula $\mathfrak{M}$
+\end_inset
+
+ нет наибольшего элемента: 
+\begin_inset Formula $\mathfrak{N}\nvDash\exists x\forall y\;(x\leq y)\Rightarrow\mathfrak{M}\nvDash\exists y\forall x\;(x\leq y)$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-1
+Определение (Аксиоматизруемый класс)
 \end_layout
 
 \begin_layout Standard
-1
-\end_layout
+Пусть
+\begin_inset Formula $K\subseteq K(\sigma)$
+\end_inset
 
-\begin_layout Subsection
-1
-\end_layout
+.
+ Класс 
+\begin_inset Formula $K$
+\end_inset
 
-\begin_layout Standard
-1
-\end_layout
+ – аксиоматизируем, если 
+\begin_inset Formula $\exists\varGamma\subseteq S(\sigma):\:K=K(\varGamma)=\{\mathfrak{A}\in K(\sigma)\}|\mathfrak{A}\vDash\varGamma\}=\{\mathfrak{A}\in K(\sigma)|\forall\varphi\in\varGamma\:\mathfrak{A}\vDash\varphi\}$
+\end_inset
 
-\begin_layout Subsection
-1
-\end_layout
 
-\begin_layout Standard
-1
-\end_layout
-
-\begin_layout Subsection
-1
-\end_layout
-
-\begin_layout Standard
-1
 \end_layout
 
 \end_body
