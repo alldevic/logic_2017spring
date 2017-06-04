@@ -485,14 +485,70 @@
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula 
-\[
-\frac{\varphi_{1},\ldots,\varphi_{n}\vdash}{\varphi_{1},\ldots,\varphi_{n}\lnot\varphi\vdash}\qquad\frac{\varphi_{1},\ldots,\varphi_{n}\lnot\varphi\vdash}{\varphi_{1},\ldots,\varphi_{n}\vdash\varphi}
-\]
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{displaymath}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+prftree[r]{}		{
+\backslash
+prftree[r]{}{
+\backslash
+varphi_{1},
+\backslash
+ldots,
+\backslash
+varphi_{n}
+\backslash
+vdash}{
+\backslash
+varphi_{1},
+\backslash
+ldots,
+\backslash
+varphi_{n}
+\backslash
+lnot
+\backslash
+varphi
+\backslash
+vdash}}
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\backslash
+varphi_{1},
+\backslash
+ldots,
+\backslash
+varphi_{n}
+\backslash
+vdash
+\backslash
+varphi}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{displaymath}
+\end_layout
 
 \end_inset
 
- 
+
 \begin_inset Formula $\Rightarrow\varphi{\scriptstyle 1},\ldots,\varphi{\scriptstyle n}\vdash\varphi$
 \end_inset
 
