@@ -977,7 +977,7 @@ a),б) - упражнение
 \end_inset
 
  Рассмотрим 
-\begin_inset Formula $f(y,x_{1}...x_{n})=\text{ЗДЕСЬ ХУЙНя}+g(x_{1}..x_{n})=g(x_{1}...x_{n})\Longrightarrow f(y,x_{1}...x_{n})\in\text{ЧРФ}^{n+1}\Longrightarrow$
+\begin_inset Formula $f(y,x_{1}...x_{n})=o\cdot y+g(x_{1}..x_{n})=g(x_{1}...x_{n})\Longrightarrow f(y,x_{1}...x_{n})\in\text{ЧРФ}^{n+1}\Longrightarrow$
 \end_inset
 
  
@@ -995,7 +995,10 @@ a),б) - упражнение
 \begin_inset Formula $K^{n+1}(c(a,y),x_{1}...x_{n})=\varphi^{n+2}(a,y,x_{1}...x_{n})=f(y,x_{1}...x_{n})=g(x_{1}...x_{n})$
 \end_inset
 
- 
+ .
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\forall k:m_{k}=c(a,k)$
 \end_inset
 
