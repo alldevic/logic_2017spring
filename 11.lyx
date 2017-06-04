@@ -216,10 +216,10 @@
 
 \begin_layout Standard
 a) 
-\begin_inset Formula $S_{1}\ldots S_{n}$
+\begin_inset Formula $S_{1}\ldots S_{k}$
 \end_inset
 
--доказательство
+ - доказательство
 \end_layout
 
 \begin_layout Standard
@@ -227,7 +227,7 @@ a)
 \begin_inset Formula $S_{k}$
 \end_inset
 
--доказуема
+ - доказуема
 \end_layout
 
 \begin_layout Subsection
