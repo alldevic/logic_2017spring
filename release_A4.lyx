@@ -6,6 +6,7 @@
 \origin unavailable
 \textclass scrartcl
 \begin_preamble
+\usepackage{prftree}
 \sloppy
 \setcounter{tocdepth}{1}
 \setcounter{section}{9}
