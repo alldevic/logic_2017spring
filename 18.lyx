@@ -81,7 +81,15 @@
 \begin_layout Standard
 Множество разрешимо если существует алгоритм, на входе которого объект,
  а на выходе ответ, принадлежит объект этому множеству или нет и перечислимым,
- если существует алгоритм перечисления элементов.
+ если существует алгоритм перечисления элементов:
+\end_layout
+
+\begin_layout Enumerate
+Перечисляются только элементы множества
+\end_layout
+
+\begin_layout Enumerate
+Каждый элемент будет перечислен
 \end_layout
 
 \begin_layout Subsection
@@ -113,7 +121,7 @@
 \begin_inset Formula $A\subseteq\mathbb{N^{\text{k}}}-$
 \end_inset
 
-рекурсивнао-перечислимое, если 
+рекурсивно-перечислимое, если 
 \begin_inset Formula $A=\varnothing$
 \end_inset
 
@@ -122,7 +130,7 @@
 \end_inset
 
  
-\begin_inset Formula $A=\{(f_{1}(n)\ldots f_{k}(n))|n\in\mathbb{N}\}$
+\begin_inset Formula $A=\{(f_{1}(n)\text{,\,}\ldots,f_{k}(n))|n\in\mathbb{N}\}$
 \end_inset
 
 
@@ -130,10 +138,10 @@
 \end_inset
 
 
-\begin_inset Formula $A\subseteq\mathbb{N}^{k}-$
+\begin_inset Formula $A\subseteq\mathbb{N}-$
 \end_inset
 
-рекурсивно-перечислимо, если существует ОРФ 
+рекурсивно-перечислимое, если существует ОРФ 
 \begin_inset Formula $f$
 \end_inset
 
@@ -169,10 +177,10 @@
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $A,B\subseteq\mathbb{N}^{k},C\subseteq\mathbb{N}^{l},A,B,C$
+\begin_inset Formula $A,B\subseteq\mathbb{N}^{k},C\subseteq\mathbb{N}^{l},\,A,\,B,\,C$
 \end_inset
 
- - рекурсивные множества (рекурсивно-примитивные множества), тогда 
+ - рекурсивные множества (примитивно-рекурсивные множества), тогда 
 \begin_inset Formula $A\cup B$
 \end_inset
 
@@ -225,7 +233,7 @@
 \begin_inset Formula $A$
 \end_inset
 
- - РМ(ПРМ) 
+ - РМ (ПРМ) 
 \begin_inset Formula $\Leftrightarrow$
 \end_inset
 
@@ -233,7 +241,7 @@
 \begin_inset Formula $B$
 \end_inset
 
- - РМ(ПРМ)
+ - РМ (ПРМ)
 \end_layout
 
 \begin_layout Standard
@@ -290,10 +298,10 @@
 \end_inset
 
  РПМ, т.е 
-\begin_inset Formula $\forall A\in\mathbb{N}^{k},$
+\begin_inset Formula $\forall A\subseteq\mathbb{N}^{k},$
 \end_inset
 
-если 
+ если 
 \begin_inset Formula $A$
 \end_inset
 
@@ -331,7 +339,7 @@
 \begin_inset Formula $А$
 \end_inset
 
- - РПМ(по определению).
+ - РПМ (по определению).
 \end_layout
 
 \begin_layout Enumerate
@@ -368,6 +376,10 @@
 \begin_inset Formula $f(n)=a\in A\Rightarrow m=a\in A\Rightarrow m\in A$
 \end_inset
 
+ 
+\begin_inset Formula $\Rightarrow\rho f\subseteq A$
+\end_inset
+
 
 \end_layout
 
@@ -377,7 +389,7 @@
 \end_inset
 
  тогда 
-\begin_inset Formula $A\subseteq\rho f\Mapsto A=\rho f,f-\text{ОРФ}\Rightarrow A$
+\begin_inset Formula $A\subseteq\rho f\Mapsto A=\rho f,\;f-\text{ОРФ}\Rightarrow A$
 \end_inset
 
  - РПМ.
@@ -466,7 +478,7 @@
 \end_inset
 
  Тогда существует ОРФ 
-\begin_inset Formula $f,g:A=\rho f,\bar{A}=\rho g.$
+\begin_inset Formula $f,g:A=\rho f,\,\bar{A}=\rho g.$
 \end_inset
 
  Тогда заметим, что 
@@ -475,7 +487,7 @@
 
  - ЧРФ.
  Если 
-\begin_inset Formula $x\in A\Rightarrow\exists y:f(y)=x,x\notin\bar{A}\Rightarrow\neg\exists:g(y)=x\Rightarrow$
+\begin_inset Formula $x\in A\Rightarrow\exists y:f(y)=x,\,x\notin\bar{A}\Rightarrow\nexists y:g(y)=x\Rightarrow$
 \end_inset
 
  существует наименьший 
@@ -491,7 +503,7 @@
 
 \begin_layout Standard
 Если 
-\begin_inset Formula $x\notin A\Rightarrow x\in\bar{A}\Rightarrow\exists y:g(y)=x,\neg\exists y:f(y)=x\Rightarrow$
+\begin_inset Formula $x\notin A\Rightarrow x\in\bar{A}\Rightarrow\exists y:g(y)=x,\nexists y:f(y)=x\Rightarrow$
 \end_inset
 
  существует наименьший 
@@ -612,7 +624,7 @@
 \end_inset
 
  ЧРФ 
-\begin_inset Formula $f:A=Sf=\{x|f(x)$
+\begin_inset Formula $f:A=\delta f=\{x|f(x)$
 \end_inset
 
  - определена
@@ -669,7 +681,7 @@
 \end_inset
 
 такая что 
-\begin_inset Formula $A=Sf,$
+\begin_inset Formula $A=\delta f,$
 \end_inset
 
  т.е 
@@ -706,7 +718,7 @@
 \end_inset
 
  - ЧРФ такая что 
-\begin_inset Formula $B=Sf,$
+\begin_inset Formula $B=\delta f,$
 \end_inset
 
  тогда рассмотрим 
@@ -722,14 +734,14 @@
 \end_inset
 
  - определена 
-\begin_inset Formula $\Rightarrow A=Sg$
+\begin_inset Formula $\Rightarrow A=\delta g$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $(=)$
+\begin_inset Formula $(\Leftarrow)$
 \end_inset
 
  - упражнение
@@ -933,7 +945,7 @@ a)
 
 \begin_layout Standard
 Множество 
-\begin_inset Formula $A=Sk^{n}(x_{1}\dots x_{n})$
+\begin_inset Formula $A=\delta k^{n}(x_{1}\dots x_{n})$
 \end_inset
 
  - РПМ, но не РМ.
@@ -955,7 +967,7 @@ a)
 \begin_inset Formula $A\subseteq\mathbb{N}^{k},$
 \end_inset
 
- тогда эквивалентности:
+ тогда эквивалентны:
 \end_layout
 
 \begin_layout Enumerate
@@ -966,7 +978,7 @@ a)
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $A=Sf,f$
+\begin_inset Formula $A=\delta f,f$
 \end_inset
 
  - ЧРФ
@@ -1051,11 +1063,11 @@ a)
 \end_layout
 
 \begin_layout Standard
-Множество является рекурсивно-перечислимой 
+Множество является рекурсивно-перечислимым 
 \begin_inset Formula $\Leftrightarrow$
 \end_inset
 
- его частная характеристическая функция является ЧРФ.
+ его частичая характеристическая функция является ЧРФ.
  т.е 
 \begin_inset Formula $A\subseteq\mathbb{N}^{k}.\:A$
 \end_inset
@@ -1086,7 +1098,7 @@ a)
 \end_inset
 
  существует ЧРФ 
-\begin_inset Formula $f:A=Sf$
+\begin_inset Formula $f:A=\delta f$
 \end_inset
 
  
@@ -1139,7 +1151,7 @@ a)
 
  - ЧРФ.
  Тогда 
-\begin_inset Formula $A=S\chi_{A}^{*}\Rightarrow A$
+\begin_inset Formula $A=\delta\chi_{A}^{*}\Rightarrow A$
 \end_inset
 
  - РПМ.
@@ -1173,6 +1185,7 @@ a)
 \begin_layout Standard
 \begin_inset Formula $f(x_{1}\dots x_{k})=\begin{cases}
 g_{1}(x_{1}\dots x_{k}) & \text{если}(x_{1}\dots x_{k})\in A_{1}\\
+\vdots\\
 g_{n}(x_{1}\dots x_{k}) & \text{если(}x_{1}\dots x_{k})\in A_{n}\\
 \text{неопред.} & \text{иначе}
 \end{cases}$
