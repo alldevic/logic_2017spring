@@ -795,75 +795,590 @@
 \end_layout
 
 \begin_layout Subsection
-1
+Определение 
 \end_layout
 
 \begin_layout Standard
-1
+\begin_inset Formula $\mathfrak{A}'=<A;\sigma'>\in k(\sigma'),\:|\mathfrak{A}'|=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\{t\in T(\sigma')|\:Fv(t)=\emptyset\},\:c\subseteq A\Rightarrow A\neq\emptyset;$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Когда рассматриваем модель - основное множество не пусто.
+\end_layout
+
+\begin_layout Enumerate
+Поэтому:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $P^{n}\in\sigma',t_{1}\dots t_{n}\in A,$
+\end_inset
+
+ то 
+\begin_inset Formula $\mathfrak{A}'\models P(t_{1}\dots t_{n}):P(t_{1}\dots t_{n})\in T'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $f^{n}\in\sigma,t_{1}\dots t_{n}\in A,$
+\end_inset
+
+ тогда 
+\begin_inset Formula $f^{\mathfrak{A'}}(t_{1}\dots t_{n})=f(t_{1}\dots t_{n})\in T(\sigma'),$
+\end_inset
+
+ т.е.
+ 
+\begin_inset Formula $f(t_{1}\dots t_{n})\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $e\in\sigma',$
+\end_inset
+
+ то 
+\begin_inset Formula $e^{\mathfrak{A'}}=e\in A,$
+\end_inset
+
+ т.к.
+ 
+\begin_inset Formula $e\in T(\sigma')$
+\end_inset
+
+ нужно показать, что 
+\begin_inset Formula $\mathfrak{A'}\models T'.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Лемма 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $t\in T(\sigma'),FV(t)=\emptyset,$
+\end_inset
+
+ тогда 
+\begin_inset Formula $t^{\mathfrak{A'}}=t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Индукция по построению
+\end_layout
+
+\begin_layout Standard
+1)Пусть 
+\begin_inset Formula $t=c\in\sigma'\Rightarrow t^{\mathfrak{A'}}=c^{\mathfrak{A'}}=c=t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2)Пусть 
+\begin_inset Formula $t=f(t_{1}\dots t_{n}),f^{n}\in\sigma',t_{1}\in A,$
+\end_inset
+
+ тогда 
+\begin_inset Formula $t_{i}^{\mathfrak{A'}}=t_{i}\Rightarrow t^{\mathfrak{\mathfrak{A'}}}=f^{\mathfrak{A'}}(t_{1}^{\mathfrak{A'}}\dots t_{n}^{\mathfrak{A'}})=f^{\mathfrak{A'}}(t_{1}\dots t_{n})=f(t_{1}\dots t_{n})=t$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-1
+Следствие
 \end_layout
 
 \begin_layout Standard
-1
+Пусть 
+\begin_inset Formula $t(x_{1}\dots x_{n})\in T(\sigma'),q_{1}\dots q_{n}\in A,$
+\end_inset
+
+ тогда 
+\begin_inset Formula $t^{\mathfrak{A'}}(q_{1}\dots q_{n})=t(q_{1}\dots q_{n})\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство: 
+\bar default
+(индукцией по построению)упр.
 \end_layout
 
 \begin_layout Subsection
-1
+Лемма 
 \end_layout
 
 \begin_layout Standard
-1
+\begin_inset Formula $\forall\varphi\in S(\sigma'):\mathfrak{A'}\models\varphi\Leftrightarrow\varphi\in T'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Индукцией по построению 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1)
+\begin_inset Formula $\varphi=P(t_{1}\dots t_{n}),t_{i}\in T(\sigma'),Fv(t_{i})=\emptyset,$
+\end_inset
+
+ тогда 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathfrak{A'}\models\varphi\Leftrightarrow\mathfrak{\mathfrak{A}}'\models P(t_{1}\dots t_{n})\Leftrightarrow\mathfrak{A'}\models P^{\mathfrak{A}}(t_{1}^{\mathfrak{A}}\dots t_{n}^{\mathfrak{A}})\Leftrightarrow\mathfrak{A'}\models P^{\mathfrak{A}}(t_{1}\dots t_{n})\Leftrightarrow P(t_{1}\dots t_{n})\in T'\Leftrightarrow\varphi\in T'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2)а)
+\begin_inset Formula $\varphi=(\varphi_{1}\&\varphi_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathfrak{A'}\models\varphi\Leftrightarrow\mathfrak{A}'\models\varphi_{1}$
+\end_inset
+
+ и 
+\begin_inset Formula $\mathfrak{A'}\models\varphi_{2}\Leftrightarrow\varphi_{1}\in T'$
+\end_inset
+
+ и 
+\begin_inset Formula $\varphi_{2}\in T'\Leftrightarrow(\varphi_{1}\&\varphi_{2})\in T',$
+\end_inset
+
+ т.е.
+ 
+\begin_inset Formula $\varphi\in T'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+б)
+\begin_inset Formula $\varphi=(\varphi_{1}\lor\varphi_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+в)
+\begin_inset Formula $\varphi=(\varphi_{1}\rightarrow\varphi_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+г)
+\begin_inset Formula $\varphi=\neg\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a-г)-доказательство упражнение.
+\end_layout
+
+\begin_layout Standard
+д)
+\begin_inset Formula $\varphi=\exists x\psi(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\mathfrak{A}'\models\exists x\psi(x)\Leftrightarrow\exists a\in A:\mathfrak{A}\models\psi(a)\Leftrightarrow\exists t\in T(\gamma')$
+\end_inset
+
+ такое что 
+\begin_inset Formula $Fv(t)=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+и 
+\begin_inset Formula $\mathfrak{A}\models\psi(t)\Leftrightarrow\exists t\in A$
+\end_inset
+
+ такое что 
+\begin_inset Formula $\psi(t)\in T'\Leftrightarrow\exists x\psi(x)\in T'$
+\end_inset
+
+ т.е.
+ 
+\begin_inset Formula $\varphi\in T'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+е)
+\begin_inset Formula $\varphi=\forall x\psi(x)$
+\end_inset
+
+ - упражнение.
 \end_layout
 
 \begin_layout Subsection
-1
+Следствие
 \end_layout
 
 \begin_layout Standard
-1
+\begin_inset Formula $\mathfrak{A}'\models T'$
+\end_inset
+
+ 
+\begin_inset Formula $(\forall\varphi\in T':\mathfrak{A}'\models\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma'=T_{0}\subseteq T'\Rightarrow\mathfrak{A}'\models\Gamma'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma'=\Gamma[\gamma]=[\Gamma]_{\gamma(x)\in D}^{x\in Fv(\Gamma)}$
+\end_inset
+
+
+\begin_inset Formula $\qquad\qquad\gamma:Fv(\Gamma)\rightarrow D\subseteq\sigma'$
+\end_inset
+
+ - биекция
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow D\subseteq A.$
+\end_inset
+
+ Рассмотрим 
+\begin_inset Formula $\gamma:Fv(\Gamma)\rightarrow A,$
+\end_inset
+
+ т.е.
+ 
+\begin_inset Formula $\gamma:Fv(\Gamma)\rightarrow(\mathfrak{A'})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow\mathfrak{A'}\models\Gamma[\gamma]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi(x_{1}\dots x_{n})\in\Gamma$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{A'}\models\varphi(d_{1}\dots d_{n}),\gamma(x_{i})=d_{i};\qquad d_{i}\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad\qquad\qquad\ \ \ \ ||$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\qquad\qquad\qquad\ \mathfrak{\ \ \ A'}\models\varphi(\gamma(x_{1})\dots\gamma(x_{n}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\Gamma\subseteq F(\sigma)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\mathfrak{A=A\text{'}\wedge\sigma\in}k(\sigma)\Rightarrow\mathfrak{A}\in k(\sigma),\mathfrak{A}\models\Gamma[\gamma]$
+\end_inset
+
+- упражнение.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S(\sigma')=\{\varphi_{\alpha}|\alpha<\delta\}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-1
+Лемма 
 \end_layout
 
 \begin_layout Standard
-1
+Пусть 
+\begin_inset Formula $t\in T(\sigma'),Fv(t)=\emptyset\text{,}$
+\end_inset
+
+ тогда 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists c\in C,$
+\end_inset
+
+ такое что 
+\begin_inset Formula $(t=c)\in T'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ (упражнение)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vdash\exists x(x=t)$
+\end_inset
+
+ - док(Хенк) 
+\begin_inset Formula $\Rightarrow\exists x(x=t)\in T'\Rightarrow\exists c\in C:\dots$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-1
+Определение
 \end_layout
 
 \begin_layout Standard
-1
+Пусть 
+\begin_inset Formula $c,e\in C.$
+\end_inset
+
+ Будем говорить, что 
+\begin_inset Formula $c\sim e\Leftrightarrow(c=e)\in T'$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-1
+Лемма
 \end_layout
 
 \begin_layout Standard
-1
+\begin_inset Formula $\sim$
+\end_inset
+
+отношение эквивалентности.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\bar default
+ упражнение
 \end_layout
 
 \begin_layout Subsection
-1
+Определение
 \end_layout
 
 \begin_layout Standard
-1
-\end_layout
+\begin_inset Formula $\mathfrak{A'=}<A;\sigma'>.$
+\end_inset
 
-\begin_layout Subsection
-1
+ В качестве 
+\begin_inset Formula $A$
+\end_inset
+
+ возьмём:
 \end_layout
 
 \begin_layout Standard
-1
+\begin_inset Formula $A=C/_{\sim}=\{[c]_{\sim}|c\in C\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+а)Если 
+\begin_inset Formula $P^{n}\in\sigma',$
+\end_inset
+
+ 
+\begin_inset Formula $c_{1}\dots c_{n}\in C,$
+\end_inset
+
+ тогда 
+\begin_inset Formula $\mathfrak{A'}\models P([c_{1}]\dots[c_{n}])$
+\end_inset
+
+, если 
+\begin_inset Formula $P(c_{1}\dots c_{n})\in T'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+б)Если 
+\begin_inset Formula $f^{n}\in\sigma',c_{1}\dots c_{n}\in C,$
+\end_inset
+
+ тогда 
+\begin_inset Formula $f([c_{1}]\dots[c_{n}])=[e],\hspace*{1em}e\in C,$
+\end_inset
+
+ когда 
+\begin_inset Formula $(f(c_{1}\dots c_{n})=e)\in T'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+в)Если 
+\begin_inset Formula $d\in\sigma,$
+\end_inset
+
+ тогда 
+\begin_inset Formula $d^{\mathfrak{A'}}=[e],$
+\end_inset
+
+ 
+\begin_inset Formula $e\in C,$
+\end_inset
+
+ если выполнено 
+\begin_inset Formula $(d=e)\in T'$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
