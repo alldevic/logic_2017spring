@@ -2657,7 +2657,11 @@ end{displaymath}
 \end_layout
 
 \begin_layout Standard
-Док-во 
+
+\bar under
+Доказательство:
+\bar default
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2677,7 +2681,7 @@ end{displaymath}
 \end_inset
 
 , 
-\begin_inset Formula $Fv(f(c_{1}...c_{n}))=\emptyset$
+\begin_inset Formula $Fv(f(c_{1}...c_{n}))=\varnothing$
 \end_inset
 
 
