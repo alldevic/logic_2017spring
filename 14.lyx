@@ -485,70 +485,14 @@
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{displaymath}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-prftree[r]{}		{
-\backslash
-prftree[r]{}{
-\backslash
-varphi_{1},
-\backslash
-ldots,
-\backslash
-varphi_{n}
-\backslash
-vdash}{
-\backslash
-varphi_{1},
-\backslash
-ldots,
-\backslash
-varphi_{n}
-\backslash
-lnot
-\backslash
-varphi
-\backslash
-vdash}}
-\end_layout
-
-\begin_layout Plain Layout
-
-	{
-\backslash
-varphi_{1},
-\backslash
-ldots,
-\backslash
-varphi_{n}
-\backslash
-vdash
-\backslash
-varphi}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{displaymath}
-\end_layout
+\begin_inset Formula 
+\[
+\frac{\varphi_{1},\ldots,\varphi_{n}\vdash}{\varphi_{1},\ldots,\varphi_{n}\lnot\varphi\vdash}\qquad\frac{\varphi_{1},\ldots,\varphi_{n}\lnot\varphi\vdash}{\varphi_{1},\ldots,\varphi_{n}\vdash\varphi}
+\]
 
 \end_inset
 
-
+ 
 \begin_inset Formula $\Rightarrow\varphi{\scriptstyle 1},\ldots,\varphi{\scriptstyle n}\vdash\varphi$
 \end_inset
 
@@ -3093,11 +3037,202 @@ a)
 \end_layout
 
 \begin_layout Subsection
-1
+Теорема (Мальцева о расширении)
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\Gamma\subseteq S\text{(\sigma), \mathfrak{A}\in K(\sigma), \mathfrak{A}}$
+\end_inset
+
+- бесконечна, 
+\begin_inset Formula $\mathfrak{A}\models\Gamma$
+\end_inset
+
+Тогда 
+\begin_inset Formula $\forall$
+\end_inset
+
+кардинала 
+\begin_inset Formula $\alpha\exists\mathfrak{B}\in K(\sigma)$
+\end_inset
+
+, такая что 
+\begin_inset Formula $\mathfrak{B}\models\Gamma,$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{||B||}\geq\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\series medium
+\bar under
+Доказательство:
+\series default
+\bar default
+ 
+\begin_inset Formula $C$
+\end_inset
+
+ - множество констант, 
+\begin_inset Formula $C\cap\sigma=\oslash,$
+\end_inset
+
+ 
+\begin_inset Formula $||C||=\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\Gamma^{'}=\{\lnot(c=d)|c,d\in C,c\neq d\},$
+\end_inset
+
+
+\begin_inset Formula $\Gamma^{''}=\Gamma\cup\Gamma^{'}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-1
+Покажем 
+\begin_inset Formula $\Gamma^{''}-$
+\end_inset
+
+локально-совместна.
+ 
+\begin_inset Formula $\Gamma_{0}^{''}\subseteq\Gamma^{''},$
+\end_inset
+
+
+\begin_inset Formula $\Gamma_{0}^{''}-$
+\end_inset
+
+конечна.
+ 
+\begin_inset Formula $\Gamma_{0}=\Gamma_{0}^{''}\cap\Gamma$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma_{0}^{'}=\Gamma_{0}^{''}\cap\Gamma^{'}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\Gamma_{0}^{''}=\Gamma_{0}\cup\Gamma_{0}^{'},$
+\end_inset
+
+ 
+\begin_inset Formula $\Gamma_{0,}\Gamma_{0}^{'}-$
+\end_inset
+
+конечны, 
+\begin_inset Formula $\Gamma_{0}\subseteq\Gamma,\Gamma_{0}^{'}\subseteq\Gamma^{'}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $C_{0}=C\cap\sigma(\Gamma_{0}^{'})$
+\end_inset
+
+- конечно, 
+\begin_inset Formula $C_{0}=\{d_{1},\dots,d_{n}\},$
+\end_inset
+
+ 
+\begin_inset Formula $\Gamma_{0}^{'}=\{\lnot(d_{i}=d_{j})|i\neq j\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma^{'}=\sigma\cup C,$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{A}^{'}\in K(\sigma^{'}):\mathfrak{A}^{'}\upharpoonright\sigma=\mathfrak{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\mathfrak{A}$
+\end_inset
+
+ - бесконечна 
+\begin_inset Formula $\Rightarrow\exists b_{1},\dots,b_{n}\in\mathfrak{A}^{'}:b_{i}\neq b_{j}$
+\end_inset
+
+при 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $d_{i}^{\mathfrak{A}^{'}}=b_{i}\Rightarrow\mathfrak{A}^{'}\models\Gamma\Rightarrow\mathfrak{A}^{'}\models\Gamma_{0}:\mathfrak{A}^{'}\models\Gamma_{0}^{'}\Rightarrow\mathfrak{A}^{'}\models\Gamma_{0}^{''}\Rightarrow\Gamma_{0}^{''}$
+\end_inset
+
+- совместна
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\Mapsto\Gamma^{''}$
+\end_inset
+
+- локально-совместна 
+\begin_inset Formula $\Rightarrow\Gamma^{''}$
+\end_inset
+
+- совместна 
+\begin_inset Formula $\exists\mathfrak{B}^{'}\in K(\sigma^{'}):\mathfrak{B}^{'}\models\Gamma^{''}\Rightarrow\mathfrak{B}^{'}\models\Gamma,$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{B}^{'}\models\Gamma^{'}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\mathfrak{B=B}^{'}\upharpoonright\sigma\Rightarrow\mathfrak{B}\models\Gamma.$
+\end_inset
+
+ 
+\begin_inset Formula $C^{'}=\{d^{\mathfrak{A}^{'}}|d\in C\}\subseteq\mathfrak{|B|^{'}=\mathfrak{|B|}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\mathfrak{B}^{'}\models\Gamma^{'}\Rightarrow\forall c,d\in C,$
+\end_inset
+
+ если 
+\begin_inset Formula $c\neq d,\Rightarrow c^{\mathfrak{B}^{'}}\neq d^{\mathfrak{B}^{'}}\Rightarrow||c^{'}||=\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $C^{'}\subseteq\mathfrak{|B|}\Rightarrow\mathfrak{||B^{''}||\geq}\alpha\Rightarrow\mathfrak{||B||}\geq\alpha$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
