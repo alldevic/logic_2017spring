@@ -1292,7 +1292,7 @@
 \begin_inset Formula $\sim$
 \end_inset
 
-отношение эквивалентности.
+ - отношение эквивалентности.
 \end_layout
 
 \begin_layout Standard
@@ -1325,8 +1325,8 @@
 
 \end_layout
 
-\begin_layout Standard
-а)Если 
+\begin_layout Enumerate
+Если 
 \begin_inset Formula $P^{n}\in\sigma',$
 \end_inset
 
@@ -1345,8 +1345,8 @@
 
 \end_layout
 
-\begin_layout Standard
-б)Если 
+\begin_layout Enumerate
+Если 
 \begin_inset Formula $f^{n}\in\sigma',c_{1}\dots c_{n}\in C,$
 \end_inset
 
@@ -1361,8 +1361,8 @@
 
 \end_layout
 
-\begin_layout Standard
-в)Если 
+\begin_layout Enumerate
+Если 
 \begin_inset Formula $d\in\sigma,$
 \end_inset
 
