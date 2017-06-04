@@ -703,75 +703,412 @@
 \end_layout
 
 \begin_layout Subsection
-1
+Определение (элементарная эквиваленция)
 \end_layout
 
 \begin_layout Standard
-1
+Пусть 
+\begin_inset Formula $\mathfrak{A,\;B}$
+\end_inset
+
+ - мождели сигнатуры сигма.
+ Они называются 
+\end_layout
+
+\begin_layout Standard
+лементарно ээквивалентными 
+\begin_inset Formula $(\mathfrak{A\equiv B),}$
+\end_inset
+
+ tckb 
+\begin_inset Formula $Th(\mathfrak{A})=Th(\mathfrak{B})$
+\end_inset
+
+, т.е 
+\begin_inset Formula $\forall\varphi\in S(\sigma)\qquad\mathfrak{A}\models\varphi\Leftrightarrow\mathfrak{B}\models\varphi.$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-1
+Предложение
 \end_layout
 
 \begin_layout Standard
-1
+Пусть 
+\begin_inset Formula $\mathfrak{A}\in K(\sigma)\text{,}$
+\end_inset
+
+ то 
+\begin_inset Formula $Th(\mathfrak{A})$
+\end_inset
+
+ - полная непротиворечивая теория сигнатуры сигмы.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Th(\mathfrak{A)\nvdash.}$
+\end_inset
+
+ Пусть 
+\begin_inset Formula $Th(\mathfrak{A)\vdash\Rightarrow\exists\varphi_{1}\dots\varphi_{n}\in}Th(\mathfrak{A}):\varphi_{1}\dots\varphi_{n}\vdash$
+\end_inset
+
+ - док.
+ 
+\begin_inset Formula $\Rightarrow\varphi_{1}\dots\varphi_{n}\vdash$
+\end_inset
+
+ - тождественно истинна 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+истинна на 
+\begin_inset Formula $\mathfrak{A}\Rightarrow\exists k\leq n:\;\mathfrak{A\nvDash\varphi}_{k},$
+\end_inset
+
+ но 
+\begin_inset Formula $\varphi_{k}\in Th(\mathfrak{A})\Rightarrow\mathfrak{A}\models\varphi_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Th(\mathfrak{A})$
+\end_inset
+
+ - полна.
+ Пусть 
+\begin_inset Formula $\varphi\in S(\sigma).$
+\end_inset
+
+ Пусть 
+\begin_inset Formula $\varphi\notin Th(\mathfrak{A})\Rightarrow\mathfrak{A}\nvDash\varphi\Rightarrow\mathfrak{A}\models\neg\varphi\Rightarrow\neg\varphi\in Th(\mathfrak{A})\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $Th(\mathfrak{A})$
+\end_inset
+
+ - полна и непротиворечива
+\begin_inset Formula $\Rightarrow Th(\mathfrak{A})$
+\end_inset
+
+ - теория.
 \end_layout
 
 \begin_layout Subsection
-1
+Теорема (б.
+ д.)
 \end_layout
 
 \begin_layout Standard
-1
+Пусть 
+\begin_inset Formula $A,B$
+\end_inset
+
+ - множества, 
+\begin_inset Formula $B$
+\end_inset
+
+ - бесконечна и 
+\begin_inset Formula $||A||\leq||B||$
+\end_inset
+
+, тогда 
+\begin_inset Formula $||A\cup B||=||B||$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-1
+Теорема (б.
+ д.)
 \end_layout
 
 \begin_layout Standard
-1
+Пусть 
+\begin_inset Formula $A$
+\end_inset
+
+ - бесконечна, 
+\begin_inset Formula $A^{*}=\underset{n\in\mathbb{N}}{\cup A^{n}}=\{(a_{1}\dots a_{n})|n\in\mathbb{N},a_{i}\in A\},$
+\end_inset
+
+ тогда 
+\begin_inset Formula $||A^{*}||=||A||$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-1
+Теорема (б.
+ д.)
 \end_layout
 
 \begin_layout Standard
-1
+\begin_inset Formula $\forall A\exists$
+\end_inset
+
+ кардинал 
+\begin_inset Formula $\alpha:||A||=||\alpha||$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-1
+Теорема
 \end_layout
 
 \begin_layout Standard
-1
+\begin_inset Formula $\forall A$
+\end_inset
+
+ и 
+\begin_inset Formula $B$
+\end_inset
+
+ 
+\begin_inset Formula $||A||\leq||B||$
+\end_inset
+
+ или 
+\begin_inset Formula $||B||\leq||A||$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Существуют кардиналы 
+\begin_inset Formula $\alpha,\beta:\;||A||=||\alpha||,\;||B||=||\beta||$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha\leq\beta$
+\end_inset
+
+ или с
+\begin_inset Formula $\beta\leq A\Rightarrow\alpha\subseteq\beta$
+\end_inset
+
+ или 
+\begin_inset Formula $\beta\subseteq\alpha\Rightarrow||\alpha||\leq||\beta||$
+\end_inset
+
+ или 
+\begin_inset Formula $||\beta||\leq||\alpha||\Rightarrow||A||\leq||B||$
+\end_inset
+
+ или 
+\begin_inset Formula $||B||\leq||A||$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
-1
+Следствие
 \end_layout
 
 \begin_layout Standard
-1
+Если 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ - бесконечный кардинал, то 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-предельный ординал.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+(от обр.)Пусть 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ - не предельный 
+\begin_inset Formula $\Rightarrow\exists\beta:\alpha=\beta+1,\hspace*{1em}\alpha=\beta\cup\{\beta\}\Rightarrow||\alpha||=||\beta||,\hspace*{1em}\beta<\alpha\Rightarrow\alpha$
+\end_inset
+
+ - не кардинал
+\begin_inset Formula $\Rightarrow\alpha$
+\end_inset
+
+ - предельный.
 \end_layout
 
 \begin_layout Subsection
-1
+Определение
 \end_layout
 
 \begin_layout Standard
-1
+Пусть 
+\begin_inset Formula $\mathfrak{A}\in K(\sigma),$
+\end_inset
+
+ 
+\begin_inset Formula $X$
+\end_inset
+
+ - множество элементов произв.
+ мощности, 
+\begin_inset Formula $\gamma:\;x\rightarrow|\mathfrak{A}|$
+\end_inset
+
+ - означивание 
+\begin_inset Formula $X$
+\end_inset
+
+ на 
+\begin_inset Formula $\mathfrak{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma\subseteq F(\sigma),\hspace*{1em}Fv(\Gamma)=\{x|\exists\varphi\in\Gamma:x\in Fv(\varphi)\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $Fv(\Gamma)\subseteq x.$
+\end_inset
+
+ Говорят, что 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ истинно на 
+\begin_inset Formula $\mathfrak{A}$
+\end_inset
+
+ при означивании 
+\begin_inset Formula $\gamma:\mathfrak{A}\models\Gamma[\gamma],$
+\end_inset
+
+ если 
+\begin_inset Formula $\forall\varphi\in\Gamma:\mathfrak{A}\models\varphi[\gamma].$
+\end_inset
+
+ Множество 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ выполнимо на 
+\begin_inset Formula $\mathfrak{A}$
+\end_inset
+
+, если 
+\begin_inset Formula $\exists\gamma:x\rightarrow|\mathfrak{A}|\hspace*{1em}:\hspace*{1em}\mathfrak{A}\models\Gamma[\gamma]$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ выполнимо (имеет модель), если оно выполниммо на некоторой модели, т.е 
+\begin_inset Formula $\exists\mathfrak{A}\in K(\sigma)\hspace*{1em}\exists\gamma:\hspace*{1em}Fv(\Gamma)\rightarrow|\mathfrak{A}|:\mathfrak{A}\models\Gamma[\gamma]$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-1
+Теорема (О существовании модели)
 \end_layout
 
 \begin_layout Standard
-1
+Любое непротиворечивое множество формул имеет модель(является выполнимым)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall\Gamma\subseteq F(\sigma),$
+\end_inset
+
+ если 
+\begin_inset Formula $\Gamma\nvdash,$
+\end_inset
+
+ то 
+\begin_inset Formula $\exists\mathfrak{A}\in K(\sigma)\hspace*{1em}\exists\gamma:Fv(\Gamma)\rightarrow|\mathfrak{A}|,\qquad\mathfrak{A}\models\Gamma[\gamma]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\Gamma\subseteq F(\sigma),$
+\end_inset
+
+ 
+\begin_inset Formula $\nvdash$
+\end_inset
+
+ и 
+\begin_inset Formula $X-Fv(\Gamma)$
+\end_inset
+
+, 
+\begin_inset Formula $D$
+\end_inset
+
+ - множество констант: 
+\begin_inset Formula $D\cap\sigma=\phi,\hspace*{1em}||D||=||X||\Rightarrow\exists$
+\end_inset
+
+ биекция 
+\begin_inset Formula $\gamma:X\rightarrow D.$
+\end_inset
+
+ Обозначим 
+\begin_inset Formula $\Gamma'=\Gamma[\gamma]=\{\varphi(d_{1}\dots d_{n})|\varphi\in\Gamma,\hspace*{1em}Fv(\varphi)=\{x_{1}\dots x_{n}\},\hspace*{1em}\gamma(x_{i})=d_{i}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[\varphi]_{d_{1}\dots d_{n}}^{x_{1}\dots x_{n}}\hspace*{1em}\Rightarrow\Gamma'\subseteq S(\sigma).$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -2926,43 +3263,573 @@ a)
 \end_layout
 
 \begin_layout Subsection
-1
+Лемма
 \end_layout
 
 \begin_layout Standard
-1
+\begin_inset Formula $\varphi\in S(\sigma')$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\mathfrak{A'}\vDash\varphi\Leftrightarrow\varphi\in T'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство
+\bar default
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi=(t=q)$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi=P(t_{1},...,t_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $ln\varphi=n$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\psi$
+\end_inset
+
+:
+\begin_inset Formula $ln\varphi<n$
+\end_inset
+
+ - выполено
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\varphi=(\varphi_{1}\lor\varphi_{2})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\mathfrak{A}'\vDash\Leftrightarrow\mathfrak{A}'\vDash\varphi_{1}$
+\end_inset
+
+ или 
+\begin_inset Formula $\mathfrak{A}'\vDash\varphi_{2}\Leftrightarrow$
+\end_inset
+
+ (по индукции) 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow\varphi_{1}\in T'$
+\end_inset
+
+ или 
+\begin_inset Formula $\varphi_{2}\in T'\Leftrightarrow$
+\end_inset
+
+ (по л.
+ Хенкина) 
+\begin_inset Formula $(\varphi_{1}\lor\varphi_{2})\in T'$
+\end_inset
+
+ ,т.е.
+ 
+\begin_inset Formula $\varphi\in T'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi_{1}\&\varphi_{2})$
+\end_inset
+
+ - упр
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi_{1}\rightarrow\varphi_{2})$
+\end_inset
+
+ - упр
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\neg\varphi_{1}$
+\end_inset
+
+ - упр
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi=\exists\varphi_{1}(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\mathfrak{A'}\vDash\exists x\varphi_{1}(x)\Leftrightarrow\exists a(const)\in\mathfrak{A'}:\mathfrak{A'}\vDash\varphi_{1}(a)\Leftrightarrow\exists c\in C:\mathfrak{A'}\vDash\varphi_{1}[c]\Leftrightarrow(c=c)\in T'$
+\end_inset
+
+-упр
+\begin_inset Formula $\Rightarrow c^{\mathfrak{A'}}=[c]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\exists c\in C:\mathfrak{A'}\vDash\varphi_{1}(c^{\mathfrak{A'}})\Leftrightarrow\mathfrak{A'}\vDash\varphi_{1}(c)\Leftrightarrow$
+\end_inset
+
+ (по инд.)
+\begin_inset Formula $\exists c\in C:\varphi_{1}(c)\in T'\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+(по л.
+ Хенкина) 
+\begin_inset Formula $\exists x\varphi_{1}(x)\in T'$
+\end_inset
+
+ т.е.
+ 
+\begin_inset Formula $\varphi\in T'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\varphi=\forall x\varphi_{1}(x)$
+\end_inset
+
+ - упр
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Следствие
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathfrak{A'}\vDash T'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall\varphi\in T'$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{A'}\vDash\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{0}\subseteq T'\Rightarrow\mathfrak{A'}\vDash T_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $T_{0}=\varGamma'=\varGamma[\gamma]=[\varGamma]_{\gamma(x)\in D}^{x\in FV(x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $d\in D\rightarrow c\in C:d\sim c\rightarrow[c]=d^{\mathfrak{A'}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $\gamma_{0}:FV(\varGamma)\rightarrow c_{/_{\sim}}=\{[c]|c\in C\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma_{0}(x)=\gamma(x)^{\mathfrak{A'}}$
+\end_inset
+
+ , если 
+\begin_inset Formula $\gamma(x)=d$
+\end_inset
+
+ , то 
+\begin_inset Formula $\gamma_{0}(x)=d^{\mathfrak{A'}}=[c]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если рассмотрим 
+\begin_inset Formula $\varphi(x_{1},...,x_{n})\in\varGamma$
+\end_inset
+
+ , то 
+\begin_inset Formula $\gamma(x_{i})=d_{i}\in D$
+\end_inset
+
+ , тогда
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi(d_{1},...,d_{n})\in\varGamma'=T_{0}\Rightarrow\mathfrak{A'}\vDash\varphi(d_{1},..,d_{n})\Rightarrow\mathfrak{A'\vDash}\varphi(d_{1}^{\mathfrak{A'}},...,d_{n}^{\mathfrak{A'}})\Rightarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathfrak{A'}\vDash\varphi(\gamma_{0}(x_{1}),...,\gamma_{0}(x_{n}))$
+\end_inset
+
+ , т.е.
+ 
+\begin_inset Formula $\mathfrak{A'}\vDash\varphi[\gamma_{0}]$
+\end_inset
+
+ , 
+\begin_inset Formula $\gamma_{0}:FV(\varGamma)\rightarrow|\mathfrak{A'}|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|\Rightarrow\mathfrak{A'}\vDash\varGamma[\gamma_{0}]$
+\end_inset
+
+ , 
+\begin_inset Formula $\varGamma\subseteq F(\sigma)$
+\end_inset
+
+, 
+\begin_inset Formula $\mathfrak{A=A'}\varGamma[\gamma_{0}]$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-1
+Определение
 \end_layout
 
 \begin_layout Standard
-1
+\begin_inset Formula $\varGamma\subseteq F(\gamma)$
+\end_inset
+
+ , 
+\begin_inset Formula $\varGamma$
+\end_inset
+
+ - совместна, если 
+\begin_inset Formula $\exists\mathfrak{A}\in K(\sigma)$
+\end_inset
+
+, 
+\begin_inset Formula $\exists\gamma:FV(\varGamma)\rightarrow|\mathfrak{A|}$
+\end_inset
+
+ , в т.ч.
+ 
+\begin_inset Formula $\mathfrak{A}\vDash\varGamma[\gamma]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\varGamma$
+\end_inset
+
+ - локально совместима, если:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\forall$
+\end_inset
+
+ конечного 
+\begin_inset Formula $\varGamma_{0}\subseteq\varGamma$
+\end_inset
+
+ , 
+\begin_inset Formula $\varGamma_{0}$
+\end_inset
+
+- совместима
 \end_layout
 
 \begin_layout Subsection
-1
+Теорема (Мальцева о компактности)
 \end_layout
 
 \begin_layout Standard
-1
+Множество формул совместно 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ когда оно локально совместно
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+) 
+\begin_inset Formula $\varGamma$
+\end_inset
+
+ - совместно 
+\begin_inset Formula $\Rightarrow\exists\mathfrak{A}\in K(\sigma)$
+\end_inset
+
+ , 
+\begin_inset Formula $\exists\gamma:FV(\varGamma)\rightarrow|\mathfrak{A|}:\mathfrak{A}\vDash\varGamma[\gamma]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varGamma_{0}\subseteq F$
+\end_inset
+
+ , 
+\begin_inset Formula $\varGamma_{0}$
+\end_inset
+
+ - конечная 
+\begin_inset Formula $\Rightarrow\mathfrak{A}\vDash\varGamma_{0}[\gamma]$
+\end_inset
+
+ - упражение 
+\begin_inset Formula $\Rightarrow\varGamma_{0}$
+\end_inset
+
+ - совместна 
+\begin_inset Formula $|\Rightarrow\varGamma$
+\end_inset
+
+ - локально совместна
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+) 
+\begin_inset Formula $\varGamma$
+\end_inset
+
+ - локально совместна, пусть 
+\begin_inset Formula $\varGamma$
+\end_inset
+
+ - не совместна 
+\begin_inset Formula $\Rightarrow\varGamma\vdash$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow\exists\varphi_{1},...,\varphi_{n}\in\varGamma:\varphi_{1},...,\varphi_{n}\vdash$
+\end_inset
+
+- доказуемо
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varGamma_{0}=\{\varphi_{1},..,\varphi_{n}\}$
+\end_inset
+
+ - конечно, 
+\begin_inset Formula $\varGamma_{0}\subseteq\varGamma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow\varGamma_{0}$
+\end_inset
+
+ - совместна 
+\begin_inset Formula $\exists\mathfrak{A}\in K(\sigma)$
+\end_inset
+
+ , 
+\begin_inset Formula $\exists\gamma:FV(\varGamma_{0})\rightarrow|\mathfrak{A|:A}\vDash\varGamma_{0}[\gamma]$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow\mathfrak{A\vDash\varphi_{1}[\gamma]...A\vDash\varphi_{n}[\gamma]}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+С другой стороны: 
+\begin_inset Formula $\varphi_{1},...,\varphi_{n}\vdash$
+\end_inset
+
+- доказуемо 
+\begin_inset Formula $\Rightarrow\varphi_{1},...,\varphi_{n}\vdash$
+\end_inset
+
+- т.и.
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+на 
+\begin_inset Formula $\mathfrak{A}$
+\end_inset
+
+ при 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ - ист.
+ 
+\begin_inset Formula $\Rightarrow\exists i\leq n:\mathfrak{A}\nvDash\varphi_{i}[\gamma]$
+\end_inset
+
+ - противоречие 
+\begin_inset Formula $\Rightarrow\varGamma$
+\end_inset
+
+ - совместно
 \end_layout
 
 \begin_layout Subsection
-1
+Теорема (Геделя о полноте)
 \end_layout
 
 \begin_layout Standard
-1
-\end_layout
-
-\begin_layout Subsection
-1
+Любая тождественно истинная формула доказуема
 \end_layout
 
 \begin_layout Standard
-1
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - т.и.
+ , 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - не доказума
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\lnot\varphi\vdash}{\vdash\varphi}$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ если 
+\begin_inset Formula $\lnot\varphi\vdash$
+\end_inset
+
+ - доказуемо, то 
+\begin_inset Formula $\vdash\varphi$
+\end_inset
+
+ - доказуемо , т.е.
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ - доказуемо 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|\Rightarrow\lnot\varphi$
+\end_inset
+
+ - не доказуемо 
+\begin_inset Formula $\Rightarrow\{\lnot\varphi\}\nvdash\Rightarrow\exists\mathfrak{A}\in K(\sigma(\varphi))$
+\end_inset
+
+ , 
+\begin_inset Formula $\exists\gamma:FV(\varphi)\rightarrow|\mathfrak{A|}:$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathfrak{A}\vDash\lnot\varphi[\gamma]\Rightarrow\mathfrak{A}\nvDash\varphi[\gamma]$
+\end_inset
+
+ - противоречие.
 \end_layout
 
 \begin_layout Subsection
@@ -3314,11 +4181,277 @@ a)
 \end_layout
 
 \begin_layout Subsection
-1
+Предложение (О нестандартной модели 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+)
 \end_layout
 
 \begin_layout Standard
-1
+\begin_inset Formula $\mathfrak{N}=<\mathbb{N};\leq,+,\bullet,0,1>$
+\end_inset
+
+, тогда 
+\begin_inset Formula $\exists\mathfrak{M\equiv N}$
+\end_inset
+
+ и найдется 
+\begin_inset Formula $c\in\mathfrak{M}$
+\end_inset
+
+, такие что 
+\begin_inset Formula $\forall n\in\mathbb{N}\:\underbrace{1+1+\ldots+1}_{n}\leq c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varGamma=Th\mathfrak{(N)}$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma=\sigma(\mathfrak{N})=<\leq,+,\cdot,0,1>$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma^{'}=\sigma\cup\{c\}$
+\end_inset
+
+, при 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ 
+\begin_inset Formula $\varphi_{n}=(\underbrace{1+1+\ldots+1}_{n}\leq c)$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma^{'}=\{\varphi_{n}|n\in\mathbb{N}\}$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma^{''}=\Gamma\cup\Gamma^{'}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Покажем, что 
+\begin_inset Formula $\Gamma^{''}$
+\end_inset
+
+ - локально совместна.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим 
+\begin_inset Formula $\Gamma_{0}^{''}\subseteq\Gamma^{'}$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma_{0}^{''}$
+\end_inset
+
+ - конечно, 
+\begin_inset Formula $\Gamma_{0}=\Gamma_{0}^{''}\cap\Gamma$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma_{0}^{'}=\Gamma_{0}^{''}\cap\Gamma'$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma_{0},\Gamma_{0}^{'}$
+\end_inset
+
+ - конечны, 
+\begin_inset Formula $\Gamma_{0}\subseteq\Gamma$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma_{0}^{'}\subseteq\Gamma$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma_{0}^{''}=\Gamma_{0}\cup\Gamma_{0}^{'}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m=max\{n|\varphi_{n}\in\Gamma_{0}^{'}\}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\Gamma_{0}^{'}\subseteq\{\varphi_{1}\ldots\varphi_{m}\}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathfrak{N}^{'}\in K(\sigma^{'})$
+\end_inset
+
+ такая, что 
+\begin_inset Formula $\mathfrak{N}\upharpoonright\sigma=\mathfrak{N}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Положим 
+\begin_inset Formula $c^{\mathfrak{N'}}=m$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\leq m$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{N}^{'}\models\varphi_{n}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $\mathfrak{N}^{'}\models\Gamma_{0}^{'}$
+\end_inset
+
+; 
+\begin_inset Formula $\mathfrak{N}^{'}\models\Gamma$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{N}^{'}\models\Gamma_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{N}^{'}\models\mathfrak{N}^{''}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Mapsto$
+\end_inset
+
+ 
+\begin_inset Formula $\Gamma^{''}$
+\end_inset
+
+ - локально совместна 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\Gamma^{''}$
+\end_inset
+
+ - совместна 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\exists\mathfrak{M}^{'}\in K(\sigma^{'})$
+\end_inset
+
+, такая что 
+\begin_inset Formula $\mathfrak{M}^{'}\models\Gamma^{''}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{M}^{'}\models\Gamma^{'}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathfrak{M}^{'}\models\Gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Положим 
+\begin_inset Formula $\mathfrak{M}=\mathfrak{M}^{'}\upharpoonright\sigma$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{M}\models\Gamma$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathfrak{M}\equiv\mathfrak{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c=c^{\mathfrak{M'}}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\:\mathfrak{M}^{'}\models\varphi_{n}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\:\underbrace{1+1+\ldots+1}_{n}\leq c$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Subsection
