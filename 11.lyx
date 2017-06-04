@@ -2365,6 +2365,181 @@ end{displaymath}
  доказуема.
 \end_layout
 
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Enumerate
+Следует из теоремы о корректности и теоремы о полноте.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi_{1},\dots,\varphi_{n}\vdash\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+a) Если 
+\begin_inset Formula $S$
+\end_inset
+
+ доказуема, то 
+\begin_inset Formula $S$
+\end_inset
+
+ - тождественно истинна.
+ Следует из теоремы о корректности.
+\end_layout
+
+\begin_layout Standard
+б) 
+\begin_inset Formula $S$
+\end_inset
+
+ - тождественно истинна 
+\begin_inset Formula $\Rightarrow((\varphi_{1}\wedge\dots\wedge\varphi_{n})\rightarrow\psi)$
+\end_inset
+
+ - тождественно истинна (
+\series bold
+Упражнение
+\series default
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow((\varphi_{1}\wedge\dots\wedge\varphi_{n})\rightarrow\psi)$
+\end_inset
+
+ - доказуема 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow\vdash((\varphi_{1}\wedge\dots\wedge\varphi_{n})\rightarrow)$
+\end_inset
+
+ - доказуема
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vdash\psi,\varphi_{1},\dots,\varphi_{n}\vdash$
+\end_inset
+
+ (
+\series bold
+Упражнение
+\series default
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{displaymath}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+prftree[r]{}{
+\backslash
+prftree[r]{}{
+\backslash
+prftree[r]{}{(
+\backslash
+varphi_{1}
+\backslash
+wedge
+\backslash
+dots
+\backslash
+wedge
+\backslash
+varphi_{n})
+\backslash
+vdash(
+\backslash
+varphi_{1}
+\backslash
+wedge
+\backslash
+dots
+\backslash
+wedge
+\backslash
+varphi_{n}),
+\backslash
+vdash((
+\backslash
+varphi_{1}
+\backslash
+wedge
+\backslash
+dots
+\backslash
+wedge
+\backslash
+varphi_{n})
+\backslash
+rightarrow
+\backslash
+psi)}{(
+\backslash
+varphi_{1}
+\backslash
+wedge
+\backslash
+dots
+\backslash
+wedge
+\backslash
+varphi_{n})
+\backslash
+vdash
+\backslash
+psi}}{
+\backslash
+dots}}{
+\backslash
+varphi_{1},
+\backslash
+dots,
+\backslash
+varphi_{n}
+\backslash
+vdash
+\backslash
+psi}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{displaymath}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Следствие
 \end_layout
