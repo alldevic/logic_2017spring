@@ -2966,19 +2966,74 @@ a)
 \end_layout
 
 \begin_layout Subsection
-1
+Следствие
 \end_layout
 
 \begin_layout Standard
-1
+Формула доказуема 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ она тождественно-истинна
+\begin_inset Newline newline
+\end_inset
+
+Доказательство:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(\Rightarrow)$
+\end_inset
+
+ теорема о корректности
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(\Leftarrow)$
+\end_inset
+
+ теорема Геделя
 \end_layout
 
 \begin_layout Subsection
-1
+Теорема
 \end_layout
 
 \begin_layout Standard
-1
+\begin_inset Formula $f$
+\end_inset
+
+ – доказуема 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ – тождественное истинна
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\Rightarrow)$
+\end_inset
+
+ теорема о корректности
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\Leftarrow)$
+\end_inset
+
+ Теорема о полноте (аналогично логике высказываний)
 \end_layout
 
 \begin_layout Subsection
