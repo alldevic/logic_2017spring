@@ -140,7 +140,7 @@
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{\Gamma\vdash\varphi}{\Gamma\vdash(\varphi\lor\psi)}\qquad\qquad\frac{\Gamma\vdash\psi}{\Gamma\vdash(\varphi\lor\psi)}\qquad\qquad\frac{\Gamma,\varphi\vdash\xi;\Gamma,\psi\vdash(\varphi\lor\psi)}{\Gamma\vdash\xi}
+\frac{\Gamma\vdash\varphi}{\Gamma\vdash(\varphi\lor\psi)}\qquad\qquad\frac{\Gamma\vdash\psi}{\Gamma\vdash(\varphi\lor\psi)}\qquad\qquad\frac{\Gamma,\varphi\vdash\xi;\Gamma,\psi\vdash\xi;\Gamma\vdash(\varphi\lor\psi)}{\Gamma\vdash\xi}
 \]
 
 \end_inset
@@ -151,7 +151,7 @@
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{\Gamma\vdash\varphi;\Gamma\vdash(\varphi\rightarrow\psi)}{\Gamma\vdash\psi}\qquad\qquad\frac{\Gamma\vdash\varphi;\Gamma\vdash(\varphi\rightarrow\psi)}{\Gamma\vdash\psi}\qquad\qquad\frac{\Gamma,\neg\varphi\vdash}{\Gamma\vdash\varphi}
+\frac{\Gamma\vdash\varphi;\Gamma\vdash(\varphi\rightarrow\psi)}{\Gamma\vdash\psi}\qquad\qquad\frac{\Gamma,\varphi\vdash\psi}{\Gamma\vdash(\varphi\rightarrow\psi)}\qquad\qquad\frac{\Gamma,\neg\varphi\vdash}{\Gamma\vdash\varphi}
 \]
 
 \end_inset
@@ -631,7 +631,7 @@ a)
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{\psi_{1}\ldots\psi_{n}\vdash\varphi}{\xi_{1}\ldots\xi_{k}\vdash\varphi}\qquad\qquad\frac{\psi_{1}\ldots\psi_{n}\vdash}{\xi_{1}\ldots\xi_{n}\vdash}\:(\{\psi_{1}\ldots\psi_{n}\}\subseteq\{\xi_{1}\ldots\xi_{k}\})
+\frac{\psi_{1}\ldots\psi_{n}\vdash\varphi}{\xi_{1}\ldots\xi_{k}\vdash\varphi}\qquad\qquad\frac{\psi_{1}\ldots\psi_{n}\vdash}{\xi_{1}\ldots\xi_{k}\vdash}\:(\{\psi_{1}\ldots\psi_{n}\}\subseteq\{\xi_{1}\ldots\xi_{k}\})
 \]
 
 \end_inset
@@ -1142,7 +1142,7 @@ a)
 \end_inset
 
 , 
-\begin_inset Formula $\psi\equiv\varphi$
+\begin_inset Formula $\psi\equiv\xi$
 \end_inset
 
 .
