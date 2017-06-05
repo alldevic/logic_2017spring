@@ -102,7 +102,7 @@
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\forall P^{n},\,f^{n},\,c\in\sigma\;\forall a_{1},\dots,a_{n}\in k(\sigma)$
+\begin_inset Formula $\forall P^{n},\,f^{n},\,c\in\sigma\;\forall a_{1},\dots,a_{n}\in\mathfrak{\left|A\right|}$
 \end_inset
 
  выполнено следующее:
